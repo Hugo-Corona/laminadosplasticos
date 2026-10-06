@@ -1,0 +1,4507 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PWWPNRT2');</script>
+<!-- End Google Tag Manager -->
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laminados Plásticos</title>
+    <link rel="icon" type="image/webp" href="images/logo.webp">
+    <link rel="shortcut icon" type="image/webp" href="images/logo.webp">
+    <link rel="apple-touch-icon" href="images/logo.webp">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow-x: hidden;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #7CD4F9 0%, #7CD4F9 100%);
+            padding: 20px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-icon {
+            width: 50px;
+            height: 50px;
+            background: #666;
+            display: flex;
+            gap: 3px;
+            padding: 8px;
+        }
+
+        .logo-bar {
+            flex: 1;
+            background: #999;
+            border-radius: 2px;
+        }
+
+        .logo-text {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .logo-text span {
+            display: block;
+            font-size: 14px;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+
+        .header-title {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            text-align: center;
+            flex: 1;
+        }
+
+        .header-title.fade-out {
+            opacity: 0;
+            transition: opacity 0.5s ease;
+        }
+
+        .phone-link {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .phone-icon {
+            width: 40px;
+            height: 40px;
+            border: 3px solid white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 600px;
+            background: #f5f5f5;
+            background-image: linear-gradient(135deg, #f5f5f5 0%, #e0e0e0 100%);
+            position: relative;
+            overflow: hidden;
+            padding: 60px 5%;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(255,255,255,0.4);
+            pointer-events: none;
+        }
+
+        .hero-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 60px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .hero-content {
+            flex: 1;
+            max-width: 600px;
+            transform: translateX(120px);
+        }
+
+        .hero-title {
+            font-size: 48px;
+            color: #333;
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        .hero-subtitle {
+            font-size: 29px;
+            color: #555;
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+
+        .hero-subtitle strong {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Steps list under subtitle */
+        .steps { margin: 0 0 30px; }
+        .steps-list { list-style: none; }
+        .step-item {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            font-size: 24px;
+            color: #333;
+            margin: 10px 0;
+            font-weight: 700;
+        }
+        .step-badge {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 34px;
+            height: 34px;
+            border-radius: 8px;
+            background: #e1eaff;
+            color: #1e50f5;
+            font-weight: 700;
+            box-shadow: inset 0 -2px 0 rgba(0,0,0,0.05);
+        }
+
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: linear-gradient(135deg, #00C853 0%, #00E676 100%);
+            color: white;
+            padding: 20px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 28px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,200,83,0.4);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,200,83,0.5);
+        }
+
+        .whatsapp-icon {
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #00C853;
+            font-size: 24px;
+        }
+
+        .guarantee {
+            margin-top: 30px;
+            font-size: 24px;
+            color: #C62828;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        .hero-cta-row {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-button-secondary {
+            display: inline-flex;
+            align-items: center;
+            padding: 18px 32px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            color: #2E2E2E;
+            background: #FFFFFF;
+            border: 2px solid #2E2E2E;
+            transition: transform 0.3s, background 0.3s;
+        }
+
+        .cta-button-secondary:hover {
+            transform: translateY(-2px);
+            background: #f0f0f0;
+        }
+
+        .hero-trust-row {
+            display: flex;
+            gap: 40px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+
+        .hero-trust-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .hero-trust-item strong {
+            font-size: 26px;
+            color: #2E2E2E;
+        }
+
+        .hero-trust-item span {
+            font-size: 15px;
+            color: #666;
+        }
+
+        @media (max-width: 768px) {
+            .hero-trust-row { gap: 24px; }
+            .hero-trust-item strong { font-size: 20px; }
+            .cta-button-secondary { font-size: 17px; padding: 14px 24px; }
+        }
+
+        /* Carousel */
+        .carousel {
+            flex: 1;
+            max-width: 600px;
+            position: relative;
+        }
+
+        .carousel-container {
+            position: relative;
+            height: 450px;
+            perspective: 1000px;
+        }
+
+        .carousel-slide {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-slide.active {
+            opacity: 1;
+        }
+
+        .product-image {
+            width: 100%;
+            max-width: 500px;
+            height: 350px;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(0,0,0,0.3));
+            margin-bottom: 20px;
+        }
+
+        .product-label {
+            background: rgba(255,255,255,0.95);
+            padding: 15px 30px;
+            border-radius: 30px;
+            font-size: 24px;
+            font-weight: bold;
+            color: #333;
+            font-style: italic;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        /* Carousel Indicators */
+        .carousel-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .indicator {
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.5);
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .indicator.active {
+            background: #29B6F6;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        /* Floating WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #25D366 0%, #25D366 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+            cursor: pointer;
+            z-index: 1000;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 25px rgba(37,211,102,0.6);
+        }
+
+        .whatsapp-float svg {
+            width: 40px;
+            height: 40px;
+            fill: white;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .hero-container {
+                flex-direction: column;
+                gap: 40px;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                text-align: center;
+                transform: none;
+            }
+
+            .carousel {
+                max-width: 100%;
+            }
+
+            .hero-title {
+                font-size: 24px;
+            }
+
+            .hero-subtitle {
+                font-size: 24px;
+            }
+
+            .header-title {
+                font-size: 20px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                gap: 2px;
+                padding: 0 5%;
+                align-items: center;
+                margin-bottom: -60px;
+            }
+
+            .header-title {
+                font-size: 18px;
+                order: 2;
+                display: none;
+            }
+
+            .phone-link {
+                font-size: 20px;
+                order: 3;
+                margin: 0;
+                align-self: center;
+                transform: translateY(-70px);
+            }
+
+            .logo {
+                order: 1;
+                margin: 0;
+                padding: 0;
+                transform: translateY(-40px);
+            }
+
+            .hero {
+                padding: 40px 5%;
+                min-height: auto;
+            }
+
+            .carousel {
+                margin-top: -190px;
+            }
+
+            .carousel-indicators {
+                margin-top: -100px;
+            }
+
+            .hero-title {
+                font-size: 18px;
+            }
+
+            .hero-subtitle {
+                font-size: 21px;
+            }
+
+            .cta-button {
+                font-size: 22px;
+                padding: 15px 30px;
+            }
+
+            .guarantee {
+                font-size: 20px;
+            }
+
+            .carousel-container {
+                height: 600px;
+                width: 100%;
+            }
+
+            .carousel {
+                width: 100vw;
+                max-width: 100vw;
+                margin-left: calc(50% - 50vw);
+                margin-right: calc(50% - 50vw);
+            }
+
+            .product-image {
+                width: 100%;
+                height: auto;
+                max-width: none;
+                display: block;
+            }
+
+            .product-label {
+                font-size: 20px;
+                padding: 12px 24px;
+                margin-top: -40px;
+            }
+
+            .whatsapp-float {
+                width: 60px;
+                height: 60px;
+                bottom: 20px;
+                right: 20px;
+            }
+
+            .whatsapp-float svg {
+                width: 35px;
+                height: 35px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero-title {
+                font-size: 16px;
+            }
+
+            .hero-subtitle {
+                font-size: 18px;
+            }
+
+            .cta-button {
+                font-size: 18px;
+                padding: 12px 24px;
+            }
+
+            .logo-text {
+                font-size: 18px;
+            }
+
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PWWPNRT2"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.webp" alt="Laminados Plásticos" style="height: 150px; width: auto; display: block;">
+        </div>
+        <h1 class="header-title"></h1>
+        <a href="tel:3319609730" class="phone-link">
+            <div class="phone-icon">📞</div>
+            <span>33 1960 9730</span>
+        </a>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Láminas de policarbonato, acrílico y traslúcidas en Guadalajara</h1>
+                <h2 class="hero-subtitle">Corte a medida, entrega a obra y asesoría para elegir la lámina correcta. 4 sucursales en Jalisco y Colima.</h2>
+                <div class="steps">
+                    <ul class="steps-list">
+                        <li class="step-item"><span class="step-badge">✓</span> Corte a la medida de tu proyecto</li>
+                        <li class="step-item"><span class="step-badge">✓</span> Entrega a obra en Zona Metropolitana de Guadalajara y Colima</li>
+                        <li class="step-item"><span class="step-badge">✓</span> Facturamos y aceptamos todas las formas de pago</li>
+                    </ul>
+                </div>
+                <div class="hero-cta-row">
+                <a href="https://wa.me/3319609730" class="cta-button" target="_blank">
+                    <div class="whatsapp-icon">
+                        <svg width="30" height="30" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                            <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
+                        </svg>
+                    </div>
+                    Cotizar por WhatsApp
+                </a>
+                <a href="#catalogo" class="cta-button-secondary">Ver catálogo</a>
+                </div>
+                <div class="hero-trust-row">
+                    <div class="hero-trust-item"><strong>15+ años</strong><span>en el mercado</span></div>
+                    <div class="hero-trust-item"><strong>4 sucursales</strong><span>Zapopan, Tlaquepaque y Colima</span></div>
+                    <div class="hero-trust-item"><strong>+500 proyectos</strong><span>residenciales e industriales</span></div>
+                </div>
+            </div>
+
+            <div class="carousel">
+                <div class="carousel-container">
+                    <div class="carousel-slide active" data-bg="linear-gradient(0deg, rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url('images/1eraseccion/fondos/policarbonato.webp')">
+                        <img src="images/1eraseccion/productos/Policarbonato.webp" alt="Policarbonato" class="product-image">
+                        <div class="product-label">Policarbonato</div>
+                    </div>
+                    <div class="carousel-slide" data-bg="linear-gradient(0deg, rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url('images/1eraseccion/fondos/t218.webp')">
+                        <img src="images/1eraseccion/productos/t218.webp" alt="T 218" class="product-image">
+                        <div class="product-label">T 218</div>
+                    </div>
+                    <div class="carousel-slide" data-bg="linear-gradient(0deg, rgba(255,255,255,0.55), rgba(255,255,255,0.55)), url('images/1eraseccion/fondos/tejapvc.webp')">
+                        <img src="images/1eraseccion/productos/ultrateja.webp" alt="T 18" class="product-image">
+                        <div class="product-label">T 18</div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <div class="indicator active" data-slide="0"></div>
+                    <div class="indicator" data-slide="1"></div>
+                    <div class="indicator" data-slide="2"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/523319609730" class="whatsapp-float" target="_blank">
+        <svg viewBox="0 0 32 32">
+            <path d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.957 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62-6.11 13.62-13.62 13.62zM21.305 19.26c-0.346-0.174-2.049-1.007-2.366-1.123-0.316-0.117-0.547-0.174-0.776 0.174s-0.892 1.123-1.094 1.347c-0.201 0.229-0.402 0.258-0.748 0.087-0.346-0.174-1.461-0.539-2.785-1.722-1.031-0.922-1.726-2.059-1.929-2.406-0.201-0.346-0.022-0.533 0.152-0.707 0.156-0.155 0.346-0.402 0.518-0.605 0.174-0.201 0.231-0.346 0.346-0.574 0.117-0.229 0.058-0.431-0.028-0.605s-0.776-1.87-1.063-2.565c-0.28-0.672-0.56-0.58-0.776-0.591-0.2-0.008-0.431-0.010-0.662-0.010s-0.605 0.086-0.922 0.431c-0.316 0.346-1.206 1.179-1.206 2.873s1.235 3.333 1.406 3.561c0.174 0.229 2.421 3.696 5.864 5.186 0.819 0.354 1.458 0.566 1.956 0.724 0.822 0.262 1.569 0.225 2.16 0.136 0.66-0.099 2.049-0.835 2.335-1.642 0.288-0.807 0.288-1.501 0.201-1.642-0.086-0.146-0.316-0.231-0.662-0.402z"/>
+        </svg>
+    </a>
+
+    <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+        const hero = document.querySelector('.hero');
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            indicators.forEach(indicator => indicator.classList.remove('active'));
+            
+            currentSlide = (n + totalSlides) % totalSlides;
+            
+            slides[currentSlide].classList.add('active');
+            indicators[currentSlide].classList.add('active');
+
+            const bg = slides[currentSlide].dataset.bg;
+            if (bg) {
+                hero.style.backgroundImage = bg;
+            }
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        // Auto-advance carousel
+        setInterval(nextSlide, 4000);
+
+        // Click indicators
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => showSlide(index));
+        });
+
+        // Set initial hero background according to first slide
+        showSlide(0);
+
+        // Add smooth scroll behavior
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
+        // Rotating header title
+        const headerTitle = document.querySelector('.header-title');
+        const headerPhrases = [
+            'Recibe el Mejor Precio para tu Proyecto.',
+            'Asesoría inmediata por WhatsApp.',
+            'Entregas rápidas a todo México.',
+            'Calidad garantizada en cada lámina.'
+        ];
+        let headerIndex = 0;
+
+        function rotateHeader() {
+            headerTitle.classList.add('fade-out');
+            setTimeout(() => {
+                headerIndex = (headerIndex + 1) % headerPhrases.length;
+                headerTitle.textContent = headerPhrases[headerIndex];
+                headerTitle.classList.remove('fade-out');
+            }, 500);
+        }
+
+        setInterval(rotateHeader, 4000);
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 2da seccion  -->
+
+<section class="marcas-carousel" style="background-color: #2E2E2E; padding: 1.5rem 0; margin: 0; overflow: hidden;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+      <div class="marcas-track" style="display: flex; align-items: center; justify-content: space-around; animation: scroll 20s linear infinite; width: calc(250px * 10);">
+        <!-- Logos de proveedores - se duplican para el efecto de scroll infinito -->
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Techos Residenciales -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Bodegas y Almacenes -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Patios y Cocheras -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Proyectos residenciales -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Terrazas -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Fincas campestres -</span>
+        </div>
+        <!-- Duplicar los logos para el efecto de scroll infinito -->
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Techos Residenciales -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Bodegas y Almacenes -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Patios y Cocheras -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Proyectos residenciales -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Terrazas -</span>
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <span style="display:inline-block; height:60px; line-height:60px; font-size:26px; font-weight:700; color:#FFFFFF; white-space:nowrap;">- Fincas campestres -</span>
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 5)); }
+      }
+      .marcas-slide span:hover {
+        filter: grayscale(0) opacity(1) !important;
+        transform: scale(1.05);
+      }
+      @media (max-width: 768px) {
+        .marcas-track {
+          animation: scroll 15s linear infinite !important;
+          width: calc(200px * 10) !important;
+        }
+        .marcas-slide span {
+          height: 50px !important;
+          line-height: 50px !important;
+        }
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(calc(-200px * 5)); }
+        }
+      }
+    </style>
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- 3era seccion -->
+  <section class="scc3-section" id="catalogo">
+  
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .scc3-section {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #FFFFFF 0%, #FFFFFF 100%);
+            padding: 40px 20px;
+        }
+
+        .scc3-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .scc3-title {
+            text-align: center;
+            color: #2E2E2E;
+            font-size: 2.5rem;
+            margin-bottom: 60px;
+            opacity: 0;
+            animation: scc3-fadeInDown 0.8s ease forwards;
+        }
+
+        .scc3-tabs {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        .scc3-tab {
+            padding: 8px 18px;
+            border-radius: 999px;
+            border: 1px solid #2E2E2E;
+            background: rgba(255,255,255,0.7);
+            color: #2E2E2E;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.25s ease;
+            outline: none;
+        }
+
+        .scc3-tab.scc3-active {
+            background: #2E2E2E;
+            color: white;
+            box-shadow: 0 6px 16px rgba(44, 82, 130, 0.35);
+        }
+
+        .scc3-carousel-wrapper {
+            position: relative;
+            opacity: 0;
+            animation: scc3-fadeInUp 1s ease 0.3s forwards;
+        }
+
+        .scc3-carousel-container {
+            display: flex;
+            align-items: stretch;
+            gap: 40px;
+            background: #7CD4F9;
+            padding: 60px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+        }
+
+        .scc3-left-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .scc3-main-image {
+            width: 100%;
+            max-width: 600px;
+            height: 340px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            opacity: 0;
+            transform: scale(0.8);
+            transition: all 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+        }
+
+        .scc3-main-image.scc3-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        .scc3-main-image img {
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain;
+            filter: drop-shadow(0 10px 30px rgba(0, 0, 0, 0.2));
+        }
+
+        .scc3-complements-title {
+            display: none !important;
+        }
+
+        .scc3-complements {
+            display: none !important;
+        }
+
+        .scc3-complement-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .scc3-complement-item.scc3-active {
+            animation: scc3-slideUp 0.6s ease forwards;
+        }
+
+        .scc3-complement-item:nth-child(1) { animation-delay: 0.8s; }
+        .scc3-complement-item:nth-child(2) { animation-delay: 1s; }
+        .scc3-complement-item:nth-child(3) { animation-delay: 1.2s; }
+
+        .scc3-complement-circle {
+            width: 140px;
+            height: 140px;
+            background: #e2e8f0;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .scc3-complement-circle:hover {
+            transform: scale(1.1);
+            background: #cbd5e0;
+        }
+
+        .scc3-complement-circle img {
+            max-width: 80%;
+            max-height: 80%;
+            object-fit: contain;
+        }
+
+        .scc3-complement-name {
+            font-size: 1rem;
+            color: #2E2E2E;
+            font-weight: 600;
+        }
+
+        .scc3-complement-item:nth-child(1) .scc3-complement-name { color: #48bb78; }
+        .scc3-complement-item:nth-child(2) .scc3-complement-name { color: #ed8936; }
+        .scc3-complement-item:nth-child(3) .scc3-complement-name { color: #48bb78; }
+
+        .scc3-right-section {
+            flex: 1;
+            padding: 50px;
+            border-radius: 20px;
+            color: white;
+            opacity: 0;
+            transform: translateX(50px);
+        }
+
+        .scc3-right-section.scc3-active {
+            animation: scc3-slideInRight 0.8s ease forwards;
+        }
+
+        .scc3-product-code {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+            letter-spacing: 2px;
+        }
+
+        .scc3-product-description {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        .scc3-characteristics-title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            text-align: center;
+            border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+            padding-bottom: 15px;
+        }
+
+        .scc3-characteristic {
+            font-size: 1rem;
+            margin-bottom: 12px;
+            padding-left: 10px;
+            opacity: 0;
+        }
+
+        .scc3-characteristic.scc3-active {
+            animation: scc3-fadeInLeft 0.5s ease forwards;
+        }
+
+        .scc3-characteristic:nth-child(1) { animation-delay: 1.4s; }
+        .scc3-characteristic:nth-child(2) { animation-delay: 1.6s; }
+        .scc3-characteristic:nth-child(3) { animation-delay: 1.8s; }
+        .scc3-characteristic:nth-child(4) { animation-delay: 2s; }
+
+        .scc3-navigation {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .scc3-nav-btn {
+            background: linear-gradient(135deg, #00a86b 0%, #00c77f 100%);
+            color: white;
+            border: none;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px #003661;
+        }
+
+        .scc3-nav-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 25px #003661;
+        }
+
+        .scc3-nav-btn:active {
+            transform: scale(0.95);
+        }
+
+        /* Hide navigation arrows */
+        .scc3-nav-btn {
+            display: none !important;
+        }
+
+        .scc3-indicators {
+            display: flex;
+            gap: 10px;
+        }
+
+        .scc3-indicator {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: #cbd5e0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .scc3-indicator.scc3-active {
+            background: #7CD4F9;
+            width: 40px;
+            border-radius: 6px;
+        }
+
+        .scc3-cta-button {
+            background: linear-gradient(135deg, #25D366 0%, #25D366 100%);
+            color: white;
+            border: none;
+            padding: 20px 60px;
+            font-size: 1.5rem;
+            font-weight: bold;
+            border-radius: 50px;
+            cursor: pointer;
+            margin-top: 50px;
+            display: inline-block;
+            box-shadow: 0 10px 30px #003661;
+            transition: all 0.3s ease;
+            opacity: 0;
+            animation: scc3-fadeInUp 0.8s ease 2.2s forwards;
+        }
+
+        .scc3-cta-wrapper {
+            text-align: center;
+        }
+
+        .scc3-cta-button:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px #003661;
+        }
+
+        @keyframes scc3-fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scc3-fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scc3-slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes scc3-slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes scc3-fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scc3-fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .scc3-carousel-container {
+                flex-direction: column;
+            }
+
+            .scc3-right-section {
+                flex: 1;
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .scc3-title {
+                font-size: 1.8rem;
+            }
+
+            .scc3-tabs {
+                margin-bottom: 20px;
+                padding: 0 10px;
+            }
+
+            .scc3-tab {
+                font-size: 0.85rem;
+                padding: 6px 14px;
+            }
+
+            .scc3-complements {
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                gap: 10px;
+            }
+
+            .scc3-complement-circle {
+                width: 90px;
+                height: 90px;
+            }
+
+            .scc3-complement-circle img {
+                max-width: 70%;
+                max-height: 70%;
+            }
+
+            .scc3-complement-name {
+                font-size: 0.85rem;
+            }
+
+            .scc3-product-code {
+                font-size: 2rem;
+            }
+
+            .scc3-right-section {
+                padding: 0;
+            }
+
+            .scc3-carousel-container {
+                padding: 8px 0;
+                width: 100vw;
+                max-width: 100vw;
+                margin-left: calc(50% - 50vw);
+                margin-right: calc(50% - 50vw);
+            }
+
+            .scc3-product-description {
+                text-align: justify;
+                text-justify: inter-word;
+                margin: 0 20px 12px;
+                font-size: 0.9rem;
+                line-height: 1.35;
+                hyphens: auto;
+                overflow-wrap: anywhere;
+                word-break: break-word;
+            }
+        }
+    </style>
+    <div class="scc3-container">
+        <h1 class="scc3-title">Nuestras láminas plásticas</h1>
+
+        <div class="scc3-tabs" id="scc3Tabs"></div>
+
+        <div class="scc3-carousel-wrapper">
+            <div class="scc3-carousel-container">
+                <div class="scc3-left-section">
+                    <div class="scc3-main-image" id="scc3MainImage"></div>
+
+                    <h2 class="scc3-complements-title">Complementos recomendados:</h2>
+
+                    <div class="scc3-complements" id="scc3Complements"></div>
+                </div>
+
+                <div class="scc3-right-section" id="scc3RightSection"></div>
+            </div>
+
+            <div class="scc3-navigation">
+                <button class="scc3-nav-btn" onclick="scc3PreviousProduct()">‹</button>
+                <div class="scc3-indicators" id="scc3Indicators"></div>
+                <button class="scc3-nav-btn" onclick="scc3NextProduct()">›</button>
+            </div>
+
+            <div class="scc3-cta-wrapper">
+                <a class="scc3-cta-button" href="https://wa.me/523319609730" target="_blank" rel="noopener noreferrer">Solicitar cotización</a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const scc3Products = [
+            {
+                code: "T-2 ACRYLIT",
+                image: "images/1eraseccion/productos/t2.webp",
+                description: "DESCRIPCIÓN<br>Acrylit G18 es el único laminado plástico que combina la difusión de la luz y la durabilidad del acrílico con la resistencia mecánica, especialmente por el impacto que ofrece su refuerzo de fibra de vidrio. Está elaborado con resina 100% acrílica reforzada con fibra de vidrio, lo que permite obtener una excelente difusión de luz evitando zonas de penumbra. Acrylit G18 está fabricado bajo un proceso continuo, con un estricto control de calidad que asegura la homogeneidad de sus propiedades mecánicas y físicas.<br><br>ANCHO:<br>45.72 CM<br>COMPATIBLE CON LÁMINA METÁLICA:<br>KR-18<br>GALVATECHO<br>MULTYTECHO",
+                complements: []
+            },
+            {
+                code: "T-81 POLIACRYL",
+                image: "images/1eraseccion/productos/t81.webp",
+                description: "DESCRIPCIÓN<br>El Poliacryl G10, es un laminado plástico translúcido que ofrece resistencia para todo uso, además brinda iluminación, buena apariencia y versatilidad a bajo costo. Elaborados con resina de poliéster y acrílica reforzados con fibra de vidrio. Estos productos cuentan con una capa protectora de Gel Coat, que no se separa de la resina y le brinda superior resistencia a la intemperie, prolongando así su durabilidad. Pueden ser fabricados con características adicionales que lo hagan retardante a la flama, auto extinguible y de baja densidad de humos (formulación especial).<br><br>COMPATIBLE CON LÁMINA METÁLICA:<br>R-101<br>T3D",
+                complements: []
+            },
+            {
+                code: "ULTRATEJA PVC",
+                image: "images/1eraseccion/productos/ultrateja.webp",
+                description: "Lámina de PVC de 94 cm de ancho efectivo. Largos: 2.19 m, 3.29 m, 4.81 m, 6.57 m. Usos: residencial, salones de eventos, fincas, lienzos charros, marquesinas, sombreados, caballerizas, fachaletas, quioscos, albercas, cabañas, terrazas.",
+                complements: []
+            },
+            {
+                code: "T-95 POLIACRYL",
+                image: "images/1eraseccion/productos/t95.webp",
+                description: "DESCRIPCIÓN<br>El Poliacryl G10, es un laminado plástico translúcido que ofrece resistencia para todo uso, además brinda iluminación, buena apariencia y versatilidad a bajo costo. Elaborados con resina de poliéster y acrílica reforzados con fibra de vidrio. Estos productos cuentan con una capa protectora de Gel Coat, que no se separa de la resina y le brinda superior resistencia a la intemperie, prolongando así su durabilidad. Pueden ser fabricados con características adicionales que lo hagan retardante a la flama, auto extinguible y de baja densidad de humos (formulación especial).<br><br>COMPATIBLE CON LÁMINA METÁLICA:<br>RN-100/35",
+                complements: []
+            },
+            {
+                code: "TLA3-136",
+                image: "images/1eraseccion/productos/t136.webp",
+                description: "DESCRIPCIÓN<br>Lámina tricapa de 136 cms de ancho con capa central de compuesto aislante, nuestras láminas ofrecen más de 30 años de vida útil, asegurando un rendimiento impecable a lo largo del tiempo.",
+                complements: []
+            },
+            {
+                code: "T-952 ACRYLIT",
+                image: "images/1eraseccion/productos/t952.webp",
+                description: "DESCRIPCIÓN<br>La lámina translúcida Acrílica Acrylit tipo T-952, es compatible con Panel metálico tipo Galvatecho de 2.0\" de espesor, tiene 98.00 cm de ancho efectivo y su fijación es mediante fleje metálico calibre 22 a presión, atornillado con tornillo o pija galvanizado cabeza hexagonal autorroscante de 1/4 de diámetro con arandela de neopreno en cada extremo con fleje.",
+                complements: []
+            },
+            {
+                code: "Makrolon / Policarbonato",
+                image: "images/1eraseccion/productos/Policarbonato.webp",
+                description: "DESCRIPCIÓN<br>Makrolon es un laminado plástico extruido a base de resina de policarbonato, con alta tecnología de Bayer. Además, cuenta con una capa de protección contra los efectos de intemperización, producidos por los rayos UV. Makrolon es el material recomendado para lograr la fusión de estética y funcionalidad gracias a la excelente transmisión de luz, flexibilidad, ligereza, transparencia y resistencia al impacto.",
+                complements: []
+            },
+            {
+                code: "T-18 ACRYLIT",
+                image: "images/1eraseccion/productos/t18.webp",
+                description: "DESCRIPCIÓN<br>Lámina acrílica Acrylit tipo T-18 con garantía Stabilit de 18 años, compatible con perfiles metálicos CM-101 o lámina acanalada R-101. Tiene 1.01 m de ancho efectivo y su fijación es expuesta mediante tornillo o pija galvanizado cabeza hexagonal de 1/4 de diámetro con arandela de neopreno cada 29 cm. Este perfil se utiliza en bodegas, almacenes y naves industriales, cuenta con acabado gel coat que retrasa el afloramiento de la fibra de vidrio e incrementa la vida útil del producto.",
+                complements: []
+            },
+            {
+                code: "T-218 ACRYLIT",
+                image: "images/1eraseccion/productos/t218.webp",
+                description: "DESCRIPCIÓN<br>Acrylit G18 es el único laminado plástico que combina la difusión de la luz y la durabilidad del acrílico con la resistencia mecánica, especialmente por el impacto que ofrece su refuerzo de fibra de vidrio. Está elaborado con resina 100% acrílica reforzada con fibra de vidrio, lo que permite obtener una excelente difusión de luz evitando zonas de penumbra. Acrylit G18 está fabricado bajo un proceso continuo, con un estricto control de calidad que asegura la homogeneidad de sus propiedades mecánicas y físicas.<br><br>COMPATIBLE CON LÁMINA METÁLICA:<br>KR-18<br>GALVATECHO<br>MULTYTECHO",
+                complements: []
+            },
+            {
+                code: "Placa Mármol PVC",
+                image: "images/1eraseccion/productos/Placa_PVC.webp",
+                description: "Eleva el diseño de cualquier ambiente con la placa tipo mármol Dolomita Claro. Con dimensiones de 122 cm x 244 cm y fabricada en PVC de 3 mm de espesor, ofrece resistencia y fácil mantenimiento.<br><br>Su acabado clásico y elegante la convierte en una opción ideal para proyectos que buscan sofisticación natural y discreta.",
+                complements: []
+            },
+            {
+                code: "TLM-82",
+                image: "images/1eraseccion/productos/TLM-82.webp",
+                description: "Lámina de PVC perfil tipo M de 1.5mm en color ASA terracota con acabado embozado que la hace ideal para la construcción y decoración de techos en diferentes entornos.",
+                complements: []
+            },
+            {
+                code: "Lambrin",
+                image: "images/1eraseccion/productos/Lambrin.webp",
+                description: "Los lambrines ofrecen soluciones estéticas y funcionales para muros y fachadas, tanto en interiores como exteriores. Fabricados en WPC de alta calidad, están disponibles en una amplia variedad de colores y acabados.",
+                complements: []
+            },
+            {
+                code: "Piedra de PVC",
+                image: "images/1eraseccion/productos/Piedra_de_PVC.webp",
+                description: "Paneles decorativos de PVC diseñados para imitar la apariencia de la piedra natural (mármol, granito) o crear texturas, ofreciendo una alternativa ligera, impermeable, fácil de instalar y resistente a la humedad, ideal para revestir paredes y techos en interiores, aunque con menor durabilidad y estética que la piedra tecnológica o sinterizada.",
+                complements: []
+            },
+            {
+                code: "Policarbonato Sólido",
+                image: "images/1eraseccion/productos/Policarbonato_Solido_.webp",
+                description: "Lámina termoplástica de alta ingeniería diseñada para proyectos que exigen seguridad y durabilidad.<br>Impacto: 30 veces más fuerte que el acrílico.<br>Protección: Capa UV en ambas caras para larga vida a la intemperie.<br>Seguridad: Material autoextinguible y de alta resistencia térmica.<br>Uso: Acristalamientos de seguridad, guardas de maquinaria y domos industriales.",
+                complements: []
+            }
+        ];
+
+        let scc3CurrentIndex = 0;
+        let scc3AnimationTimeout;
+        let scc3AutoIntervalId;
+        let scc3ResumeTimeoutId;
+
+        function scc3StartAuto() {
+            scc3StopAuto();
+            scc3AutoIntervalId = setInterval(() => scc3NextProduct(), 8000);
+        }
+
+        function scc3StopAuto() {
+            if (scc3AutoIntervalId) {
+                clearInterval(scc3AutoIntervalId);
+                scc3AutoIntervalId = null;
+            }
+        }
+
+        function scc3PauseAndResume() {
+            scc3StopAuto();
+            if (scc3ResumeTimeoutId) clearTimeout(scc3ResumeTimeoutId);
+            scc3ResumeTimeoutId = setTimeout(() => {
+                scc3StartAuto();
+            }, 30000);
+        }
+
+        function scc3CreateProductHTML(product) {
+            return {
+                mainImage: `<img src="${product.image}" alt="${product.code}">`,
+                complements: product.complements.map(comp => `
+                    <div class="scc3-complement-item">
+                        <div class="scc3-complement-circle">
+                            <img src="${comp.image}" alt="${comp.name}">
+                        </div>
+                        <div class="scc3-complement-name">${comp.name}</div>
+                    </div>
+                `).join(''),
+                rightSection: `
+                    <div class="scc3-product-code">${product.code}</div>
+                    <div class="scc3-product-description">${product.description}</div>
+                `
+            };
+        }
+
+        function scc3UpdateProduct(index) {
+            const product = scc3Products[index];
+            const html = scc3CreateProductHTML(product);
+
+            // Remove active classes
+            document.getElementById('scc3MainImage').classList.remove('scc3-active');
+            document.getElementById('scc3RightSection').classList.remove('scc3-active');
+            document.querySelectorAll('.scc3-complement-item').forEach(item => {
+                item.classList.remove('scc3-active');
+            });
+            document.querySelectorAll('.scc3-characteristic').forEach(char => {
+                char.classList.remove('scc3-active');
+            });
+
+            // Update content after brief delay
+            setTimeout(() => {
+                document.getElementById('scc3MainImage').innerHTML = html.mainImage;
+                document.getElementById('scc3Complements').innerHTML = html.complements;
+                document.getElementById('scc3RightSection').innerHTML = html.rightSection;
+
+                // Add active classes to trigger animations
+                setTimeout(() => {
+                    document.getElementById('scc3MainImage').classList.add('scc3-active');
+                    document.getElementById('scc3RightSection').classList.add('scc3-active');
+                    document.querySelectorAll('.scc3-complement-item').forEach(item => {
+                        item.classList.add('scc3-active');
+                    });
+                    document.querySelectorAll('.scc3-characteristic').forEach(char => {
+                        char.classList.add('scc3-active');
+                    });
+                }, 50);
+            }, 300);
+
+            // Update indicators
+            document.querySelectorAll('.scc3-indicator').forEach((indicator, i) => {
+                indicator.classList.toggle('scc3-active', i === index);
+            });
+
+            // Update tabs
+            document.querySelectorAll('.scc3-tab').forEach((tab, i) => {
+                tab.classList.toggle('scc3-active', i === index);
+            });
+        }
+
+        function scc3NextProduct() {
+            scc3CurrentIndex = (scc3CurrentIndex + 1) % scc3Products.length;
+            scc3UpdateProduct(scc3CurrentIndex);
+        }
+
+        function scc3PreviousProduct() {
+            scc3CurrentIndex = (scc3CurrentIndex - 1 + scc3Products.length) % scc3Products.length;
+            scc3UpdateProduct(scc3CurrentIndex);
+        }
+
+        function scc3GoToProduct(index) {
+            scc3CurrentIndex = index;
+            scc3UpdateProduct(scc3CurrentIndex);
+        }
+
+        // Initialize
+        function scc3Init() {
+            // Create indicators
+            const indicatorsContainer = document.getElementById('scc3Indicators');
+            const tabsContainer = document.getElementById('scc3Tabs');
+
+            scc3Products.forEach((product, index) => {
+                const indicator = document.createElement('div');
+                indicator.className = 'scc3-indicator' + (index === 0 ? ' scc3-active' : '');
+                indicator.onclick = () => { scc3PauseAndResume(); scc3GoToProduct(index); };
+                indicatorsContainer.appendChild(indicator);
+
+                const tab = document.createElement('button');
+                tab.className = 'scc3-tab' + (index === 0 ? ' scc3-active' : '');
+                tab.type = 'button';
+                tab.textContent = product.code;
+                tab.onclick = () => { scc3PauseAndResume(); scc3GoToProduct(index); };
+                tabsContainer.appendChild(tab);
+            });
+
+            // Load first product
+            scc3UpdateProduct(0);
+
+            // Add initial animations to first product
+            setTimeout(() => {
+                document.getElementById('scc3MainImage').classList.add('scc3-active');
+                document.getElementById('scc3RightSection').classList.add('scc3-active');
+                document.querySelectorAll('.scc3-complement-item').forEach(item => {
+                    item.classList.add('scc3-active');
+                });
+                document.querySelectorAll('.scc3-characteristic').forEach(char => {
+                    char.classList.add('scc3-active');
+                });
+            }, 100);
+
+            // Pause auto-rotation on any click/tap within the carousel area
+            const carouselContainer = document.querySelector('.scc3-carousel-container');
+            const mainImageEl = document.getElementById('scc3MainImage');
+            const rightSectionEl = document.getElementById('scc3RightSection');
+            [carouselContainer, mainImageEl, rightSectionEl].forEach(el => {
+                if (el) {
+                    el.addEventListener('pointerdown', scc3PauseAndResume, { passive: true });
+                    el.addEventListener('click', scc3PauseAndResume, { passive: true });
+                    el.addEventListener('touchstart', scc3PauseAndResume, { passive: true });
+                }
+            });
+        }
+
+        // Start when page loads
+        scc3Init();
+        // Auto-rotate setup
+        scc3StartAuto();
+
+        // Keyboard navigation
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') { scc3PauseAndResume(); scc3PreviousProduct(); }
+            if (e.key === 'ArrowRight') { scc3PauseAndResume(); scc3NextProduct(); }
+        });
+    </script>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+  <!-- 4ta seccion -->
+<section class="marcas-carousel" style="background-color: #8A8A8A; padding: 1.5rem 0; margin: 0; overflow: hidden;">
+    <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
+      <div class="marcas-track" style="display: flex; align-items: center; justify-content: space-around; animation: scroll 20s linear infinite; width: calc(250px * 10);">
+        <!-- Logos de proveedores - se duplican para el efecto de scroll infinito -->
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor1.webp" alt="proveedor 1" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor2.webp" alt="proveedor 2" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor3.webp" alt="proveedor 3" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor4.webp" alt="proveedor 4" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor5.webp" alt="proveedor 5" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor6.webp" alt="proveedor 6" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <!-- Duplicar los logos para el efecto de scroll infinito -->
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor1.webp" alt="proveedor 1" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor2.webp" alt="proveedor 2" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor3.webp" alt="proveedor 3" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor4.webp" alt="proveedor 4" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor5.webp" alt="proveedor 5" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
+          <img src="images/2daseccion/provedor6.webp" alt="proveedor 6" style="height: 60px; width: auto; object-fit: contain; ">
+        </div>
+      </div>
+    </div>
+    <style>
+      @keyframes scroll {
+        0% { transform: translateX(0); }
+        100% { transform: translateX(calc(-250px * 5)); }
+      }
+      .marcas-slide img:hover {
+        filter: grayscale(0) opacity(1) !important;
+        transform: scale(1.05);
+      }
+      @media (max-width: 768px) {
+        .marcas-track {
+          animation: scroll 15s linear infinite !important;
+          width: calc(200px * 10) !important;
+        }
+        .marcas-slide img {
+          height: 50px !important;
+        }
+        @keyframes scroll {
+          0% { transform: translateX(0); }
+          100% { transform: translateX(calc(-200px * 5)); }
+        }
+      }
+    </style>
+  </section>
+
+
+
+
+
+
+
+
+
+
+  <!-- 5ta seccion: selector por proyecto -->
+
+<section class="selector-section" id="selector">
+  <style>
+    .selector-section {
+      padding: 70px 5%;
+      background: #f5f5f5;
+    }
+    .selector-title {
+      text-align: center;
+      font-size: 2.4rem;
+      color: #2E2E2E;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .selector-subtitle {
+      text-align: center;
+      color: #666;
+      font-size: 1.05rem;
+      margin-bottom: 36px;
+    }
+    .selector-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+      max-width: 1100px;
+      margin: 0 auto 36px;
+    }
+    .selector-tab {
+      padding: 12px 22px;
+      border-radius: 999px;
+      border: 2px solid #7CDAF9;
+      background: #FFFFFF;
+      color: #2E2E2E;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.25s ease;
+    }
+    .selector-tab.active {
+      background: #7CDAF9;
+      color: #FFFFFF;
+      box-shadow: 0 6px 16px rgba(124,218,249,0.5);
+    }
+    .selector-panel {
+      max-width: 900px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 36px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+    }
+    .selector-card {
+      border-radius: 16px;
+      padding: 24px;
+    }
+    .selector-card.recomendada {
+      background: #eaf8ff;
+      border: 2px solid #7CDAF9;
+    }
+    .selector-card.economica {
+      background: #f2f2f2;
+      border: 2px solid #8A8A8A;
+    }
+    .selector-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 800;
+      letter-spacing: 0.5px;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 12px;
+      color: #FFFFFF;
+    }
+    .selector-card.recomendada .selector-tag { background: #2E2E2E; }
+    .selector-card.economica .selector-tag { background: #8A8A8A; }
+    .selector-card h3 {
+      color: #2E2E2E;
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    .selector-card p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      margin-bottom: 18px;
+    }
+    .selector-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 700;
+      padding: 12px 22px;
+      border-radius: 999px;
+      font-size: 0.95rem;
+      transition: transform 0.2s ease;
+    }
+    .selector-btn:hover { transform: translateY(-2px); }
+    @media (max-width: 700px) {
+      .selector-panel { grid-template-columns: 1fr; }
+      .selector-title { font-size: 1.8rem; }
+    }
+  </style>
+
+  <h2 class="selector-title">¿Qué lámina necesito para mi proyecto?</h2>
+  <p class="selector-subtitle">Elige lo que vas a construir y te recomendamos el material correcto.</p>
+
+  <div class="selector-tabs" id="selectorTabs"></div>
+  <div class="selector-panel" id="selectorPanel"></div>
+
+  <script>
+    const selectorData = [
+      {
+        id: 'cochera',
+        label: 'Cochera',
+        recomendada: {
+          nombre: 'Policarbonato celular 6mm/8mm',
+          texto: 'Deja pasar luz natural, es ligero, resiste granizo y bloquea rayos UV. Ideal para cocheras y pérgolas.'
+        },
+        economica: {
+          nombre: 'Lámina traslúcida corrugada',
+          texto: 'Costo más bajo, buena entrada de luz. Menor resistencia al impacto que el policarbonato celular.'
+        }
+      },
+      {
+        id: 'domo',
+        label: 'Domo o tragaluz',
+        recomendada: {
+          nombre: 'Policarbonato compacto (solid)',
+          texto: 'Alta resistencia al impacto y excelente transmisión de luz, perfecto para domos y tragaluces.'
+        },
+        economica: {
+          nombre: 'Policarbonato celular',
+          texto: 'Buena opción de entrada de luz con menor costo por m², adecuado para domos de poca pendiente.'
+        }
+      },
+      {
+        id: 'pergola',
+        label: 'Pérgola o terraza',
+        recomendada: {
+          nombre: 'Policarbonato celular bronce/opal',
+          texto: 'Controla el calor y la luz directa, ideal para terrazas y áreas de convivencia.'
+        },
+        economica: {
+          nombre: 'Teja de PVC',
+          texto: 'Acabado tipo teja, resistente y económico, aunque no deja pasar luz natural.'
+        }
+      },
+      {
+        id: 'invernadero',
+        label: 'Invernadero',
+        recomendada: {
+          nombre: 'Lámina traslúcida corrugada',
+          texto: 'Diseñada para naves e invernaderos: difunde la luz de forma uniforme para el cultivo.'
+        },
+        economica: {
+          nombre: 'Policarbonato celular',
+          texto: 'Mejor aislamiento térmico, recomendable en climas con temperaturas extremas.'
+        }
+      },
+      {
+        id: 'nave',
+        label: 'Nave industrial',
+        recomendada: {
+          nombre: 'Lámina traslúcida perfil industrial',
+          texto: 'Compatible con perfiles metálicos estándar, resistente y de bajo mantenimiento para naves y bodegas.'
+        },
+        economica: {
+          nombre: 'Policarbonato celular calibre alto',
+          texto: 'Mejor aislamiento acústico y térmico si el proyecto lo requiere.'
+        }
+      },
+      {
+        id: 'letrero',
+        label: 'Letrero o exhibidor',
+        recomendada: {
+          nombre: 'Acrílico transparente o de color',
+          texto: 'Excelente para letreros, exhibidores y aplicaciones decorativas por su brillo y facilidad de corte.'
+        },
+        economica: {
+          nombre: 'PVC espumado',
+          texto: 'Más económico, ligero y fácil de imprimir, aunque menos resistente a la intemperie.'
+        }
+      }
+    ];
+
+    let selectorActive = 0;
+
+    function renderSelectorTabs() {
+      const tabsEl = document.getElementById('selectorTabs');
+      tabsEl.innerHTML = selectorData.map((item, i) =>
+        `<button class="selector-tab ${i === selectorActive ? 'active' : ''}" data-index="${i}">${item.label}</button>`
+      ).join('');
+      tabsEl.querySelectorAll('.selector-tab').forEach(btn => {
+        btn.addEventListener('click', () => {
+          selectorActive = parseInt(btn.dataset.index, 10);
+          renderSelectorTabs();
+          renderSelectorPanel();
+        });
+      });
+    }
+
+    function renderSelectorPanel() {
+      const item = selectorData[selectorActive];
+      const panel = document.getElementById('selectorPanel');
+      const msg = encodeURIComponent(`Hola, quiero cotizar ${item.recomendada.nombre} para mi proyecto de ${item.label.toLowerCase()}.`);
+      panel.innerHTML = `
+        <div class="selector-card recomendada">
+          <span class="selector-tag">RECOMENDADA</span>
+          <h3>${item.recomendada.nombre}</h3>
+          <p>${item.recomendada.texto}</p>
+          <a class="selector-btn" href="https://wa.me/3319609730?text=${msg}" target="_blank">Cotizar para mi ${item.label.toLowerCase()}</a>
+        </div>
+        <div class="selector-card economica">
+          <span class="selector-tag">OPCIÓN ECONÓMICA</span>
+          <h3>${item.economica.nombre}</h3>
+          <p>${item.economica.texto}</p>
+          <a class="selector-btn" href="https://wa.me/3319609730?text=${encodeURIComponent('Hola, quiero cotizar ' + item.economica.nombre + ' para mi proyecto de ' + item.label.toLowerCase() + '.')}" target="_blank">Cotizar esta opción</a>
+        </div>
+      `;
+    }
+
+    renderSelectorTabs();
+    renderSelectorPanel();
+  </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 5b seccion: comparativa de materiales -->
+<section class="comparativa-section">
+  <style>
+    .comparativa-section {
+      padding: 70px 5%;
+      background: #FFFFFF;
+    }
+    .comparativa-title {
+      text-align: center;
+      font-size: 2.2rem;
+      color: #2E2E2E;
+      font-weight: 700;
+      margin-bottom: 36px;
+    }
+    .comparativa-wrap {
+      max-width: 1200px;
+      margin: 0 auto;
+      overflow-x: auto;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    }
+    table.comparativa-table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 700px;
+      font-size: 0.95rem;
+    }
+    .comparativa-table thead th {
+      background: #2E2E2E;
+      color: #FFFFFF;
+      padding: 16px;
+      text-align: left;
+      font-weight: 700;
+    }
+    .comparativa-table tbody td {
+      padding: 16px;
+      border-bottom: 1px solid #e5e5e5;
+      color: #333;
+    }
+    .comparativa-table tbody tr:nth-child(even) { background: #f7fbfd; }
+    .comparativa-table tbody tr:hover { background: #eaf8ff; }
+    .comparativa-table td:first-child { font-weight: 700; color: #2E2E2E; }
+    .precio-relativo { color: #7CDAF9; font-weight: 800; letter-spacing: 1px; }
+  </style>
+
+  <h2 class="comparativa-title">Compara materiales antes de decidir</h2>
+  <div class="comparativa-wrap">
+    <table class="comparativa-table">
+      <thead>
+        <tr>
+          <th>Material</th>
+          <th>Uso ideal</th>
+          <th>Paso de luz</th>
+          <th>Resistencia al impacto</th>
+          <th>Garantía</th>
+          <th>Precio relativo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Policarbonato celular</td>
+          <td>Cocheras, domos</td>
+          <td>Alta</td>
+          <td>Alta</td>
+          <td>10 años</td>
+          <td class="precio-relativo">$$</td>
+        </tr>
+        <tr>
+          <td>Policarbonato compacto</td>
+          <td>Protecciones, cancelería</td>
+          <td>Muy alta</td>
+          <td>Muy alta</td>
+          <td>10 años</td>
+          <td class="precio-relativo">$$$</td>
+        </tr>
+        <tr>
+          <td>Lámina traslúcida</td>
+          <td>Naves, bodegas</td>
+          <td>Media</td>
+          <td>Media</td>
+          <td>5 años</td>
+          <td class="precio-relativo">$</td>
+        </tr>
+        <tr>
+          <td>Teja de PVC</td>
+          <td>Techos residenciales</td>
+          <td>Nula</td>
+          <td>Media</td>
+          <td>10 años</td>
+          <td class="precio-relativo">$$</td>
+        </tr>
+        <tr>
+          <td>Acrílico</td>
+          <td>Letreros, exhibición</td>
+          <td>Muy alta</td>
+          <td>Baja</td>
+          <td>3 años</td>
+          <td class="precio-relativo">$$</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+  <!-- 6ta seccion -->
+
+<section class="s5" style="overflow: hidden; background: linear-gradient(135deg, #2E2E2E 0%, #2E2E2E 50%, #2E2E2E 100%); padding: 60px 0 80px; position: relative;">
+    <!-- Efectos de fondo -->
+    <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.1; background-image: radial-gradient(circle at 20% 30%, rgba(255,255,255,0.2) 0%, transparent 50%), radial-gradient(circle at 80% 70%, rgba(255,255,255,0.1) 0%, transparent 50%);"></div>
+    
+    <div class="carousel-container">
+        <div class="carousel-wrapper s5-carousel-wrapper">
+            <button class="carousel-nav s5-carousel-nav prev" onclick="pauseAndResume()" aria-label="Diapositiva anterior">
+                <svg viewBox="0 0 24 24">
+                    <path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z"/>
+                </svg>
+            </button>
+            
+            <div class="carousel-track s5-carousel-track">
+                <!-- Reseña 1 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me gustó mucho su atención al Cliente, te explican y aclaran todas tus dudas, los productos que manejan son de Excelente calidad y la entrega es rápida, volvería a solicitar con ellos 10/10"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-purple">P</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Priscila Carrillo</div>
+                            <div class="reviewer-meta">• hace 3 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente atención de todo el personal, muy amables y rápidos en el proceso."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-blue">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Torres</div>
+                            <div class="reviewer-meta">• hace 1 mes</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me encantó trabajar con este equipo. Son muy creativos y atentos a los detalles. El resultado final fue exactamente lo que buscaba."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-green">A</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Ana Martínez</div>
+                            <div class="reviewer-meta">• hace 3 semanas</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 4 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Cuentan con gran variedad de materiales de excelente calidad y excelente atención, recomendados, lo mejor"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-orange">K</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Kevin Palomar</div>
+                            <div class="reviewer-meta">• hace 2 Meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 5 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente lugar "
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-red">R</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Rafael Olmo</div>
+                            <div class="reviewer-meta">• hace 10 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 6 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente servicio, buena calidad, super recomendado, atención personalizada, muy recomendable!"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-teal">M</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Marcos Lomeli</div>
+                            <div class="reviewer-meta">• hace 2 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 7 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "El personal es muy atento y amable. Resolvieron todas mis dudas. Recibí el material sin ningún problema. Gran variedad de productos"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-pink">O</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Oliver Brandon</div>
+                            <div class="reviewer-meta">• hace 15 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 8 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Buenos precios y excelente atención."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-indigo">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Hernandez</div>
+                            <div class="reviewer-meta">• hace 10 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Duplicar las reseñas para el scroll infinito -->
+                <!-- Reseña 1 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me gustó mucho su atención al Cliente, te explican y aclaran todas tus dudas, los productos que manejan son de Excelente calidad y la entrega es rápida, volvería a solicitar con ellos 10/10"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-purple">P</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Priscila Carrillo</div>
+                            <div class="reviewer-meta">• hace 3 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 2 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente atención de todo el personal, muy amables y rápidos en el proceso."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-blue">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Torres</div>
+                            <div class="reviewer-meta">• hace 1 mes</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 3 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Me encantó trabajar con este equipo. Son muy creativos y atentos a los detalles. El resultado final fue exactamente lo que buscaba."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-green">A</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Ana Martínez</div>
+                            <div class="reviewer-meta">• hace 3 semanas</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 4 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Cuentan con gran variedad de materiales de excelente calidad y excelente atención, recomendados, lo mejor"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-orange">K</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Kevin Palomar</div>
+                            <div class="reviewer-meta">• hace 2 Meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 5 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente lugar "
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-red">R</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Rafael Olmo</div>
+                            <div class="reviewer-meta">• hace 10 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 6 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Excelente servicio, buena calidad, super recomendado, atención personalizada, muy recomendable!"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-teal">M</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Marcos Lomeli</div>
+                            <div class="reviewer-meta">• hace 2 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 7 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star empty">★</span>
+                    </div>
+                    <div class="review-text">
+                        "El personal es muy atento y amable. Resolvieron todas mis dudas. Recibí el material sin ningún problema. Gran variedad de productos"
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-pink">O</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Oliver Brandon</div>
+                            <div class="reviewer-meta">• hace 15 dias</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Reseña 8 -->
+                <div class="review-card">
+                    <div class="stars">
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                        <span class="star filled">★</span>
+                    </div>
+                    <div class="review-text">
+                        "Buenos precios y excelente atención."
+                    </div>
+                    <div class="reviewer-info">
+                        <div class="reviewer-avatar avatar-indigo">L</div>
+                        <div class="reviewer-details">
+                            <div class="reviewer-name">Luis Hernandez</div>
+                            <div class="reviewer-meta">• hace 10 meses</div>
+                        </div>
+                        <svg class="google-icon" viewBox="0 0 24 24">
+                            <path fill="#4285f4" d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z"/>
+                            <path fill="#34a853" d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z"/>
+                            <path fill="#fbbc05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
+                            <path fill="#ea4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+
+            <button class="carousel-nav s5-carousel-nav next" onclick="pauseAndResume()" aria-label="Siguiente diapositiva">
+                <svg viewBox="0 0 24 24">
+                    <path d="M8.59 16.59L13.17 12L8.59 7.41L10 6l6 6-6 6-1.41-1.41z"/>
+                </svg>
+            </button>
+        </div>
+
+        <script>
+            function pauseAndResume() {
+                var track = document.querySelector('.s5 .carousel-track');
+                if (track) {
+                    track.classList.toggle('paused');
+                }
+            }
+        </script>
+    </div>
+</section>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Inter', sans-serif;
+        background: #f8fafc;
+    }
+
+    .s5 .carousel-container {
+        max-width: 1400px;
+        margin: 0 auto;
+        position: relative;
+        padding: 0 20px;
+        z-index: 2;
+        overflow: hidden;
+        height: auto !important;
+        perspective: none !important;
+    }
+
+    .s5 .carousel-wrapper {
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+        background: white;
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255,255,255,0.1);
+        padding: 30px 30px 20px;
+        box-shadow: 0 20px 60px rgba(0,0,0,0.2);
+        min-height: unset;
+    }
+
+    .s5 .carousel-track {
+        display: flex;
+        gap: 25px;
+        animation: s5-infiniteScroll 60s linear infinite;
+        width: calc(320px * 12 + 25px * 11);
+    }
+
+    .s5 .carousel-track:hover {
+        animation-play-state: paused;
+    }
+
+    /* Allow manual pause via class */
+    .s5 .carousel-track.paused {
+        animation-play-state: paused;
+    }
+
+    @keyframes s5-infiniteScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-320px * 8 - 25px * 7));
+        }
+    }
+
+    .s5 .review-card {
+        min-width: 320px;
+        max-width: 320px;
+        background: rgba(255,255,255,0.95);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 28px;
+        border: 1px solid rgba(255,255,255,0.2);
+        box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+        transition: all 0.3s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .s5 .review-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 4px;
+        background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
+    }
+
+    .s5 .review-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+        background: rgba(255,255,255,0.98);
+    }
+
+    .s5 .stars {
+        display: flex;
+        margin-bottom: 18px;
+        gap: 3px;
+    }
+
+    .s5 .star {
+        width: 18px;
+        height: 18px;
+        font-size: 18px;
+        transition: all 0.2s ease;
+    }
+
+    .s5 .star.filled {
+        color: #fbbf24;
+        text-shadow: 0 1px 3px rgba(251,191,36,0.3);
+    }
+
+    .s5 .star.empty {
+        color: #e5e7eb;
+    }
+
+    .s5 .review-card:hover .star.filled {
+        transform: scale(1.1);
+    }
+
+    .s5 .review-text {
+        font-size: 15px;
+        line-height: 1.6;
+        color: #374151;
+        margin-bottom: 20px;
+        min-height: 80px;
+        font-weight: 400;
+    }
+
+    .s5 .reviewer-info {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .s5 .reviewer-avatar {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 16px;
+        flex-shrink: 0;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .s5 .reviewer-details {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .s5 .reviewer-name {
+        font-size: 15px;
+        font-weight: 600;
+        color: #1f2937;
+        margin-bottom: 4px;
+    }
+
+    .s5 .reviewer-meta {
+        font-size: 13px;
+        color: #6b7280;
+    }
+
+    .s5 .platform-badge {
+        padding: 4px 10px;
+        border-radius: 12px;
+        font-size: 11px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+    }
+
+    .s5 .platform-badge.google {
+        background: linear-gradient(135deg, #4285f4, #34a853);
+        color: white;
+    }
+
+    .s5 .platform-badge.facebook {
+        background: linear-gradient(135deg, #1877f2, #42a5f5);
+        color: white;
+    }
+
+    .s5 .platform-badge.trustpilot {
+        background: linear-gradient(135deg, #00b67a, #73cf42);
+        color: white;
+    }
+
+    .s5 .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(255,255,255,0.9);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255,255,255,0.2);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+        transition: all 0.3s ease;
+        z-index: 10;
+    }
+
+    .s5 .carousel-nav:hover {
+        background: rgba(255,255,255,1);
+        transform: translateY(-50%) scale(1.1);
+        box-shadow: 0 12px 40px rgba(0,0,0,0.2);
+    }
+
+    .s5 .carousel-nav.prev {
+        left: -70px;
+    }
+
+    .s5 .carousel-nav.next {
+        right: -70px;
+    }
+
+    .s5 .carousel-nav svg {
+        width: 24px;
+        height: 24px;
+        fill: #374151;
+    }
+
+    .s5 .stats {
+        display: flex;
+        justify-content: center;
+        gap: 40px;
+        margin-top: 24px;
+        flex-wrap: wrap;
+    }
+
+    .s5 .stat-item {
+        text-align: center;
+    }
+
+    .s5 .stat-number {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: #ffffff;
+        margin-bottom: 8px;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+    }
+
+    .s5 .stat-label {
+        font-size: 0.95rem;
+        color: rgba(255,255,255,0.8);
+        font-weight: 500;
+    }
+
+    /* Avatares con colores */
+    .s5 .avatar-purple { background: linear-gradient(135deg, #8b5cf6, #a855f7); }
+    .s5 .avatar-blue { background: linear-gradient(135deg, #3b82f6, #2563eb); }
+    .s5 .avatar-green { background: linear-gradient(135deg, #10b981, #059669); }
+    .s5 .avatar-orange { background: linear-gradient(135deg, #f97316, #ea580c); }
+    .s5 .avatar-red { background: linear-gradient(135deg, #ef4444, #dc2626); }
+    .s5 .avatar-teal { background: linear-gradient(135deg, #14b8a6, #0d9488); }
+    .s5 .avatar-pink { background: linear-gradient(135deg, #ec4899, #db2777); }
+    .s5 .avatar-indigo { background: linear-gradient(135deg, #6366f1, #4f46e5); }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+        .s5 .carousel-nav {
+            display: none;
+        }
+        
+        .s5 .s5-title {
+            font-size: 2.8rem;
+        }
+        
+        .s5 .stats {
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .s5 .carousel-container {
+            padding: 0 15px;
+        }
+        
+        .s5 .review-card {
+            min-width: 280px;
+            max-width: 280px;
+            padding: 24px;
+        }
+        
+        .s5 .s5-title {
+            font-size: 2.2rem;
+        }
+        
+        .s5 .subtitle {
+            font-size: 1.1rem;
+        }
+        
+        .s5 .carousel-wrapper {
+            padding: 20px;
+        }
+        
+        @keyframes s5-infiniteScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-280px * 8 - 25px * 7));
+            }
+        }
+        
+        .s5 .stats {
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .s5 .stat-number {
+            font-size: 2rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .s5 .review-card {
+            min-width: 260px;
+            max-width: 260px;
+            padding: 20px;
+        }
+        
+        .s5 .s5-title {
+            font-size: 1.8rem;
+        }
+        
+        .s5 .stats {
+            flex-direction: column;
+            gap: 20px;
+            align-items: center;
+        }
+    }
+    
+    .s5 .carousel-container {
+        max-width: 2000px;
+        margin: 0 auto;
+        position: relative;
+        height: auto !important;
+        perspective: none !important;
+    }
+
+    .s5 .s5-title {
+        font-size: 50px;
+        font-weight: 400;
+        color: #FFFFFF; /* Changed to white for better contrast */
+        margin-bottom: 30px;
+        text-align: center;
+        margin-top: 50px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 700;
+        font-size: 2rem;
+        text-align: center;
+        margin-bottom: 30px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-shadow: 1px 1px 3px rgba(0,0,0,0.3); /* Added subtle text shadow for better readability */
+    }
+
+    .s5 .carousel-wrapper {
+        position: relative;
+        overflow: visible;
+        border-radius: 16px;
+        background: white;
+        padding: 16px 16px 8px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+        min-height: unset;
+    }
+
+    .s5 .carousel-track {
+        display: flex;
+        gap: 20px;
+        animation: s5-infiniteScroll 45s linear infinite;
+        width: calc(280px * 18 + 20px * 17); /* 9 cards * 2 + gaps */
+    }
+
+    .s5 .carousel-track:hover {
+        animation-play-state: paused;
+    }
+
+    .s5 .carousel-track.paused {
+        animation-play-state: paused;
+    }
+
+    @keyframes s5-infiniteScroll {
+        0% {
+            transform: translateX(0);
+        }
+        100% {
+            transform: translateX(calc(-280px * 9 - 20px * 8)); /* Width of original 9 cards + gaps */
+        }
+    }
+
+    .s5 .review-card {
+        min-width: 280px;
+        max-width: 280px;
+        background: white;
+        border-radius: 12px;
+        padding: 25px 20px;
+        border: 1px solid #e8eaed;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        flex-shrink: 0;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        margin: 10px 0;
+    }
+
+    .s5 .review-card:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+    }
+
+    .s5 .stars {
+        display: flex;
+        margin-bottom: 15px;
+        gap: 2px;
+    }
+
+    .s5 .star {
+        width: 16px;
+        height: 16px;
+        font-size: 16px;
+    }
+
+    .s5 .star.filled {
+        color: #fbbc04;
+    }
+
+    .s5 .star.empty {
+        color: #e0e0e0;
+    }
+
+    .s5 .review-text {
+        font-size: 14px;
+        line-height: 1.5;
+        color: #3c4043;
+        margin-bottom: 15px;
+        min-height: 60px;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    .s5 .reviewer-info {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .s5 .reviewer-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 500;
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+
+    .s5 .reviewer-details {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .s5 .reviewer-name {
+        font-size: 14px;
+        font-weight: 500;
+        color: #3c4043;
+        margin-bottom: 2px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .s5 .reviewer-meta {
+        font-size: 12px;
+        color: #70757a;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .s5 .google-icon {
+        width: 16px;
+        height: 16px;
+        flex-shrink: 0;
+    }
+
+    .s5 .carousel-nav {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 44px;
+        height: 44px;
+        background: rgb(40, 5, 167);
+        border: 1px solid #023292;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        transition: all 0.2s ease;
+        z-index: 10;
+    }
+
+    .s5 .carousel-nav:hover {
+        background: #04417d;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+        border-color: #1a73e8;
+    }
+
+    .s5 .carousel-nav.prev {
+        left: -60px;
+    }
+
+    .s5 .carousel-nav.next {
+        right: -60px;
+    }
+
+    .s5 .carousel-nav svg {
+        width: 20px;
+        height: 20px;
+        fill: #5f6368;
+        transition: fill 0.2s ease;
+    }
+
+    .s5 .carousel-nav:hover svg {
+        fill: #1a73e8;
+    }
+
+    /* Avatares con colores */
+    .s5 .avatar-purple { background: linear-gradient(135deg, #9c27b0, #e91e63); }
+    .s5 .avatar-red { background: linear-gradient(135deg, #f44336, #ff5722); }
+    .s5 .avatar-orange { background: linear-gradient(135deg, #ff9800, #ff5722); }
+    .s5 .avatar-blue { background: linear-gradient(135deg, #2196f3, #3f51b5); }
+    .s5 .avatar-green { background: linear-gradient(135deg, #4caf50, #8bc34a); }
+
+    /* Control de pausa */
+    .s5 .pause-control {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        background: rgba(17, 0, 201, 0.9);
+        border: 1px solid #e0e0e0;
+        border-radius: 20px;
+        padding: 8px 12px;
+        font-size: 12px;
+        color: #666;
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+
+    .s5 .pause-control:hover {
+        background: rgb(10, 23, 201);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .s5 .carousel-container {
+            padding: 0 10px;
+        }
+        
+        .s5 .carousel-nav {
+            display: none;
+        }
+        
+        .s5 .review-card {
+            min-width: 260px;
+            max-width: 260px;
+        }
+        
+        @keyframes s5-infiniteScroll {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(calc(-260px * 9 - 20px * 8));
+            }
+        }
+
+        .s5 .s5-title {
+            font-size: 24px;
+        }
+        .s5 .image-carousel {
+            width: 150px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .s5 .review-card {
+            min-width: 240px;
+            max-width: 240px;
+            padding: 16px;
+        }
+
+        .s5 .carousel-wrapper {
+            padding: 15px;
+        }
+        .s5 .image-carousel {
+            width: 150px;
+        }
+    }
+</style>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- seccion: cotizador rapido whatsapp -->
+<section class="cotizador-section" id="cotizador">
+  <style>
+    .cotizador-section {
+      padding: 70px 5%;
+      background: #eaf8ff;
+    }
+    .cotizador-wrap {
+      max-width: 700px;
+      margin: 0 auto;
+      background: #FFFFFF;
+      border-radius: 20px;
+      padding: 40px;
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+    .cotizador-title {
+      text-align: center;
+      font-size: 2rem;
+      color: #2E2E2E;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .cotizador-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 0.98rem;
+    }
+    .cotizador-steps {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 30px;
+      flex-wrap: wrap;
+    }
+    .cotizador-step {
+      flex: 1;
+      min-width: 150px;
+      text-align: center;
+      font-size: 0.85rem;
+      color: #2E2E2E;
+      font-weight: 600;
+    }
+    .cotizador-step span {
+      display: block;
+      width: 30px;
+      height: 30px;
+      line-height: 30px;
+      border-radius: 50%;
+      background: #7CDAF9;
+      color: #fff;
+      margin: 0 auto 8px;
+      font-weight: 800;
+    }
+    .cotizador-form label {
+      display: block;
+      font-weight: 700;
+      color: #2E2E2E;
+      margin: 16px 0 6px;
+      font-size: 0.9rem;
+    }
+    .cotizador-form select,
+    .cotizador-form input[type="text"],
+    .cotizador-form input[type="number"] {
+      width: 100%;
+      padding: 12px 14px;
+      border-radius: 10px;
+      border: 2px solid #ddd;
+      font-size: 1rem;
+      color: #2E2E2E;
+      background: #fff;
+    }
+    .cotizador-form select:focus,
+    .cotizador-form input:focus {
+      outline: none;
+      border-color: #7CDAF9;
+    }
+    .cotizador-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .cotizador-checks {
+      display: flex;
+      gap: 20px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    .cotizador-checks label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 600;
+      color: #333;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+    .cotizador-submit {
+      display: block;
+      width: 100%;
+      margin-top: 26px;
+      padding: 16px;
+      border: none;
+      border-radius: 999px;
+      background: #25D366;
+      color: #fff;
+      font-weight: 800;
+      font-size: 1.05rem;
+      cursor: pointer;
+      transition: transform 0.2s ease;
+    }
+    .cotizador-submit:hover { transform: translateY(-2px); }
+    .cotizador-note {
+      text-align: center;
+      font-size: 0.82rem;
+      color: #888;
+      margin-top: 14px;
+    }
+    @media (max-width: 600px) {
+      .cotizador-row { grid-template-columns: 1fr; }
+      .cotizador-wrap { padding: 26px; }
+    }
+  </style>
+
+  <h2 class="cotizador-title">Cotiza en menos de un minuto</h2>
+  <p class="cotizador-subtitle">Llena estos datos y te abrimos WhatsApp con tu solicitud lista. Una asesora te responde con precio y tiempo de entrega.</p>
+
+  <div class="cotizador-wrap">
+    <div class="cotizador-steps">
+      <div class="cotizador-step"><span>1</span>Nos dices qué vas a construir</div>
+      <div class="cotizador-step"><span>2</span>Calculamos material y piezas</div>
+      <div class="cotizador-step"><span>3</span>Recibes precio con entrega incluida</div>
+    </div>
+
+    <form class="cotizador-form" id="cotizadorForm" onsubmit="return enviarCotizacion(event)">
+      <label for="cot-tipo">Tipo de proyecto</label>
+      <select id="cot-tipo" required>
+        <option value="">Selecciona una opción</option>
+        <option>Cochera</option>
+        <option>Domo o tragaluz</option>
+        <option>Pérgola o terraza</option>
+        <option>Invernadero</option>
+        <option>Nave industrial</option>
+        <option>Letrero o exhibidor</option>
+        <option>Otro</option>
+      </select>
+
+      <div class="cotizador-row">
+        <div>
+          <label for="cot-metros">Metros aprox. (m²)</label>
+          <input type="number" id="cot-metros" min="1" placeholder="Ej. 18">
+        </div>
+        <div>
+          <label for="cot-municipio">Municipio</label>
+          <select id="cot-municipio">
+            <option value="">Selecciona</option>
+            <option>Zapopan</option>
+            <option>Guadalajara</option>
+            <option>Tlaquepaque</option>
+            <option>Tonalá</option>
+            <option>Colima</option>
+            <option>Otro</option>
+          </select>
+        </div>
+      </div>
+
+      <label>Necesito</label>
+      <div class="cotizador-checks">
+        <label><input type="checkbox" id="cot-corte" checked> Corte a medida</label>
+        <label><input type="checkbox" id="cot-entrega" checked> Entrega a obra</label>
+        <label><input type="checkbox" id="cot-factura"> Factura</label>
+      </div>
+
+      <button type="submit" class="cotizador-submit">Enviar cotización por WhatsApp</button>
+      <p class="cotizador-note">Respuesta en minutos · Lun a Sáb 9:00–19:00</p>
+    </form>
+  </div>
+
+  <script>
+    function enviarCotizacion(e) {
+      e.preventDefault();
+      const tipo = document.getElementById('cot-tipo').value || 'mi proyecto';
+      const metros = document.getElementById('cot-metros').value;
+      const municipio = document.getElementById('cot-municipio').value;
+      const necesidades = [];
+      if (document.getElementById('cot-corte').checked) necesidades.push('corte a medida');
+      if (document.getElementById('cot-entrega').checked) necesidades.push('entrega a obra');
+      if (document.getElementById('cot-factura').checked) necesidades.push('factura');
+
+      let msg = `Hola, quiero cotizar lámina para: ${tipo}.`;
+      if (metros) msg += ` Aprox. ${metros} m².`;
+      if (municipio) msg += ` Municipio: ${municipio}.`;
+      if (necesidades.length) msg += ` Necesito: ${necesidades.join(', ')}.`;
+
+      window.open(`https://wa.me/3319609730?text=${encodeURIComponent(msg)}`, '_blank');
+      return false;
+    }
+  </script>
+</section>
+
+  <!-- seccion: logistica -->
+<section class="logistica-section">
+  <style>
+    .logistica-section {
+      padding: 60px 5%;
+      background: #2E2E2E;
+    }
+    .logistica-title {
+      text-align: center;
+      color: #FFFFFF;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .logistica-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .logistica-item {
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .logistica-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: #7CDAF9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      font-size: 1.6rem;
+    }
+    .logistica-item h3 {
+      font-size: 1.1rem;
+      margin-bottom: 6px;
+    }
+    .logistica-item p {
+      font-size: 0.88rem;
+      color: #cfcfcf;
+    }
+    .logistica-nota {
+      text-align: center;
+      color: #7CDAF9;
+      margin-top: 36px;
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+    @media (max-width: 800px) {
+      .logistica-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+  <h2 class="logistica-title">Así te llega tu material</h2>
+  <div class="logistica-grid">
+    <div class="logistica-item">
+      <div class="logistica-icon">🚚</div>
+      <h3>Entrega a obra</h3>
+      <p>Zona Metropolitana de Guadalajara y Colima, en 24–72 h.</p>
+    </div>
+    <div class="logistica-item">
+      <div class="logistica-icon">📦</div>
+      <h3>Descarga</h3>
+      <p>Coordinamos la descarga contigo al llegar a tu obra.</p>
+    </div>
+    <div class="logistica-item">
+      <div class="logistica-icon">✂️</div>
+      <h3>Corte a medida</h3>
+      <p>Cortamos tus láminas al tamaño exacto que necesitas.</p>
+    </div>
+    <div class="logistica-item">
+      <div class="logistica-icon">🏬</div>
+      <h3>Recoge en sucursal</h3>
+      <p>Listo en pocas horas en tu sucursal más cercana.</p>
+    </div>
+  </div>
+  <p class="logistica-nota">Cobertura: Zona Metropolitana de Guadalajara y Colima · Pedido mínimo para envío: consulta con tu asesora</p>
+</section>
+
+  <!-- seccion: diferenciadores -->
+<section class="diferenciadores-section">
+  <style>
+    .diferenciadores-section {
+      padding: 60px 5%;
+      background: #FFFFFF;
+    }
+    .diferenciadores-title {
+      text-align: center;
+      color: #2E2E2E;
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+    .diferenciadores-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .diferenciador-item {
+      text-align: center;
+      padding: 20px;
+    }
+    .diferenciador-icon {
+      width: 60px;
+      height: 60px;
+      border-radius: 16px;
+      background: #eaf8ff;
+      color: #2E2E2E;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 14px;
+      font-size: 1.6rem;
+    }
+    .diferenciador-item h3 {
+      color: #2E2E2E;
+      font-size: 1.05rem;
+      margin-bottom: 6px;
+    }
+    .diferenciador-item p {
+      color: #666;
+      font-size: 0.88rem;
+    }
+    @media (max-width: 800px) {
+      .diferenciadores-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+  <h2 class="diferenciadores-title">Por qué comprar con nosotros</h2>
+  <div class="diferenciadores-grid">
+    <div class="diferenciador-item">
+      <div class="diferenciador-icon">🎯</div>
+      <h3>Asesoría técnica</h3>
+      <p>Te ayudamos a calcular piezas y elegir el espesor correcto.</p>
+    </div>
+    <div class="diferenciador-item">
+      <div class="diferenciador-icon">📋</div>
+      <h3>Stock inmediato</h3>
+      <p>Los materiales más pedidos siempre en existencia.</p>
+    </div>
+    <div class="diferenciador-item">
+      <div class="diferenciador-icon">📄</div>
+      <h3>Fichas técnicas</h3>
+      <p>Descargables por producto, con garantía y normas.</p>
+    </div>
+    <div class="diferenciador-item">
+      <div class="diferenciador-icon">💳</div>
+      <h3>Factura y pagos</h3>
+      <p>Transferencia, tarjeta y facturación para tu proyecto.</p>
+    </div>
+  </div>
+</section>
+
+<!-- 7ma seccion Te mejoramos tu presupesto -->
+<section> 
+<style>
+        .seccion6-container {
+            width: 100%;
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            padding: 60px 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 50vh;
+        }
+
+        .seccion6-content {
+            max-width: 900px;
+            text-align: center;
+        }
+
+        .seccion6-title {
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-size: 80px;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.3;
+        }
+
+        .seccion6-subtitle {
+            font-size: 2.8rem;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 30px;
+        }
+
+        .seccion6-buttons {
+            display: flex;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .seccion6-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            padding: 18px 50px;
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            min-width: 250px;
+        }
+
+        .seccion6-btn-whatsapp {
+            background: #25D366;
+        }
+
+        .seccion6-btn-whatsapp:hover {
+            background: #25D366;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+        }
+
+        .seccion6-btn-call {
+            background: #7CDAF9;
+        }
+
+        .seccion6-btn-call:hover {
+            background: #7CA4F9;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
+        }
+
+        .seccion6-icon {
+            width: 35px;
+            height: 35px;
+            fill: white;
+        }
+
+        @media (max-width: 768px) {
+            .seccion6-title {
+                font-size: 2.8rem;
+            }
+
+            .seccion6-subtitle {
+                font-size: 1.6rem;
+            }
+
+            .seccion6-buttons {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .seccion6-btn {
+                width: 100%;
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="seccion6-container">
+        <div class="seccion6-content">
+            <h2 class="seccion6-title">
+                Te mejoramos tu cotización
+            </h2>
+            <p class="seccion6-subtitle">
+               Revisamos tu presupuesto y te ofrecemos<br>un mejor precio sin perder calidad.
+            </p>
+            <div class="seccion6-buttons">
+                <a href="https://wa.me/3319609730" class="seccion6-btn seccion6-btn-whatsapp" target="_blank">
+                    <svg class="seccion6-icon" viewBox=" 0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+                    </svg>
+                    Mensaje
+                </a>
+                <a href="tel:+523312195252" class="seccion6-btn seccion6-btn-call">
+                    <svg class="seccion6-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.56a.977.977 0 00-1.01.24l-1.57 1.97c-2.83-1.35-5.48-3.9-6.89-6.83l1.95-1.66c.27-.28.35-.67.24-1.02-.37-1.11-.56-2.3-.56-3.53 0-.54-.45-.99-.99-.99H4.19C3.65 3 3 3.24 3 3.99 3 13.28 10.73 21 20.01 21c.71 0 .99-.63.99-1.18v-3.45c0-.54-.45-.99-.99-.99z"/>
+                    </svg>
+                    Llamada
+                </a>
+            </div>
+        </div>
+    </section>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <!-- seccion 7 SUCURSALES -->
+ <section class="sucursales">
+    <h2>Realizamos Envíos a Toda la República</h2>
+    
+    <div class="sucursales-container">
+      <!-- Pestañas de navegación -->
+      <div class="sucursales-tabs">
+        <button class="tab-btn active" style="background-color: #7CDAF9; color: white; border: 1px solid #003661; padding: 10px 20px; font-weight: 600;" data-tab="panel-periferico">Paraísos del Colli</button>
+        <button class="tab-btn" style="background-color: #7CDAF9; color: white; border: 1px solid #003661; padding: 10px 20px; font-weight: 600;" data-tab="juan-gil">Nuevo México</button>
+        <button class="tab-btn" style="background-color: #7CDAF9; color: white; border: 1px solid #003661; padding: 10px 20px; font-weight: 600;" data-tab="punto-sur">Tlaquepaque</button>
+        <button class="tab-btn" style="background-color: #7CDAF9; color: white; border: 1px solid #003661; padding: 10px 20px; font-weight: 600;" data-tab="colima">Colima</button>
+      </div>
+      
+      <!-- Contenido de las pestañas -->
+      <div class="sucursales-content">
+        <!-- Sucursal Panel Periférico -->
+        <div class="tab-content active" id="panel-periferico">
+          <div class="sucursal-info">
+            <h3>PARAÍSOS DEL COLLI, ZAPOPAN</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #7CDAF9;"></i> Av. Perif. Pte. Manuel Gómez Morin 2790-D<br>Paraísos del Colli CP. 45069 Zapopan, Jal.</p>
+            <p><i class="fas fa-phone" style="color: #7CDAF9;"></i> <a href="tel:3319609730">33 1960 9730</a></p>
+            <p><i class="fas fa-envelope" style="color: #7CDAF9;"></i> <a href="mailto:ventas@lesamx.com">ventas@laminadosplasticos.com</a></p>
+            <a href="https://www.google.com/maps/place/Av+Perif%C3%A9rico+Pte+Manuel+G%C3%B3mez+Morin+2880,+Para%C3%ADsos+del+Colli,+45069+Zapopan,+Jal.,+M%C3%A9xico/@20.6907,-103.4185,17z/data=!3m1!4b1!4m5!3m4!1s0x8428ae4a6f0f2f1f:0x1c9f1c9f1c9f1c9f!8m2!3d20.6907!4d-103.4185" target="_blank" class="ver-mapa" style="color: #7CDAF9;">
+              <i class="fas fa-map-marked-alt" style="color: #7CDAF9;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.6544!2d-103.4208!3d20.6907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae4a6f0f2f1f%3A0x1c9f1c9f1c9f1c9f!2sAv%20Perif%C3%A9rico%20Pte%20Manuel%20G%C3%B3mez%20Morin%202880%2C%20Para%C3%ADsos%20del%20Colli%2C%2045069%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#AE1916" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-ddowngrade" title="Ubicación de Sucursal Panel Periférico"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Juan Gil Preciado -->
+        <div class="tab-content" id="juan-gil">
+          <div class="sucursal-info">
+            <h3>NUEVO MÉXICO, ZAPOPAN</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #7CDAF9;"></i> Lat. Juan Gil Preciado 4176<br>Hogares de Nuevo México CP. 45160 Zapopan, Jal.</p>
+            <p><i class="fas fa-phone" style="color: #7CDAF9;"></i> <a href="tel:3319609730">33 1960 9730</a></p>
+            <p><i class="fas fa-envelope" style="color: #7CDAF9;"></i> <a href="mailto:ventas@lesamx.com">ventas@laminadosplasticos.com</a></p>
+            <a href="https://www.google.com/maps/place/Lat+Juan+Gil+Preciado+4176,+Hogares+de+Nuevo+M%C3%A9xico,+45160+Zapopan,+Jal.,+M%C3%A9xico/@20.6745,-103.4567,17z/data=!3m1!4b1!4m5!3m4!1s0x8428b3f9f9f9f9f9:0x1c9f1c9f1c9f1c9f!8m2!3d20.6745!4d-103.4567" target="_blank" class="ver-mapa" style="color: #7CDAF9;">
+              <i class="fas fa-map-marked-alt" style="color: #7CDAF9;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3733.1234!2d-103.4589!3d20.6745!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sLat%20Juan%20Gil%20Preciado%204176%2C%20Hogares%20de%20Nuevo%20M%C3%A9xico%2C%2045160%20Zapopan%2C%20Jal.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#003661" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Juan Gil Preciado"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Punto Sur -->
+        <div class="tab-content" id="punto-sur">
+          <div class="sucursal-info">
+            <h3>SAN PEDRO TLAQUEPAQUE</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #7CDAF9;"></i> Av. Camino Real a Colima 150<br>CP. 45602 San Pedro Tlaquepaque</p>
+            <p><i class="fas fa-phone" style="color: #7CDAF9;"></i> <a href="tel:3319609730">33 1960 9730</a></p>
+            <p><i class="fas fa-envelope" style="color: #7CDAF9;"></i> <a href="mailto:ventas@lesamx.com">ventas@laminadosplasticos.com</a></p>
+            <a href="https://www.google.com/maps/place/Av+Camino+Real+a+Colima+150,+San+Pedro+Tlaquepaque,+Jal.,+M%C3%A9xico/@20.6083,-103.4187,17z/data=!3m1!4b1!4m5!3m4!1s0x8428b3f9f9f9f9f9:0x1c9f1c9f1c9f1c9f!8m2!3d20.6083!4d-103.4187" target="_blank" class="ver-mapa" style="color: #7CDAF9;">
+              <i class="fas fa-map-marked-alt" style="color: #7CDAF9;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.6789!2d-103.4209!3d20.6083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428b3f9f9f9f9f9%3A0x1c9f1c9f1c9f1c9f!2sAv%20Camino%20Real%20a%20Colima%20150%2C%20San%20Pedro%20Tlaquepaque%2C%20Jal.%2C%20M%C3%A9xico!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#003661" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downdowngrade" title="Ubicación de Sucursal Punto Sur"></iframe>
+          </div>
+        </div>
+        
+        <!-- Sucursal Colima -->
+        <div class="tab-content" id="colima">
+          <div class="sucursal-info">
+            <h3>SUCURSAL COLIMA</h3>
+            <p><i class="fas fa-map-marker-alt" style="color: #7CDAF9;"></i> Blvrd Camino Real 670<br>Residencial Los Olivos El Provenir II<br>CP. 28019 Col, Colima.</p>
+            <p><i class="fas fa-phone" style="color: #7CDAF9;"></i> <a href="tel:3319609730">33 1960 9730</a></p>
+            <p><i class="fas fa-envelope" style="color: #7CDAF9;"></i> <a href="mailto:ventas@lesamx.com">ventas@laminadosplasticos.com</a></p>
+            <a href="https://www.google.com/maps/place/Blvd+Camino+Real+670,+Residencial+Los+Olivos,+28019+Colima,+Col.,+M%C3%A9xico/@19.2678,-103.7229,17z/data=!3m1!4b1!4m5!3m4!1s0x84255e9f9f9f9f9f:0x1c9f1c9f1c9f1c9f!8m2!3d19.2678!4d-103.7229" target="_blank" class="ver-mapa" style="color: #7CDAF9;">
+              <i class="fas fa-map-marked-alt" style="color: #7CDAF9;"></i> Ver en mapa
+            </a>
+          </div>
+          <div class="sucursal-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3766.7890!2d-103.7251!3d19.2678!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x84255e9f9f9f9f9f%3A0x1c9f1c9f1c9f1c9f!2sBlvd%20Camino%20Real%20670%2C%20Residencial%20Los%20Olivos%2C%2028019%20Colima%2C%20Col.!5e0!3m2!1sen!2smx!4v1620000000000" width="100%" height="100%" style="border:0;"color="#003661" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Ubicación de Sucursal Colima"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="sucursales-note">
+      <p><i class="fas fa-truck"></i> Realizamos envíos a toda la república mexicana</p>
+    </div>
+  </section>
+  
+  <style>
+    /* Estilos para la sección de sucursales */
+    .sucursales {
+      padding: 3rem 5%;
+      background-color: #7CDAF9;
+    }
+  
+    .sucursales h2 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      font-size: 2.2rem;
+    }
+  
+    .sucursales-subtitle {
+      text-align: center;
+      color: #7CDAF9;
+      margin-bottom: 2rem;
+      font-size: 1.1rem;
+    }
+  
+    .sucursales-container {
+      background: #FFFFFF;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 5px 30px rgba(0, 0, 0, 0.08);
+    }
+  
+    .sucursales-tabs {
+      display: flex;
+      overflow-x: auto;
+      background: #FFFFFF;
+      padding: 0.5rem;
+      gap: 0.5rem;
+      scrollbar-width: thin;
+      scrollbar-color: #ffffff #FFFFFF;
+    }
+  
+    .sucursales-tabs::-webkit-scrollbar {
+      height: 6px;
+    }
+  
+    .sucursales-tabs::-webkit-scrollbar-thumb {
+      background-color: #FFFFFF;
+      border-radius: 3px;
+    }
+  
+    .tab-btn {
+      padding: 0.8rem 1.5rem;
+      border: none;
+      background:FFFFFF;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 600;
+      color: #7CDAF9;
+      white-space: nowrap;
+      transition: all 0.3s ease;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+  
+    .tab-btn:hover {
+      background: #FFFFFF;
+    }
+  
+    .tab-btn.active {
+      background: #FFFFFF;
+      color:FFFFFF;
+      box-shadow: 0 4px 8px #7CDAF9;
+    }
+  
+    .sucursales-content {
+      position: relative;
+      min-height: 400px;
+    }
+  
+    .tab-content {
+      display: none;
+      grid-template-columns: 1fr 1.5fr;
+      gap: 2rem;
+      padding: 2rem;
+      animation: fadeIn 0.5s ease;
+    }
+  
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  
+    .tab-content.active {
+      display: grid;
+    }
+  
+    .sucursal-info {
+      padding: 1rem;
+    }
+  
+    .sucursal-info h3 {
+      color: #222;
+      margin-bottom: 1.5rem;
+      font-size: 1.4rem;
+      position: relative;
+      padding-bottom: 0.8rem;
+    }
+  
+    .sucursal-info h3::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 60px;
+      height: 3px;
+      background: #E0F5F0;
+    }
+  
+    .sucursal-info p {
+      margin: 1rem 0;
+      color: #555;
+      line-height: 1.6;
+    }
+  
+    .sucursal-info i {
+      color: #E0F5F0;
+      width: 20px;
+      margin-right: 10px;
+    }
+  
+    .sucursal-info a {
+      color: #333;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+  
+    .sucursal-info a:hover {
+      color: #000000;
+    }
+  
+    .ver-mapa {
+      display: inline-flex;
+      align-items: center;
+      margin-top: 1.5rem;
+      padding: 0.6rem 1.2rem;
+      background: #E0F5F0;
+      color: black !important;
+      border-radius: 6px;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      text-decoration: none !important;
+    }
+  
+    .ver-mapa:hover {
+      background: #E0F5F0;
+      color:FFFFFF !important;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(30,190,93,0.3);
+    }
+  
+    .ver-mapa i {
+      margin-right: 8px;
+      transition: all 0.3s ease;
+    }
+  
+    .ver-mapa:hover i {
+      color:FFFFFF !important;
+    }
+  
+    .sucursal-mapa {
+      height: 400px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    }
+  
+    .sucursales-note {
+      text-align: center;
+      margin-top: 2rem;
+      padding: 1rem;
+      background: #FFFFFF;
+      border-radius: 8px;
+      color: BLACK;
+      font-weight: 500;
+    }
+  
+    .sucursales-note i {
+      margin-right: 8px;
+      color: #E0F5F0;
+    }
+  
+    /* Ajustes responsivos para la sección de sucursales */
+    @media (max-width: 992px) {
+      .tab-content {
+        grid-template-columns: 1fr;
+      }
+      
+      .sucursal-mapa {
+        height: 300px;
+        margin-top: 1.5rem;
+      }
+    }
+  
+    @media (max-width: 768px) {
+      .sucursales {
+        padding: 2rem 4%;
+      }
+      
+      .sucursales h2 {
+        font-size: 1.8rem;
+      }
+      
+      .tab-btn {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+      }
+    }
+  
+    @media (max-width: 480px) {
+      .sucursales {
+        padding: 1.5rem 3%;
+      }
+      
+      .sucursales h2 {
+        font-size: 1.6rem;
+      }
+      
+      .tab-content {
+        padding: 1rem;
+      }
+      
+      .sucursal-info h3 {
+        font-size: 1.2rem;
+      }
+      
+      .ver-mapa {
+        width: 100%;
+        justify-content: center;
+      }
+    }
+  </style>
+  
+  <script>
+  // Funcionalidad de pestañas para sucursales
+  document.addEventListener('DOMContentLoaded', function() {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabContents = document.querySelectorAll('.tab-content');
+    
+    // Mostrar la primera pestaña por defecto
+    if (tabContents.length > 0) {
+      tabContents[0].classList.add('active');
+    }
+    
+    // Manejar clic en las pestañas
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const tabId = button.getAttribute('data-tab');
+        
+        // Remover clase active de todos los botones y contenidos
+        tabButtons.forEach(btn => {
+          btn.style.backgroundColor = '#7CDAF9';
+          btn.style.color = 'white';
+          btn.style.border = '1px solid #7CDAF9';
+        });
+        tabContents.forEach(content => content.classList.remove('active'));
+        
+        // Agregar estilos al botón activo
+        button.style.backgroundColor = '#7CDAF9';
+        button.style.color = 'white';
+        button.style.border = '1px solid #7CDAF9';
+        
+        // Mostrar el contenido correspondiente
+        document.getElementById(tabId).classList.add('active');
+        
+        // Hacer scroll suave hacia la sección de sucursales
+        document.querySelector('.sucursales').scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+  });
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- seccion: FAQ -->
+<section class="faq-section">
+  <style>
+    .faq-section {
+      padding: 70px 5%;
+      background: #f5f5f5;
+    }
+    .faq-title {
+      text-align: center;
+      color: #2E2E2E;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 8px;
+    }
+    .faq-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 36px;
+    }
+    .faq-list {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .faq-item {
+      background: #FFFFFF;
+      border-radius: 14px;
+      margin-bottom: 14px;
+      overflow: hidden;
+      box-shadow: 0 4px 14px rgba(0,0,0,0.06);
+    }
+    .faq-question {
+      width: 100%;
+      text-align: left;
+      background: none;
+      border: none;
+      padding: 20px 24px;
+      font-size: 1.02rem;
+      font-weight: 700;
+      color: #2E2E2E;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-question .faq-icon {
+      color: #7CDAF9;
+      font-size: 1.4rem;
+      transition: transform 0.25s ease;
+    }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      padding: 0 24px;
+    }
+    .faq-item.open .faq-answer {
+      max-height: 300px;
+      padding: 0 24px 20px;
+    }
+    .faq-answer p {
+      color: #555;
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+  </style>
+
+  <h2 class="faq-title">Lo que más nos preguntan</h2>
+  <p class="faq-subtitle">Respuestas rápidas antes de que escribas por WhatsApp.</p>
+
+  <div class="faq-list" id="faqList"></div>
+
+  <script>
+    const faqData = [
+      { q: '¿Cuánto cuesta el metro cuadrado?', a: 'Depende del material y espesor que elijas. Escríbenos por WhatsApp con tu proyecto y te damos un precio exacto en minutos.' },
+      { q: '¿Cortan a la medida?', a: 'Sí, cortamos todas nuestras láminas al tamaño exacto que necesitas, sin costo adicional en la mayoría de los materiales.' },
+      { q: '¿Quién descarga el material en obra?', a: 'Coordinamos contigo el horario de entrega; te recomendamos tener a alguien disponible para apoyar en la descarga.' },
+      { q: '¿Hacen instalación o recomiendan instalador?', a: 'No instalamos directamente, pero podemos recomendarte instaladores de confianza en tu zona.' },
+      { q: '¿Qué garantía tienen las láminas?', a: 'La garantía varía según el material, entre 3 y 10 años. Te compartimos la ficha técnica de cada producto.' },
+      { q: '¿Qué formas de pago aceptan? ¿Facturan?', a: 'Aceptamos efectivo, transferencia y tarjeta, y sí facturamos tu compra.' }
+    ];
+
+    function renderFaq() {
+      const list = document.getElementById('faqList');
+      list.innerHTML = faqData.map((item, i) => `
+        <div class="faq-item" id="faq-${i}">
+          <button class="faq-question" onclick="toggleFaq(${i})">
+            ${item.q} <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer"><p>${item.a}</p></div>
+        </div>
+      `).join('');
+    }
+
+    function toggleFaq(i) {
+      document.getElementById(`faq-${i}`).classList.toggle('open');
+    }
+
+    renderFaq();
+  </script>
+</section>
+
+  <!-- seccion: CTA final + venta cruzada -->
+<section class="cta-final-section">
+  <style>
+    .cta-final-section {
+      padding: 70px 5%;
+      background: #2E2E2E;
+      text-align: center;
+    }
+    .cta-final-title {
+      color: #FFFFFF;
+      font-size: 2.2rem;
+      font-weight: 700;
+      margin-bottom: 26px;
+    }
+    .cta-final-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: #25D366;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 1.2rem;
+      padding: 18px 40px;
+      border-radius: 999px;
+      transition: transform 0.2s ease;
+    }
+    .cta-final-btn:hover { transform: translateY(-3px); }
+    .cta-cross-sell {
+      max-width: 700px;
+      margin: 46px auto 0;
+      display: flex;
+      justify-content: center;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .cross-sell-card {
+      background: #3a3a3a;
+      border-radius: 14px;
+      padding: 22px 30px;
+      color: #FFFFFF;
+      text-align: left;
+      min-width: 240px;
+    }
+    .cross-sell-card p {
+      font-size: 0.85rem;
+      color: #8A8A8A;
+      margin-bottom: 4px;
+    }
+    .cross-sell-card h4 {
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+    .cross-sell-card a {
+      color: #7CDAF9;
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 0.9rem;
+    }
+    .cross-sell-card a:hover { text-decoration: underline; }
+  </style>
+
+  <h2 class="cta-final-title">¿Listo para techar tu proyecto? Cotiza hoy.</h2>
+  <a href="https://wa.me/3319609730" class="cta-final-btn" target="_blank">
+    <svg width="26" height="26" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path fill="currentColor" d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347M12.051 21.785h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884"/>
+    </svg>
+    Cotizar por WhatsApp
+  </a>
+
+  <div class="cta-cross-sell">
+    <div class="cross-sell-card">
+      <p>¿También necesitas?</p>
+      <h4>Panel térmico</h4>
+      <a href="https://wa.me/3319609730?text=Hola,%20me%20interesa%20cotizar%20panel%20t%C3%A9rmico" target="_blank">Cotizar panel térmico →</a>
+    </div>
+    <div class="cross-sell-card">
+      <p>¿También necesitas?</p>
+      <h4>Lámina metálica</h4>
+      <a href="https://wa.me/3319609730?text=Hola,%20me%20interesa%20cotizar%20l%C3%A1mina%20met%C3%A1lica" target="_blank">Cotizar lámina metálica →</a>
+    </div>
+  </div>
+</section>
+
+  <!-- 8ta seccion  seccion de footer-->
+<footer class="footer">
+    <div class="footer-container">
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img src="images/logo.webp" alt="Láminados plasticos" class="footer-logo-img">
+        </div>
+        
+        <!-- Acciones rápidas (solo móvil) -->
+        <div class="footer-actions" aria-label="Acciones rápidas">
+          <a class="btn-action btn-call" href="tel:3319609730"><i class="fas fa-phone"></i> Llamar</a>
+          <a class="btn-action btn-wa" href="https://wa.me/3319609730" target="_blank" rel="noopener"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+        </div>
+
+        <div class="footer-info">
+          <div class="footer-section">
+            <h4>Contacto</h4>
+            <p><i class="fas fa-phone"></i> 33 1960 9730</p>
+            <p><i class="fas fa-envelope"></i> ventas@laminadosplasticos.com</p>
+          </div>
+
+          <div class="footer-section">
+            <h4>Sucursales</h4>
+            <p>Jalisco y Colima</p>
+            <p>Entregas a toda la República</p>
+          </div>
+
+         
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2025 Laminados Plasticos - Todos los derechos reservados.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Facebook">
+            <svg width="18" height="18" viewBox="0 0 320 512" aria-hidden="true">
+              <path fill="white" d="M279.14 288l14.22-92.66h-88.91V127.41c0-25.35 12.42-50.06 52.24-50.06H295V6.26S277.43 0 260.19 0c-73.22 0-121.17 44.38-121.17 124.72v70.62H89.09V288h49.93v224h100.17V288z"/>
+            </svg>
+          </a>
+          <a href="https://wa.me/3319609730" aria-label="WhatsApp">
+            <svg width="18" height="18" viewBox="0 0 448 512" aria-hidden="true">
+              <path fill="white" d="M380.9 97.1C339 55.1 283.2 32 223.9 32 103.5 32 8 127.5 8 247.9c0 43.7 11.4 86.2 33.1 123.6L0 480l112.7-40.5c35.3 19.2 74.9 29.3 115.2 29.3h.1c120.3 0 215.9-95.5 215.9-215.9 0-59.3-23.1-115.1-65-157.1zM223.9 438.6h-.1c-36.2 0-71.6-9.7-102.5-28.1l-7.3-4.3-66.8 24 22.4-68.9-4.8-7.1C48 323.8 37.7 286.4 37.7 247.9 37.7 145.4 121.4 61.7 223.9 61.7c54.3 0 105.3 21.1 143.6 59.4 38.3 38.3 59.4 89.3 59.4 143.6 0 112.6-91.4 214-203 214z"/>
+              <path fill="white" d="M325.4 308.9c-5.4-2.7-32-15.8-36.9-17.6-5-1.9-8.6-2.7-12.2 2.7-3.7 5.4-14 17.6-17.1 21.3-3.1 3.7-6.3 4.1-11.7 1.4-31.7-15.8-52.5-28.3-73.3-64.1-5.5-9.5 5.5-8.8 15.8-29.3 1.7-3.7.9-6.9-.5-9.6-1.4-2.7-12.2-29.3-16.7-40.2-4.4-10.6-8.9-9.2-12.2-9.4-3.1-.2-6.9-.2-10.6-.2s-9.6 1.4-14.6 6.9c-5 5.4-19.2 18.7-19.2 45.6 0 26.9 19.7 52.9 22.4 56.6 2.7 3.7 38.9 59.4 94.2 83.4 35 15.1 48.7 16.4 66.2 13.8 10.6-1.6 32.9-13.4 37.6-26.4 4.7-13 4.7-24.1 3.3-26.4-1.3-2.5-4.9-3.9-10.3-6.6z"/>
+            </svg>
+          </a>
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <rect x="3" y="3" width="18" height="18" rx="5" ry="5" fill="none" stroke="white" stroke-width="1.8"/>
+              <circle cx="12" cy="12" r="4" fill="none" stroke="white" stroke-width="1.8"/>
+              <circle cx="17" cy="7" r="1.1" fill="white"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <style>
+    /* Footer Styles */
+    .footer {
+      background: linear-gradient(5deg, #8A8A8A 0%, #8A8A8A 100%);
+      color: #606060;
+      padding: 0;
+      margin-top: 0;
+      position: relative;
+      overflow-x: hidden; /* evita desbordes horizontales */
+    }
+
+    .footer::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, #706F6F, #706F6F, #706F6F, #706F6F);
+      opacity: 0.8;
+    }
+
+    .footer-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 3rem 2rem 2rem;
+    }
+
+    .footer-content {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 3rem;
+      margin-bottom: 2rem;
+    }
+
+    .footer-logo {
+      text-align: left;
+    }
+
+    .footer-logo-img {
+      max-height: 270px;
+      width: auto;
+      display: block;
+    }
+
+    .logo-text {
+      font-size: 2.5rem;
+      font-weight: 800;
+      background: linear-gradient(45deg, #606060, #606060);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+      position: relative;
+    }
+
+    .logo-text::before {
+      content: '▶';
+      position: absolute;
+      left: -40px;
+      top: 50%;
+      transform: translateY(-50%) rotate(45deg);
+      color: #706F6F;
+      font-size: 1.5rem;
+    }
+
+    .footer-tagline {
+      font-size: 1.1rem;
+      color: BLACK;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .footer-info {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .footer-section h4 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 1rem;
+      color: BLACK;
+      position: relative;
+      padding-bottom: 0.5rem;
+    }
+
+    .footer-section h4::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 30px;
+      height: 2px;
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .footer-section p {
+      margin: 0.5rem 0;
+      color: BLACK;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .footer-section i {
+      width: 16px;
+      opacity: 0.7;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 2rem;
+      border-top: 1px solid #7CDAF9;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-bottom p {
+      margin: 0;
+      color: #7CDAF9;
+      font-size: 0.9rem;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .footer-social a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      background: #7CDAF9;
+      border-radius: 50%;
+      color: white;
+      text-decoration: none;
+      transition: all 0.3s ease;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .footer-social a:hover {
+      background: #7CDAF9;
+      transform: translateY(-2px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    .footer-social i {
+      font-size: 1.1rem;
+      color: white;
+    }
+
+    .footer-social svg {
+      width: 18px;
+      height: 18px;
+      display: block;
+    }
+
+    /* Acciones rápidas (móvil) */
+    .footer-actions { display: none; }
+    .btn-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 10px 16px;
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 600;
+      color: white;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+    .btn-action:active { transform: scale(0.98); }
+    .btn-call { background: #7CDAF9; }
+    .btn-wa { background: #7CDAF9; }
+
+    /* Responsive Footer */
+    @media (max-width: 768px) {
+      .footer-content {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        text-align: center;
+      }
+
+      .footer-info {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .logo-text {
+        font-size: 2rem;
+      }
+
+      .logo-text::before {
+        left: -30px;
+        font-size: 1.2rem;
+      }
+      .footer-logo-img {
+      max-height: 130px;
+      width: auto;
+      display: block;
+    }
+      /* Mejoras extra para móvil (<=768px) */
+      .footer-logo { text-align: center; }
+      .logo-text::before { display: none; }
+      .footer-section h4 { margin-bottom: 0.5rem; }
+      .footer-section p { justify-content: center; }
+      .footer-social { justify-content: center; }
+      .footer-social a { width: 48px; height: 48px; }
+      .footer-actions { display: flex; justify-content: center; gap: 12px; flex-wrap: wrap; }
+    }
+
+    @media (max-width: 480px) {
+      .footer-container {
+        padding: 2rem 1rem 1.5rem;
+      }
+
+      .footer-info { gap: 1rem; }
+
+      .footer-section h4 {
+        font-size: 1.1rem;
+      }
+
+      .footer-section p {
+        font-size: 0.9rem;
+      }
+      /* Ajustes finos para pantallas muy pequeñas (<=480px) */
+      .footer-content { gap: 1.5rem; }
+      .footer-bottom { gap: 0.75rem; }
+      .footer-social a { width: 52px; height: 52px; }
+      .logo-text { font-size: 1.8rem; }
+      /* Rediseño compacto: escondemos detalle y dejamos acciones rápidas */
+      .footer-info { display: none; }
+      .footer-actions { display: flex; }
+    }
+  </style>
+
+</body>
+</html>
