@@ -36,22 +36,24 @@ section{padding:88px 0}
 .btn-light:hover{border-color:var(--blue-deep)}
 .wa-icon{width:16px;height:16px;flex:none}
 
-/* --- brand mark: recreated from logo, three cut bars --- */
+/* --- brand mark --- */
 .brand{display:flex;align-items:center;gap:10px}
-.brand svg{width:34px;height:30px}
-.brand-word{font-family:'Sora',sans-serif;font-weight:700;font-size:1.05rem;line-height:1.05}
-.brand-word span{display:block;font-weight:500;color:var(--gray);font-size:.62em;letter-spacing:.02em}
+.brand img{width:min(420px,calc(100vw - 40px));height:68px;object-fit:cover;object-position:center}
 
 /* --- header --- */
 header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-row{display:flex;align-items:center;justify-content:space-between;height:76px}
-nav ul{display:flex;gap:28px;list-style:none}
+.nav-row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"brand actions" "nav nav";align-items:center;gap:8px 24px;height:auto;padding-top:8px;padding-bottom:8px}
+.nav-row>.brand{grid-area:brand}
+.nav-row>nav{grid-area:nav}
+.nav-row>.header-right{grid-area:actions}
+nav ul{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 28px;list-style:none}
 nav a{font-size:.92rem;font-weight:500;color:var(--ink);opacity:.8}
 nav a:hover{opacity:1;color:var(--blue-deeper)}
 .header-right{display:flex;align-items:center;gap:18px}
 .phone-link{font-size:.9rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:6px}
 .menu-btn{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer}
-@media(max-width:900px){ nav{display:none} .phone-link{display:none} .menu-btn{display:block} }
+@media(max-width:900px){ .nav-row{grid-template-areas:"brand actions"} nav{display:none} .phone-link{display:none} .menu-btn{display:block} }
+@media(max-width:700px){ .nav-row{grid-template-columns:1fr;grid-template-areas:"brand" "actions";justify-items:center} .header-right{justify-content:center} }
 
 /* --- hero --- */
 .hero{padding:64px 0 60px;background:linear-gradient(180deg,var(--soft) 0%, #fff 100%);overflow:hidden}
@@ -82,12 +84,15 @@ nav a:hover{opacity:1;color:var(--blue-deeper)}
 
 /* --- catalog --- */
 .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{border:1px solid var(--line);border-radius:var(--r);padding:26px;background:#fff;transition:box-shadow .2s ease, border-color .2s ease}
+.card{border:1px solid var(--line);border-radius:var(--r);background:#fff;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s ease, border-color .2s ease}
 .card:hover{box-shadow:0 14px 30px rgba(46,46,46,.08);border-color:var(--blue)}
+.product-image{width:100%;aspect-ratio:1.6;object-fit:cover}
+.card-content{display:flex;flex:1;flex-direction:column;padding:22px}
 .card-icon{width:44px;height:44px;border-radius:8px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--blue-deep)}
 .card h3{font-size:1.1rem;margin-bottom:8px}
 .card p.desc{color:var(--gray);font-size:.9rem;margin-bottom:16px;min-height:42px}
 .card .specs{font-size:.8rem;color:var(--ink);opacity:.75;margin-bottom:18px}
+.card .btn{width:100%;justify-content:center;margin-top:auto}
 @media(max-width:900px){ .grid-3{grid-template-columns:1fr 1fr} }
 @media(max-width:600px){ .grid-3{grid-template-columns:1fr} }
 
@@ -146,8 +151,8 @@ form.qform{display:flex;flex-direction:column;gap:14px}
 .filter-btn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .proj-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
-.proj-photo{height:170px;background:linear-gradient(135deg,var(--blue) 0%,var(--blue-deep) 100%);position:relative}
-.proj-photo::after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(255,255,255,.12) 0 18px,transparent 18px 36px)}
+.proj-photo{aspect-ratio:12/5;overflow:hidden;background:var(--soft)}
+.proj-photo img{width:100%;height:100%;object-fit:cover}
 .proj-body{padding:18px}
 .proj-body h4{font-size:1rem;margin-bottom:4px}
 .proj-body p{font-size:.85rem;color:var(--gray)}
@@ -198,10 +203,9 @@ form.qform{display:flex;flex-direction:column;gap:14px}
 .cross a:hover{border-color:var(--blue)}
 
 /* --- footer --- */
-footer{background:#1f1f1f;color:#b8b8b8;padding:44px 0 28px;font-size:.85rem}
+footer{background:#1f1f1f;color:#b8b8b8;padding:18px 0 16px;font-size:.85rem}
 .foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
-.foot-row .brand-word{color:#fff}
-.foot-row .brand-word span{color:#8a8a8a}
+.foot-row .brand img{filter:brightness(0) invert(1)}
 
 /* --- floating wa --- */
 .float-wa{position:fixed;bottom:24px;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25);z-index:60}
@@ -215,8 +219,7 @@ footer{background:#1f1f1f;color:#b8b8b8;padding:44px 0 28px;font-size:.85rem}
 <header>
   <div class="wrap nav-row">
     <a href="#top" class="brand" aria-label="Laminados Plásticos - inicio">
-      <svg viewBox="0 0 40 34" fill="none"><path d="M2 6h7v22H2z" fill="#7CDAF9"/><path d="M14 6h7v22h-7z" fill="#4FC1EE"/><path d="M26 6h9v13L26 28z" fill="#2F8FC4"/></svg>
-      <span class="brand-word">LAMINADOS<span>PLÁSTICOS</span></span>
+      <img src="images/logo.webp" alt="Laminados Plásticos">
     </a>
     <nav><ul>
       <li><a href="#catalogo">Catálogo</a></li>
@@ -273,50 +276,89 @@ footer{background:#1f1f1f;color:#b8b8b8;padding:44px 0 28px;font-size:.85rem}
     <div class="sec-head">
       <p class="eyebrow">Catálogo por material</p>
       <h2>Encuentra tu lámina</h2>
-      <p>Cada botón abre WhatsApp con el producto ya escrito, para que la asesora no tenga que preguntar qué buscas.</p>
+      <p>Cada botón abre WhatsApp con el producto ya escrito, para que podamos asesorarte mejor.</p>
     </div>
     <div class="grid-3" id="catalogGrid">
       <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/><path d="M9 4v16M15 4v16"/></svg></div>
-        <h3>Policarbonato celular</h3>
-        <p class="desc">Cocheras, domos, pérgolas y tragaluces.</p>
-        <p class="specs">Espesores: 4, 6, 8 y 10 mm · Colores: transparente, opal, bronce</p>
-        <a class="btn btn-light" data-wa-item="Policarbonato celular">Cotizar esta lámina</a>
+        <img class="product-image" src="images/1eraseccion/productosn/tlm-107.jpeg" alt="Lámina de PVC TLM-107" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Láminas de PVC TLM-107</h3>
+          <p class="desc">Techados industriales, comerciales y bodegas de gran cobertura.</p>
+          <p class="specs">Ancho útil: 107 cm · Colores: blanco, marfil y termoacústico</p>
+          <a class="btn btn-light" data-wa-item="Láminas de PVC TLM-107" aria-label="Cotizar Láminas de PVC TLM-107 por WhatsApp">Cotizar esta lámina</a>
+        </div>
       </div>
       <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/></svg></div>
-        <h3>Policarbonato compacto</h3>
-        <p class="desc">Protecciones, cancelería y alta resistencia al impacto.</p>
-        <p class="specs">Espesores: 3 a 10 mm · Medidas: 2.44 × 1.22 m</p>
-        <a class="btn btn-light" data-wa-item="Policarbonato compacto">Cotizar esta lámina</a>
+        <img class="product-image" src="images/1eraseccion/productosn/tlm82.jpeg" alt="Lámina de PVC TLM-82" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Láminas de PVC TLM-82</h3>
+          <p class="desc">Cubiertas residenciales, comerciales y estructuras ligeras.</p>
+          <p class="specs">Ancho útil: 82 cm · Diseños: acanalado resistente y duradero</p>
+          <a class="btn btn-light" data-wa-item="Láminas de PVC TLM-82" aria-label="Cotizar Láminas de PVC TLM-82 por WhatsApp">Cotizar esta lámina</a>
+        </div>
       </div>
       <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20l9-16 9 16z"/></svg></div>
-        <h3>Lámina traslúcida</h3>
-        <p class="desc">Naves, bodegas e invernaderos con luz natural.</p>
-        <p class="specs">Perfiles: 5 y 7 canales · Largos: hasta 12 m</p>
-        <a class="btn btn-light" data-wa-item="Lámina traslúcida">Cotizar esta lámina</a>
+        <img class="product-image" src="images/1eraseccion/productosn/t81.jpeg" alt="Lámina de PVC perfil trapezoidal T-81" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Láminas de PVC T-81</h3>
+          <p class="desc">Naves industriales, almacenes y cerramientos perimetrales.</p>
+          <p class="specs">Perfil: trapezoidal T-81 · Propiedades: resistencia química y corrosiva</p>
+          <a class="btn btn-light" data-wa-item="Láminas de PVC T-81" aria-label="Cotizar Láminas de PVC T-81 por WhatsApp">Cotizar esta lámina</a>
+        </div>
       </div>
       <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12l4-8h10l4 8-9 9-9-9z"/></svg></div>
-        <h3>Teja de PVC</h3>
-        <p class="desc">Techos residenciales con acabado de teja.</p>
-        <p class="specs">Colores: terracota, gris, blanco · Largos: 2 a 3.5 m</p>
-        <a class="btn btn-light" data-wa-item="Teja de PVC">Cotizar esta lámina</a>
+        <img class="product-image" src="images/1eraseccion/productosn/ut-105.jpeg" alt="Lámina de PVC UT-105" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Láminas de PVC UT-105</h3>
+          <p class="desc">Proyectos agropecuarios, industriales y techados expuestos.</p>
+          <p class="specs">Ancho útil: 105 cm · Características: aislante térmico y acústico</p>
+          <a class="btn btn-light" data-wa-item="Láminas de PVC UT-105" aria-label="Cotizar Láminas de PVC UT-105 por WhatsApp">Cotizar esta lámina</a>
+        </div>
       </div>
       <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="8"/></svg></div>
-        <h3>Acrílico</h3>
-        <p class="desc">Letreros, exhibidores y aplicaciones decorativas.</p>
-        <p class="specs">Espesores: 2 a 12 mm · Colores: transparente y color</p>
-        <a class="btn btn-light" data-wa-item="Acrílico">Cotizar esta lámina</a>
+        <img class="product-image" src="images/1eraseccion/productosn/pt1.jpeg" alt="Lámina de PVC PT1" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Láminas de PVC PT1</h3>
+          <p class="desc">Cocheras, tejabanes, patios y techos ligeros.</p>
+          <p class="specs">Perfil: PT1 estándar · Colores: terracota, blanco y gris</p>
+          <a class="btn btn-light" data-wa-item="Láminas de PVC PT1" aria-label="Cotizar Láminas de PVC PT1 por WhatsApp">Cotizar esta lámina</a>
+        </div>
       </div>
       <div class="card">
-        <div class="card-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3v18M18 3v18M3 9h18M3 15h18"/></svg></div>
-        <h3>Accesorios y fijación</h3>
-        <p class="desc">Perfiles, tornillería y selladores para instalar.</p>
-        <p class="specs">Compatibles con todas nuestras láminas</p>
-        <a class="btn btn-light" data-wa-item="Accesorios y fijación">Cotizar accesorios</a>
+        <img class="product-image" src="images/1eraseccion/productosn/t2.jpeg" alt="Lámina T-2 Acrylit" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Lámina T-2 Acrylit</h3>
+          <p class="desc">Naves industriales, bodegas e iluminación natural constante.</p>
+          <p class="specs">Perfil: T-2 acanalado · Material: resina acrílica reforzada con fibra de vidrio</p>
+          <a class="btn btn-light" data-wa-item="Lámina T-2 Acrylit" aria-label="Cotizar Lámina T-2 Acrylit por WhatsApp">Cotizar esta lámina</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="product-image" src="images/1eraseccion/productosn/t-18.jpeg" alt="Lámina T-18 Acrylit" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Lámina T-18 Acrylit</h3>
+          <p class="desc">Cubiertas metálicas, naves industriales y tragaluces continuos.</p>
+          <p class="specs">Perfil: T-18 compatible · Alta difusión de luz y resistencia al intemperismo</p>
+          <a class="btn btn-light" data-wa-item="Lámina T-18 Acrylit" aria-label="Cotizar Lámina T-18 Acrylit por WhatsApp">Cotizar esta lámina</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="product-image" src="images/1eraseccion/productosn/t-95.jpeg" alt="Lámina T-95 Poliacryl de poliéster reforzado con fibra de vidrio" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Lámina T-95 Poliacryl</h3>
+          <p class="desc">Edificios comerciales, almacenes e invernaderos.</p>
+          <p class="specs">Perfil: T-95 trapezoidal · Transmisión de luz uniforme y alta durabilidad</p>
+          <a class="btn btn-light" data-wa-item="Lámina T-95 Poliacryl" aria-label="Cotizar Lámina T-95 Poliacryl por WhatsApp">Cotizar esta lámina</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="product-image" src="images/1eraseccion/productosn/policelular.jpeg" alt="Lámina de policarbonato celular multi-pared" loading="lazy" decoding="async">
+        <div class="card-content">
+          <h3>Policarbonato celular</h3>
+          <p class="desc">Cocheras, domos, pérgolas y tragaluces.</p>
+          <p class="specs">Espesores: 4, 6, 8 y 10 mm · Colores: transparente, opal, bronce</p>
+          <a class="btn btn-light" data-wa-item="Policarbonato celular" aria-label="Cotizar Policarbonato celular por WhatsApp">Cotizar esta lámina</a>
+        </div>
       </div>
     </div>
   </div>
@@ -347,11 +389,15 @@ footer{background:#1f1f1f;color:#b8b8b8;padding:44px 0 28px;font-size:.85rem}
       <table>
         <thead><tr><th>Material</th><th>Uso ideal</th><th>Paso de luz</th><th>Resistencia</th><th>Garantía</th><th>Precio</th></tr></thead>
         <tbody>
-          <tr><td>Policarbonato celular</td><td>Cocheras, domos</td><td>Alta</td><td>Alta</td><td>10 años</td><td class="price">$$</td></tr>
-          <tr><td>Policarbonato compacto</td><td>Protecciones</td><td>Muy alta</td><td>Muy alta</td><td>10 años</td><td class="price">$$$</td></tr>
-          <tr><td>Lámina traslúcida</td><td>Naves, bodegas</td><td>Media</td><td>Media</td><td>5 años</td><td class="price">$</td></tr>
-          <tr><td>Teja de PVC</td><td>Techos residenciales</td><td>Nula</td><td>Media</td><td>10 años</td><td class="price">$$</td></tr>
-          <tr><td>Acrílico</td><td>Letreros, exhibición</td><td>Muy alta</td><td>Baja</td><td>5 años</td><td class="price">$$</td></tr>
+          <tr><td>Policarbonato celular</td><td>Cocheras, domos, pérgolas y tragaluces</td><td>Alta</td><td>Alta</td><td>10 años</td><td class="price">$$</td></tr>
+          <tr><td>Lámina de PVC TLM-107</td><td>Naves industriales, bodegas y gran cobertura</td><td>Nula</td><td>Alta (termoacústica/anticorrosiva)</td><td>10 años</td><td class="price">$$</td></tr>
+          <tr><td>Lámina de PVC TLM-82</td><td>Techados residenciales y estructuras ligeras</td><td>Nula</td><td>Media-alta</td><td>10 años</td><td class="price">$</td></tr>
+          <tr><td>Lámina de PVC T-81</td><td>Almacenes, naves y cerramientos perimetrales</td><td>Nula</td><td>Alta (resistencia química)</td><td>10 años</td><td class="price">$$</td></tr>
+          <tr><td>Lámina de PVC UT-105</td><td>Techados agropecuarios e industriales expuestos</td><td>Nula</td><td>Alta (aislante térmico/acústico)</td><td>10 años</td><td class="price">$$</td></tr>
+          <tr><td>Lámina de PVC PT1</td><td>Cocheras, patios, tejabanes y techos ligeros</td><td>Nula</td><td>Media</td><td>10 años</td><td class="price">$</td></tr>
+          <tr><td>Lámina T-2 Acrylit</td><td>Iluminación natural en naves industriales y bodegas</td><td>Muy alta</td><td>Alta (reforzada con fibra de vidrio)</td><td>10 años</td><td class="price">$$</td></tr>
+          <tr><td>Lámina T-18 Acrylit</td><td>Cubiertas metálicas y tragaluces continuos</td><td>Alta</td><td>Alta (difusión de luz)</td><td>10 años</td><td class="price">$$</td></tr>
+          <tr><td>Lámina T-95 Poliacryl</td><td>Invernaderos, bodegas y edificios comerciales</td><td>Alta</td><td>Media-alta</td><td>10 años</td><td class="price">$$</td></tr>
         </tbody>
       </table>
     </div>
@@ -424,9 +470,9 @@ footer{background:#1f1f1f;color:#b8b8b8;padding:44px 0 28px;font-size:.85rem}
       <button class="filter-btn" data-cat="industrial">Industrial</button>
     </div>
     <div class="proj-grid" id="projGrid">
-      <div class="proj-card" data-cat="residencial"><div class="proj-photo"></div><div class="proj-body"><h4>Cochera residencial · Zapopan</h4><p>Policarbonato celular 6 mm · 22 m²</p></div></div>
-      <div class="proj-card" data-cat="comercial"><div class="proj-photo"></div><div class="proj-body"><h4>Terraza de restaurante · Guadalajara</h4><p>Policarbonato compacto · 40 m²</p></div></div>
-      <div class="proj-card" data-cat="industrial"><div class="proj-photo"></div><div class="proj-body"><h4>Nave industrial · Tlaquepaque</h4><p>Lámina traslúcida · 180 m²</p></div></div>
+      <div class="proj-card" data-cat="residencial"><div class="proj-photo"><img src="images/1eraseccion/proyectos/cochera.jpeg" alt="Cochera residencial cubierta con policarbonato" loading="lazy" decoding="async"></div><div class="proj-body"><h4>Cochera residencial · Zapopan</h4><p>Policarbonato celular 6 mm · 22 m²</p></div></div>
+      <div class="proj-card" data-cat="comercial"><div class="proj-photo"><img src="images/1eraseccion/proyectos/restaurante.jpeg" alt="Terraza de restaurante cubierta en Guadalajara" loading="lazy" decoding="async"></div><div class="proj-body"><h4>Terraza de restaurante · Guadalajara</h4><p>Policarbonato compacto · 40 m²</p></div></div>
+      <div class="proj-card" data-cat="industrial"><div class="proj-photo"><img src="images/1eraseccion/proyectos/industria.jpeg" alt="Nave industrial en Tlaquepaque" loading="lazy" decoding="async"></div><div class="proj-body"><h4>Nave industrial · Tlaquepaque</h4><p>Lámina traslúcida · 180 m²</p></div></div>
     </div>
     <div class="testimonials">
       <div class="testi"><p>Cotizamos por WhatsApp en la mañana y el material llegó cortado y listo al día siguiente. Muy claros con precios y tiempos.</p><span>Ricardo M. · Cochera residencial, Zapopan</span></div>
@@ -479,8 +525,7 @@ footer{background:#1f1f1f;color:#b8b8b8;padding:44px 0 28px;font-size:.85rem}
 <footer>
   <div class="wrap foot-row">
     <div class="brand">
-      <svg viewBox="0 0 40 34" fill="none" width="30"><path d="M2 6h7v22H2z" fill="#7CDAF9"/><path d="M14 6h7v22h-7z" fill="#4FC1EE"/><path d="M26 6h9v13L26 28z" fill="#2F8FC4"/></svg>
-      <span class="brand-word">LAMINADOS<span>PLÁSTICOS</span></span>
+      <img src="images/logo.webp" alt="Laminados Plásticos">
     </div>
     <span>4 sucursales en Jalisco y Colima · 33 1960 9730</span>
     <span>© 2026 Laminados Plásticos</span>
@@ -512,12 +557,12 @@ document.querySelectorAll('[data-wa-item]').forEach(btn=>{
 
 // ---- Selector by project ----
 const projects = {
-  "Cochera": {rec:"Policarbonato celular 6 mm", why:"Deja pasar luz, es ligero, resiste granizo y bloquea rayos UV — ideal para cubrir autos sin oscurecer la cochera.", alt:"Lámina traslúcida", altWhy:"Cuando el presupuesto es ajustado y la cochera no requiere alta resistencia al impacto."},
-  "Domo o tragaluz": {rec:"Policarbonato celular 8 mm", why:"Mayor rigidez para claros amplios y buena difusión de luz natural.", alt:"Acrílico", altWhy:"Para domos pequeños donde se busca máxima transparencia."},
-  "Pérgola o terraza": {rec:"Policarbonato celular 6 mm", why:"Reduce el calor directo y protege de la lluvia sin oscurecer el espacio.", alt:"Teja de PVC", altWhy:"Si buscas un acabado tipo teja tradicional en vez de vista translúcida."},
-  "Invernadero": {rec:"Lámina traslúcida", why:"Máxima entrada de luz difusa, ideal para el desarrollo de cultivos.", alt:"Policarbonato celular", altWhy:"Cuando se necesita mejor aislamiento térmico en climas extremos."},
-  "Nave industrial": {rec:"Lámina traslúcida", why:"Cubre grandes claros a bajo costo y reduce el gasto en iluminación durante el día.", alt:"Policarbonato compacto", altWhy:"En zonas con riesgo de impacto o granizo severo."},
-  "Letrero o exhibidor": {rec:"Acrílico 5 mm", why:"Alta transparencia, fácil de cortar, grabar y rotular para exhibidores y señalética.", alt:"Policarbonato compacto", altWhy:"Para letreros a la intemperie que requieren mayor resistencia al golpe."}
+  "Cochera": {rec:"Policarbonato celular 6 mm", why:"Deja pasar luz, es ligero, resiste granizo y bloquea rayos UV; ideal para cubrir autos sin oscurecer la cochera.", alt:"Lámina de PVC PT1", altWhy:"Cubierta ligera y accesible, resistente a la intemperie, ideal cuando no se requiere paso de luz natural."},
+  "Domo o tragaluz": {rec:"Policarbonato celular", why:"Excelente difusión de luz natural con protección UV e aislamiento térmico que evita el sobrecalentamiento interior.", alt:"Lámina T-2 Acrylit", altWhy:"Paso constante de luz con excelente difusión y alta resistencia a la intemperie a un costo accesible."},
+  "Pérgola o terraza": {rec:"Policarbonato celular", why:"Protección UV y excelente estética con luz filtrada para espacios de convivencia al aire libre.", alt:"Lámina de PVC TLM-82", altWhy:"Alternativa económica y duradera de cubierta opaca para sombra total y protección contra la intemperie."},
+  "Invernadero": {rec:"Lámina T-95 Poliacryl", why:"Difusión de luz uniforme y alta resistencia química para garantizar el crecimiento óptimo de los cultivos.", alt:"Lámina T-18 Acrylit", altWhy:"Paso eficiente de luz natural y resistencia a la intemperie a un excelente precio por metro cuadrado."},
+  "Nave industrial": {rec:"Lámina de PVC TLM-107", why:"Gran ancho útil para optimizar tiempos de instalación, con excelente resistencia anticorrosiva y aislamiento termoacústico.", alt:"Lámina de PVC T-81 / UT-105", altWhy:"Perfil trapezoidal resistente a ambientes agresivos e industriales con una excelente relación costo-beneficio."},
+  "Letrero o exhibidor": {rec:"Asesoría para letreros o exhibidores", why:"El catálogo actual está enfocado en láminas para cubiertas. Consulta con el equipo qué material y espesor están disponibles para señalización.", alt:"Sin alternativa equivalente en el catálogo", altWhy:"Las láminas publicadas no sustituyen directamente al acrílico o al policarbonato compacto para este uso; confirma disponibilidad antes de cotizar.", recTag:"ASESORÍA", altTag:"DISPONIBILIDAD", recAction:"Consultar por WhatsApp", altAction:"Consultar disponibilidad", recMessage:"Hola, tengo un proyecto de letrero o exhibidor y necesito asesoría sobre materiales disponibles.", altMessage:"Hola, quiero confirmar qué materiales tienen disponibles para un letrero o exhibidor."}
 };
 const tabsEl = document.getElementById('tabs');
 const resultEl = document.getElementById('selectorResult');
@@ -534,20 +579,20 @@ function selectProject(name, btnEl){
   const p = projects[name];
   resultEl.innerHTML = `
     <div class="result-card">
-      <div class="tag">RECOMENDADA</div>
+      <div class="tag">${p.recTag || 'RECOMENDADA'}</div>
       <h4>${p.rec}</h4>
       <p>${p.why}</p>
-      <a class="btn btn-primary" href="#" id="selWaBtn">Cotizar para mi proyecto</a>
+      <a class="btn btn-primary" href="#" id="selWaBtn">${p.recAction || 'Cotizar para mi proyecto'}</a>
     </div>
     <div class="result-card alt">
-      <div class="tag">OPCIÓN ECONÓMICA</div>
+      <div class="tag">${p.altTag || 'OPCIÓN ECONÓMICA'}</div>
       <h4>${p.alt}</h4>
       <p>${p.altWhy}</p>
-      <a class="btn btn-light" href="#" id="selAltWaBtn" style="background:transparent;border-color:#4a4a4a;color:#e6e6e6">Cotizar esta opción</a>
+      <a class="btn btn-light" href="#" id="selAltWaBtn" style="background:transparent;border-color:#4a4a4a;color:#e6e6e6">${p.altAction || 'Cotizar esta opción'}</a>
     </div>`;
-  document.getElementById('selWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget, `Hola, tengo un proyecto de ${name.toLowerCase()} y quiero cotizar ${p.rec}.`); });
+  document.getElementById('selWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget, p.recMessage || `Hola, tengo un proyecto de ${name.toLowerCase()} y quiero cotizar ${p.rec}.`); });
   document.getElementById('selWaBtn').target='_blank';
-  document.getElementById('selAltWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget, `Hola, tengo un proyecto de ${name.toLowerCase()} y quiero cotizar ${p.alt} como opción económica.`); });
+  document.getElementById('selAltWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget, p.altMessage || `Hola, tengo un proyecto de ${name.toLowerCase()} y quiero cotizar ${p.alt} como opción económica.`); });
   document.getElementById('selAltWaBtn').target='_blank';
 }
 selectProject("Cochera", tabsEl.children[0]);
