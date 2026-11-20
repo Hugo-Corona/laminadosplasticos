@@ -3,832 +3,567 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Laminados Plásticos — Policarbonato y Acrílico en Guadalajara</title>
+<meta name="description" content="Láminas acanaladas y perfiles especiales para techos industriales y residenciales. Cotiza con Láminas Especializadas y consulta envíos en México.">
+<meta name="theme-color" content="#AE1916">
+<title>Láminas Especializadas — Lámina Acanalada y Perfiles para Techo</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700;800;900&family=Schibsted+Grotesk:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
-:root{
-  --blue:#7CDAF9; --blue-deep:#2F8FC4; --blue-deeper:#1F6E9C;
-  --ink:#2E2E2E; --gray:#8A8A8A; --white:#FFFFFF; --soft:#F4FAFC;
-  --line:#E4EEF1;
-  --r:10px;
-  box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px);
-  padding-bottom:env(safe-area-inset-bottom,0px);
-}
-*{box-sizing:inherit;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:90px}
-body{font-family:'Inter',sans-serif;color:var(--ink);background:var(--white);line-height:1.55;-webkit-font-smoothing:antialiased}
-h1,h2,h3,h4{font-family:'Sora',sans-serif;letter-spacing:-0.01em}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
-section{padding:88px 0}
-.eyebrow{color:var(--blue-deeper);font-weight:600;font-size:.85rem;margin-bottom:10px}
-.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600;font-size:.95rem;padding:14px 24px;border-radius:8px;border:none;cursor:pointer;transition:transform .15s ease, box-shadow .15s ease}
-.btn:active{transform:scale(.98)}
-.btn-primary{background:var(--blue-deep);color:#fff;box-shadow:0 6px 18px rgba(47,143,196,.28)}
-.btn-primary:hover{background:var(--blue-deeper)}
-.btn-outline{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
-.btn-outline:hover{background:var(--ink);color:#fff}
-.btn-light{background:#fff;color:var(--blue-deeper);border:1.5px solid var(--line)}
-.btn-light:hover{border-color:var(--blue-deep)}
-.wa-icon{width:16px;height:16px;flex:none}
+:root{--red:#AE1916;--hot:#E0302A;--ink:#1d1e20;--ink2:#2a2b2e;--steel:#b8b8b8;--bone:#f3f3f3;--gray:#777;--line:#ddd;
+--d:'Big Shoulders Display','Arial Narrow',sans-serif;--b:'Schibsted Grotesk',system-ui,sans-serif}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:110px}
+body{font-family:var(--b);color:var(--ink);background:#fff;line-height:1.55;-webkit-font-smoothing:antialiased;padding-top:env(safe-area-inset-top,0px);overflow-x:hidden}
+h1,h2,h3,h4{font-family:var(--d);line-height:.95;letter-spacing:.005em}
+img{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 28px}
+section{padding:96px 0}
+:focus-visible{outline:3px solid var(--hot);outline-offset:3px}
+.eyebrow{color:var(--red);font-weight:600;font-size:.9rem;margin-bottom:12px}
+.dark .eyebrow{color:var(--steel)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font:600 .95rem var(--b);padding:15px 26px;border-radius:999px;border:0;cursor:pointer;position:relative;overflow:hidden;transition:transform .2s,box-shadow .2s;will-change:transform}
+.btn-primary{background:var(--red);color:#fff;box-shadow:0 10px 28px rgba(174,25,22,.35)}
+.btn-primary::after{content:"";position:absolute;inset:0;background:linear-gradient(105deg,transparent 35%,rgba(255,255,255,.35) 50%,transparent 65%);transform:translateX(-120%);transition:transform .7s}
+.btn-primary:hover::after{transform:translateX(120%)}
+.btn-ghost{background:transparent;color:#fff;border:1.5px solid rgba(255,255,255,.4)}
+.btn-ghost:hover{background:#fff;color:var(--ink)}
+.btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+.wa{width:17px;height:17px;flex:none}
 
-/* --- brand mark --- */
-.brand{display:flex;align-items:center;gap:10px}
+/* header */
+header{position:sticky;top:0;z-index:50;background:rgba(174,25,22,.96);backdrop-filter:blur(10px);border-bottom:1px solid #8E1512}
+.nav-row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"brand actions" "nav nav";align-items:center;gap:8px 24px;padding-top:8px;padding-bottom:8px}
+.brand{grid-area:brand;display:flex}
 .brand img{width:min(420px,calc(100vw - 40px));height:68px;object-fit:cover;object-position:center}
+nav{grid-area:nav}
+nav ul{display:flex;justify-content:center;flex-wrap:wrap;gap:8px 30px;list-style:none}
+nav a{font-size:.92rem;font-weight:500;color:#fff;opacity:.85;position:relative;padding:2px 0}
+nav a::after{content:"";position:absolute;left:0;right:0;bottom:-2px;height:2px;background:#fff;transform:scaleX(0);transform-origin:left;transition:transform .3s}
+nav a:hover{opacity:1}nav a:hover::after{transform:scaleX(1)}
+.header-right{grid-area:actions;display:flex;align-items:center;gap:18px}
+.phone-link{font-weight:600;font-size:.92rem;color:#fff}
+.header-right .btn-primary{background:#fff;color:var(--red);box-shadow:none;padding:11px 20px}
+@media(max-width:900px){.phone-link{display:none}}
+@media(max-width:700px){.nav-row{grid-template-columns:1fr;grid-template-areas:"brand" "actions" "nav";justify-items:center}nav ul{gap:6px 16px}}
 
-/* --- header --- */
-header{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-.nav-row{display:grid;grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"brand actions" "nav nav";align-items:center;gap:8px 24px;height:auto;padding-top:8px;padding-bottom:8px}
-.nav-row>.brand{grid-area:brand}
-.nav-row>nav{grid-area:nav}
-.nav-row>.header-right{grid-area:actions}
-nav ul{display:flex;justify-content:center;flex-wrap:wrap;gap:12px 28px;list-style:none}
-nav a{font-size:.92rem;font-weight:500;color:var(--ink);opacity:.8}
-nav a:hover{opacity:1;color:var(--blue-deeper)}
-.header-right{display:flex;align-items:center;gap:18px}
-.phone-link{font-size:.9rem;font-weight:600;color:var(--ink);display:flex;align-items:center;gap:6px}
-.menu-btn{display:none;background:none;border:none;font-size:1.6rem;cursor:pointer}
-@media(max-width:900px){ .nav-row{grid-template-areas:"brand actions"} nav{display:none} .phone-link{display:none} .menu-btn{display:block} }
-@media(max-width:700px){ .nav-row{grid-template-columns:1fr;grid-template-areas:"brand" "actions";justify-items:center} .header-right{justify-content:center} }
+/* hero */
+.dark{background:var(--ink);color:#fff}
+.hero{position:relative;padding:0;overflow:hidden;min-height:calc(100svh - 120px);display:flex;flex-direction:column;justify-content:center}
+#ribs{position:absolute;inset:0;width:100%;height:100%;display:block}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(29,30,32,.92) 0%,rgba(29,30,32,.55) 48%,rgba(29,30,32,.1) 100%);pointer-events:none}
+.hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center;padding-top:56px;padding-bottom:40px}
+.hero h1{font-size:clamp(3.6rem,9vw,8rem);font-weight:900;text-transform:uppercase;margin-bottom:24px}
+.hero h1 .ln{display:block;overflow:hidden;padding-bottom:.04em}
+.hero h1 .ln span{display:block;transform:translateY(105%);animation:rise 1s cubic-bezier(.2,.8,.15,1) forwards}
+.hero h1 .ln:nth-child(2) span{animation-delay:.12s;color:var(--hot)}
+.hero h1 .ln:nth-child(3) span{animation-delay:.24s}
+@keyframes rise{to{transform:none}}
+.lead{max-width:44ch;color:#d4d4d4;font-size:1.08rem;margin-bottom:28px;opacity:0;animation:fade .9s .6s forwards}
+.hero-ctas{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fade .9s .75s forwards}
+@keyframes fade{to{opacity:1}}
+.hero-badges{list-style:none;margin-top:30px;display:grid;gap:8px;font-size:.9rem;color:#cfcfcf;opacity:0;animation:fade .9s .9s forwards}
+.hero-badges li::before{content:"";display:inline-block;width:18px;height:2px;background:var(--hot);vertical-align:middle;margin-right:12px}
+.stack{position:relative;height:min(520px,60vw);perspective:1100px}
+.stack a{position:absolute;display:block;border-radius:6px;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.55);border:1px solid rgba(255,255,255,.12);transition:transform .25s ease-out;will-change:transform;opacity:0;animation:fade 1s forwards}
+.stack img{width:100%;height:100%;object-fit:cover}
+.stack .s1{width:78%;height:62%;right:0;top:0;animation-delay:.35s}
+.stack .s2{width:56%;height:42%;left:0;top:38%;animation-delay:.5s}
+.stack .s3{width:50%;height:36%;right:6%;bottom:0;animation-delay:.65s}
+.trust{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid rgba(255,255,255,.15);background:rgba(29,30,32,.7);backdrop-filter:blur(6px)}
+.trust div{padding:22px 28px;border-right:1px solid rgba(255,255,255,.12)}
+.trust div:last-child{border:0}
+.trust b{display:block;font:800 1.9rem var(--d);color:#fff}
+.trust span{font-size:.82rem;color:var(--steel)}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.stack{height:340px}.hero::after{background:linear-gradient(180deg,rgba(29,30,32,.9),rgba(29,30,32,.6))}.trust{grid-template-columns:1fr 1fr}.trust div{border-bottom:1px solid rgba(255,255,255,.12)}}
 
-/* --- hero --- */
-.hero{padding:64px 0 60px;background:linear-gradient(180deg,var(--soft) 0%, #fff 100%);overflow:hidden}
-.hero-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:48px;align-items:center}
-.hero h1{font-size:clamp(2.1rem,4vw,3.15rem);font-weight:700;line-height:1.08;margin-bottom:20px}
-.hero p.lead{font-size:1.08rem;color:#4a4a4a;max-width:46ch;margin-bottom:28px}
-.hero-badges{display:flex;flex-wrap:wrap;gap:10px 22px;margin:30px 0 8px;font-size:.88rem;color:var(--ink)}
-.hero-badges li{list-style:none;display:flex;gap:8px;align-items:center}
-.hero-badges svg{width:16px;height:16px;flex:none;color:var(--blue-deep)}
-.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-top:8px}
-.hero-visual{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;isolation:isolate}
-.hero-photo{position:relative;display:block;min-width:0;overflow:hidden;border-radius:12px;background:#dff4fd;box-shadow:0 16px 38px rgba(31,110,156,.18);transition:transform .3s ease,box-shadow .3s ease;animation:hero-photo-in .6s ease both}
-.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 68%;transition:transform .6s cubic-bezier(.2,.7,.2,1)}
-.hero-photo-a{grid-column:1/-1;aspect-ratio:1.8;animation-delay:.04s}
-.hero-photo-b,.hero-photo-c{aspect-ratio:1.65}
-.hero-photo-b{animation-delay:.14s}
-.hero-photo-c{animation-delay:.24s}
-.hero-photo:hover,.hero-photo:focus-visible{z-index:2;transform:translateY(-5px);box-shadow:0 24px 48px rgba(31,110,156,.28)}
-.hero-photo:focus-visible{outline:3px solid var(--blue-deeper);outline-offset:3px}
-@keyframes hero-photo-in{from{opacity:0}to{opacity:1}}
-@media(max-width:900px){ .hero-grid{grid-template-columns:1fr} .hero-visual{margin-top:10px;max-width:640px;width:100%;justify-self:center} }
-@media(max-width:600px){ .hero-visual{gap:10px} }
-@media(prefers-reduced-motion:reduce){ .hero-photo{animation:none;transition:none}.hero-photo:hover,.hero-photo:focus-visible{transform:none} }
+/* marcas */
+.marcas{background:var(--steel);padding:1.4rem 0;overflow:hidden}
+.marcas-track{display:flex;align-items:center;width:max-content;animation:scroll 28s linear infinite}
+.marcas-set{display:flex;align-items:center;gap:44px;padding-right:44px}
+.marcas img{height:46px;width:auto;object-fit:contain}
+@keyframes scroll{to{transform:translateX(-50%)}}
 
-.trustbar{border-top:1px solid var(--line);margin-top:52px;padding-top:32px;display:grid;grid-template-columns:repeat(4,1fr);gap:24px;text-align:center}
-.trustbar b{display:block;font-family:'Sora',sans-serif;font-size:1.6rem;color:var(--blue-deeper)}
-.trustbar span{font-size:.82rem;color:var(--gray)}
-@media(max-width:700px){ .trustbar{grid-template-columns:1fr 1fr} }
+/* showcase */
+.sec-head{max-width:640px;margin-bottom:44px}
+.sec-head h2{font-size:clamp(2.6rem,5vw,4.4rem);font-weight:800;text-transform:uppercase;margin-bottom:14px}
+.sec-head p{color:var(--gray)}
+.dark .sec-head p{color:#c8c8c8}
+.show{display:grid;grid-template-columns:240px minmax(0,1fr);gap:32px;align-items:start}
+.plist{list-style:none;position:sticky;top:130px;border-left:2px solid var(--line)}
+.plist button{display:block;width:100%;text-align:left;background:none;border:0;padding:11px 18px;margin-left:-2px;border-left:2px solid transparent;font:800 1.5rem var(--d);color:#9a9a9a;cursor:pointer;transition:color .2s,padding .25s,border-color .2s}
+.plist button:hover{color:var(--ink)}
+.plist button[aria-selected=true]{color:var(--ink);border-color:var(--red);padding-left:28px}
+.stage{background:var(--ink);color:#fff;border-radius:10px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr}
+.stage-img{position:relative;min-height:380px;overflow:hidden;background:#2a2b2e}
+.stage-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .4s,transform .8s cubic-bezier(.2,.7,.2,1)}
+.stage-img img.swap{opacity:0;transform:scale(1.06)}
+.stage-body{padding:34px;display:flex;flex-direction:column;gap:14px}
+.stage-body .type{color:var(--steel);font-size:.85rem}
+.stage-body h3{font-size:4rem;font-weight:900}
+.stage-body p{color:#cfcfcf;font-size:.95rem}
+.stage-body .btn{margin-top:auto;align-self:flex-start}
+.prof{grid-column:1/-1;background:#16171a;padding:26px 34px 14px;border-top:1px solid rgba(255,255,255,.08)}
+.prof svg{width:100%;height:120px;display:block;overflow:visible}
+.prof small{color:#8d8d8d;font-size:.78rem}
+@media(max-width:900px){.show{grid-template-columns:1fr}.plist{position:static;display:flex;overflow-x:auto;border:0;gap:4px;padding-bottom:6px}.plist button{border:0;border-bottom:2px solid transparent;margin:0;width:auto;white-space:nowrap;padding:8px 14px}.plist button[aria-selected=true]{padding-left:14px;border-bottom-color:var(--red)}.stage{grid-template-columns:1fr}.stage-img{min-height:240px}}
 
-/* --- section headers --- */
-.sec-head{max-width:620px;margin-bottom:44px}
-.sec-head h2{font-size:clamp(1.6rem,2.6vw,2.15rem);margin-bottom:10px}
-.sec-head p{color:var(--gray);font-size:1rem}
+/* selector */
+.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:26px}
+.tab{padding:11px 20px;border-radius:999px;border:1px solid #4a4a4a;background:transparent;color:#e6e6e6;font:500 .9rem var(--b);cursor:pointer;transition:all .2s}
+.tab:hover{border-color:var(--steel)}
+.tab.active{background:var(--red);border-color:var(--red);color:#fff;font-weight:600}
+.result{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.rc{background:var(--ink2);border:1px solid #3a3b3e;border-radius:10px;padding:28px;animation:fade .5s both}
+.rc .tag{font-size:.82rem;color:var(--hot);margin-bottom:8px}
+.rc.alt .tag{color:var(--steel)}
+.rc h4{font-size:2.6rem;font-weight:800;margin-bottom:8px}
+.rc p{color:#c9c9c9;font-size:.92rem;margin-bottom:18px}
+.custom{grid-column:1/-1;background:var(--ink2);border-radius:10px;padding:26px}
+.custom label{display:block;font-weight:600;margin-bottom:10px}
+.custom textarea{width:100%;min-height:120px;padding:13px 15px;border:1px solid #5b5b5b;border-radius:8px;background:#232427;color:#fff;font:inherit;resize:vertical}
+.custom .btn{margin-top:14px}
+@media(max-width:700px){.result{grid-template-columns:1fr}}
 
-/* --- catalog --- */
-.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{border:1px solid var(--line);border-radius:var(--r);background:#fff;overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s ease, border-color .2s ease}
-.card:hover{box-shadow:0 14px 30px rgba(46,46,46,.08);border-color:var(--blue)}
-.product-image{width:100%;aspect-ratio:1.6;object-fit:cover}
-.card-content{display:flex;flex:1;flex-direction:column;padding:22px}
-.card-icon{width:44px;height:44px;border-radius:8px;background:var(--soft);display:flex;align-items:center;justify-content:center;margin-bottom:18px;color:var(--blue-deep)}
-.card h3{font-size:1.1rem;margin-bottom:8px}
-.card p.desc{color:var(--gray);font-size:.9rem;margin-bottom:16px;min-height:42px}
-.card .specs{font-size:.8rem;color:var(--ink);opacity:.75;margin-bottom:18px}
-.card .btn{width:100%;justify-content:center;margin-top:auto}
-@media(max-width:900px){ .grid-3{grid-template-columns:1fr 1fr} }
-@media(max-width:600px){ .grid-3{grid-template-columns:1fr} }
-
-/* --- selector --- */
-.selector{background:var(--ink);color:#fff;border-radius:16px;padding:44px 40px}
-.selector .sec-head h2, .selector .sec-head p{color:#fff}
-.selector .sec-head p{color:#c8c8c8}
-.tabs{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:28px}
-.tab{padding:11px 18px;border-radius:24px;border:1px solid #4a4a4a;background:transparent;color:#e6e6e6;font-size:.88rem;font-weight:500;cursor:pointer;transition:all .15s ease}
-.tab.active{background:var(--blue);border-color:var(--blue);color:var(--ink);font-weight:700}
-.result{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.result-card{background:#3b3b3b;border-radius:10px;padding:24px}
-.result-card .tag{font-size:.72rem;font-weight:700;letter-spacing:.03em;color:var(--blue);margin-bottom:10px}
-.result-card.alt .tag{color:#c8c8c8}
-.result-card h4{font-size:1.15rem;margin-bottom:8px}
-.result-card p{color:#c9c9c9;font-size:.9rem;margin-bottom:16px}
-.custom-project{grid-column:1/-1;background:#3b3b3b;border-radius:10px;padding:24px}
-.custom-project label{display:block;font-size:.9rem;font-weight:600;margin-bottom:8px}
-.custom-project textarea{width:100%;min-height:130px;padding:12px 14px;border:1px solid #5b5b5b;border-radius:8px;background:#303030;color:#fff;font:inherit;resize:vertical}
-.custom-project textarea::placeholder{color:#b8b8b8}
-.custom-project textarea:focus{outline:2px solid var(--blue);outline-offset:1px}
-.custom-project .btn{margin-top:16px}
-@media(max-width:700px){ .result{grid-template-columns:1fr} .selector{padding:32px 22px} }
-
-/* --- comparison table --- */
-.table-scroll{overflow:auto;padding:10px;border:1px solid #32434a;border-radius:14px;background:#202d33;box-shadow:0 24px 56px rgba(24,46,54,.2);overscroll-behavior-x:contain}
-.comparison-table{width:100%;min-width:1020px;border-collapse:separate;border-spacing:0 8px;color:#29383e;font-size:.86rem}
-.comparison-table thead th{position:sticky;top:0;text-align:left;background:#202d33;color:#b9c9ce;padding:13px 15px;border-bottom:1px solid #45565c;font-size:.7rem;font-weight:700;white-space:nowrap}
-.comparison-table thead th:first-child{left:0;z-index:3;min-width:220px}
-.comparison-table thead th:last-child{text-align:center}
-.comparison-table tbody{counter-reset:material-index}
-.comparison-table tbody td{padding:15px;background:#fff;vertical-align:middle;line-height:1.4;transition:background .18s ease}
-.comparison-table tbody tr:hover td{background:#eef8fb}
-.comparison-table tbody td:first-child{position:sticky;left:0;z-index:1;min-width:220px;border-left:3px solid var(--blue-deep);background:#fff;box-shadow:4px 0 12px rgba(32,55,64,.08)}
-.comparison-table tbody td:first-child::before{counter-increment:material-index;content:counter(material-index,decimal-leading-zero);display:block;margin-bottom:5px;color:var(--blue-deeper);font-size:.66rem;font-weight:700}
-.comparison-table tbody td:last-child{border-radius:0 8px 8px 0;text-align:center}
-.comparison-table tbody td:nth-child(2){min-width:260px;color:#637176}
-.comparison-table tbody td:nth-child(3),.comparison-table tbody td:nth-child(5){text-align:center;white-space:nowrap}
-.comparison-table tbody td:nth-child(3){min-width:120px}
-.comparison-table tbody td:nth-child(4){min-width:235px}
-.comparison-table tbody td:first-child strong,.material-meta{display:block}
-.comparison-table tbody td:first-child strong{font-family:'Sora',sans-serif;font-size:.9rem;color:#25353b}
-.material-meta{margin-top:5px;color:#87969b;font-size:.65rem;font-weight:700}
-.metric{--metric-color:#2999b7;--metric-fill:75%;display:flex;width:max-content;max-width:100%;flex-direction:column;gap:6px;font-size:.82rem;font-weight:700;color:#304046}
-.metric::before{content:"";width:46px;height:4px;border-radius:4px;background:linear-gradient(to right,var(--metric-color) 0 var(--metric-fill),#dfe7e9 var(--metric-fill) 100%)}
-.metric-none{--metric-color:#9cabb0;--metric-fill:8%}
-.metric-high{--metric-color:#278eaf;--metric-fill:72%}
-.metric-very-high{--metric-color:#126e92;--metric-fill:100%}
-.metric-strong{--metric-color:#2b8a62;--metric-fill:100%}
-.metric-medium{--metric-color:#bd9632;--metric-fill:58%}
-.metric-note{display:block;margin-top:5px;color:#7a888d;font-size:.7rem;line-height:1.35}
-.warranty-value{display:inline-flex;align-items:baseline;gap:4px;color:#304046}
-.warranty-value strong{font-family:'Sora',sans-serif;font-size:1.15rem}
-.warranty-value small{color:#87969b;font-size:.68rem;font-weight:600}
-.price-value{display:inline-flex;align-items:center;justify-content:center;gap:7px;color:#26383e}
-.price-value::before{content:"";width:4px;height:22px;border-radius:4px;background:#bd9632}
-.price-value strong{font-family:'Sora',sans-serif;font-size:1.15rem}
-.price-low::before{height:13px;background:#31966c}
-.price-mid::before{height:20px;background:#bd9632}
-@media(max-width:600px){.table-scroll{padding:6px;border-radius:10px}.comparison-table{min-width:1020px}.comparison-table tbody td{padding:13px}.comparison-table tbody td:first-child,.comparison-table thead th:first-child{min-width:190px}}
-
-/* --- quote form --- */
-.quote{background:var(--soft);border-radius:16px;padding:44px}
-.quote-grid{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:start}
-.quote-steps li{list-style:none;display:flex;gap:14px;margin-bottom:18px;align-items:flex-start}
-.step-num{width:28px;height:28px;border-radius:50%;background:var(--blue-deep);color:#fff;font-size:.82rem;font-weight:700;display:flex;align-items:center;justify-content:center;flex:none}
-form.qform{display:flex;flex-direction:column;gap:14px}
+/* cotizador */
+.quote{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.quote h2{font-size:clamp(2.6rem,5vw,4.2rem);font-weight:800;text-transform:uppercase;margin-bottom:26px}
+.qsteps{list-style:none;counter-reset:q}
+.qsteps li{counter-increment:q;display:flex;gap:16px;align-items:center;padding:16px 0;border-top:1px solid var(--line)}
+.qsteps li::before{content:counter(q);font:800 2rem var(--d);color:var(--red);width:30px}
+.qform{background:var(--bone);border-radius:12px;padding:32px;display:flex;flex-direction:column;gap:14px}
 .field label{font-size:.82rem;font-weight:600;margin-bottom:6px;display:block}
-.field select, .field input[type=text], .field input[type=number]{width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:8px;font-size:.92rem;font-family:inherit;background:#fff}
-.field select:focus, .field input:focus{outline:2px solid var(--blue-deep);outline-offset:1px}
-.row-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
-.checks{display:flex;gap:18px;flex-wrap:wrap;font-size:.88rem;margin:4px 0 6px}
-.checks label{display:flex;align-items:center;gap:7px}
-.qform .btn{margin-top:6px;justify-content:center}
-@media(max-width:800px){ .quote-grid{grid-template-columns:1fr} .quote{padding:28px 22px} }
+.field select,.field input[type=text],.field input[type=number]{width:100%;padding:13px 14px;border:1px solid var(--line);border-radius:8px;font:.92rem var(--b);background:#fff}
+.field select:focus,.field input:focus{outline:2px solid var(--red);outline-offset:1px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.checks{display:flex;gap:16px;flex-wrap:wrap;font-size:.88rem}
+.checks label{display:flex;align-items:center;gap:7px;font-weight:400}
+.qform .btn{margin-top:4px}
+.note{font-size:.78rem;color:var(--gray)}
+@media(max-width:800px){.quote{grid-template-columns:1fr}}
 
-/* --- delivery timeline --- */
-.steps4{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;position:relative}
-.steps4::before{content:"";position:absolute;top:26px;left:16.666%;right:16.666%;height:1px;background:#d7e7ec}
-.step-card{position:relative;padding:0 22px 10px;text-align:center}
-.step-card .n{position:relative;z-index:1;display:grid;width:54px;height:54px;margin:0 auto 22px;place-items:center;border:1px solid #c9e0e7;border-radius:50%;background:#fff;box-shadow:0 8px 20px rgba(31,110,156,.12);font-family:'Sora',sans-serif;font-size:.95rem;color:var(--blue-deeper);font-weight:700}
-.step-card h4{font-size:1.05rem;margin-bottom:8px}
-.step-card p{max-width:30ch;margin:0 auto;font-size:.86rem;color:var(--gray)}
-.coverage-bar{display:flex;justify-content:center;flex-wrap:wrap;gap:10px;margin-top:30px;padding:16px 20px;border:1px solid var(--line);border-radius:8px;background:var(--soft);font-size:.88rem;color:var(--ink);font-weight:600}
-@media(max-width:800px){.steps4{grid-template-columns:1fr;gap:24px}.steps4::before{top:26px;right:auto;bottom:26px;left:26px;width:1px;height:auto}.step-card{display:grid;grid-template-columns:54px minmax(0,1fr);column-gap:18px;padding:0;text-align:left}.step-card .n{grid-column:1;grid-row:1/3;margin:0}.step-card h4{grid-column:2;grid-row:1;align-self:end;margin:0 0 4px}.step-card p{grid-column:2;grid-row:2;max-width:none;margin:0}}
+/* logistica */
+.ship{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.ship .rail{position:absolute;top:31px;left:8%;right:8%;height:2px;background:var(--line)}
+.ship .rail i{display:block;height:100%;background:var(--red);width:0;transition:width 1.6s cubic-bezier(.2,.7,.2,1)}
+.ship.in .rail i{width:100%}
+.stp{position:relative;text-align:center;padding:0 24px}
+.stp .n{width:62px;height:62px;margin:0 auto 20px;border-radius:50%;background:#fff;border:2px solid var(--red);display:grid;place-items:center;font:800 1.5rem var(--d);color:var(--red);position:relative;z-index:1}
+.stp h4{font-size:1.9rem;font-weight:800;margin-bottom:6px}
+.stp p{color:var(--gray);font-size:.9rem;max-width:30ch;margin:0 auto}
+.cover{margin-top:34px;padding:16px 20px;background:var(--bone);border-radius:8px;text-align:center;font-weight:600;font-size:.9rem}
+@media(max-width:800px){.ship{grid-template-columns:1fr;gap:26px}.ship .rail{display:none}.stp{display:grid;grid-template-columns:62px 1fr;gap:0 18px;text-align:left;padding:0}.stp .n{grid-row:1/3;margin:0}.stp p{margin:0;max-width:none}}
 
-/* --- projects --- */
+/* proyectos */
 .filters{display:flex;gap:10px;margin-bottom:26px;flex-wrap:wrap}
-.filter-btn{padding:9px 16px;border-radius:20px;border:1px solid var(--line);background:#fff;font-size:.85rem;cursor:pointer;font-weight:500}
-.filter-btn.active{background:var(--ink);color:#fff;border-color:var(--ink)}
-.proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.proj-card{border-radius:var(--r);overflow:hidden;border:1px solid var(--line)}
-.proj-photo{aspect-ratio:12/5;overflow:hidden;background:var(--soft)}
-.proj-photo img{width:100%;height:100%;object-fit:cover}
-.proj-body{padding:18px}
-.proj-body h4{font-size:1rem;margin-bottom:4px}
-.proj-body p{font-size:.85rem;color:var(--gray)}
-.proj-card[data-cat]{display:block}
-.proj-card.hide{display:none}
-.testimonials{display:grid;grid-template-columns:1fr 1fr;gap:22px;margin-top:34px}
-.testi{background:var(--soft);border-radius:var(--r);padding:26px}
-.testi p{font-style:italic;color:var(--ink);margin-bottom:14px;font-size:.95rem}
-.testi span{font-size:.82rem;color:var(--gray);font-weight:600}
-@media(max-width:900px){ .proj-grid{grid-template-columns:1fr 1fr} .testimonials{grid-template-columns:1fr} }
-@media(max-width:600px){ .proj-grid{grid-template-columns:1fr} }
+.fb{padding:9px 18px;border-radius:999px;border:1px solid #4a4a4a;background:transparent;color:#ddd;font:500 .88rem var(--b);cursor:pointer;transition:all .2s}
+.fb.active{background:#fff;color:var(--ink);border-color:#fff}
+.pg{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.pc{position:relative;aspect-ratio:3/4;overflow:hidden;border-radius:8px;background:var(--ink2);transition:opacity .35s,transform .35s}
+.pc img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1),filter .5s;filter:grayscale(.85) contrast(1.05)}
+.pc:hover img{transform:scale(1.08);filter:none}
+.pc div{position:absolute;left:0;right:0;bottom:0;padding:60px 18px 18px;background:linear-gradient(transparent,rgba(0,0,0,.85))}
+.pc h4{font-size:1.7rem;font-weight:800}
+.pc p{font-size:.82rem;color:#cfcfcf}
+.pc.hide{display:none}
+@media(max-width:900px){.pg{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.pg{grid-template-columns:1fr}.pc{aspect-ratio:4/3}}
 
-/* --- why us --- */
-.why-layout{display:grid;grid-template-columns:minmax(230px,.72fr) minmax(0,1.28fr);gap:48px;align-items:center}
-.why-intro{max-width:360px}
-.why-intro h2{font-size:clamp(1.8rem,3vw,2.5rem);line-height:1.08;margin-bottom:16px}
-.why-intro>p:last-child{max-width:32ch;color:var(--gray);font-size:1rem}
-.why-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
-.why-item{position:relative;min-height:190px;overflow:hidden;padding:24px;border:1px solid #e5edef;border-radius:10px;background:#fff;transition:transform .22s ease,box-shadow .22s ease,border-color .22s ease}
-.why-item::after{content:attr(data-index);position:absolute;top:10px;right:16px;color:#eaf1f3;font-family:'Sora',sans-serif;font-size:2.25rem;font-weight:700;pointer-events:none}
-.why-item:hover{transform:translateY(-4px);border-color:#cfe4e9;box-shadow:0 16px 32px rgba(37,71,82,.09)}
-.why-item .card-icon{position:relative;z-index:1;width:46px;height:46px;margin:0 0 20px;border-radius:10px;background:#e0f3fa;color:#217b9c}
-.why-item:nth-child(2) .card-icon{background:#e2f3e9;color:#347651}
-.why-item:nth-child(3) .card-icon{background:#fff1d9;color:#9b7020}
-.why-item:nth-child(4) .card-icon{background:#f8e9e2;color:#a65a3d}
-.why-item h4{position:relative;z-index:1;font-size:1rem;margin-bottom:7px}
-.why-item p{position:relative;z-index:1;max-width:34ch;font-size:.85rem;color:var(--gray)}
-@media(max-width:900px){.why-layout{grid-template-columns:1fr;gap:28px}.why-intro{max-width:620px}}
-@media(max-width:560px){.why-grid{grid-template-columns:1fr}.why-item{min-height:0;padding:22px}}
+/* why */
+.why{display:grid;grid-template-columns:.8fr 1.2fr;gap:56px;align-items:start}
+.why h2{font-size:clamp(2.6rem,5vw,4.2rem);font-weight:800;text-transform:uppercase;margin-bottom:14px}
+.wl{list-style:none}
+.wl li{display:grid;grid-template-columns:1fr 1.2fr;gap:20px;padding:26px 0;border-top:1px solid var(--line);transition:padding .3s,background .3s}
+.wl li:last-child{border-bottom:1px solid var(--line)}
+.wl li:hover{padding-left:16px;background:linear-gradient(90deg,var(--bone),transparent)}
+.wl h4{font-size:1.9rem;font-weight:800}
+.wl p{color:var(--gray);font-size:.92rem}
+@media(max-width:800px){.why{grid-template-columns:1fr;gap:28px}.wl li{grid-template-columns:1fr;gap:6px}}
 
-/* --- location --- */
-.location-grid{display:grid;grid-template-columns:minmax(240px,.75fr) minmax(0,1.6fr);gap:32px;align-items:stretch}
-.location-details{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:14px}
-.location-details h3{font-size:1.25rem}
-.location-details address{font-style:normal;color:var(--gray);line-height:1.8}
-.location-map{min-height:360px;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:var(--soft)}
-.location-map iframe{display:block;width:100%;height:100%;min-height:360px;border:0}
-@media(max-width:800px){.location-grid{grid-template-columns:1fr}.location-map,.location-map iframe{min-height:320px}}
+/* cobertura */
+.loc{display:grid;grid-template-columns:.8fr 1.2fr;gap:36px;align-items:stretch}
+.loc-d{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:16px}
+.loc-d h3{font-size:2.4rem;font-weight:800}
+.loc-d address{font-style:normal;color:var(--gray)}
+.loc-m{border-radius:10px;overflow:hidden;min-height:340px}
+.loc-m img{width:100%;height:100%;min-height:340px;object-fit:cover}
+@media(max-width:800px){.loc{grid-template-columns:1fr}}
 
-/* --- faq --- */
-.faq-item{border-bottom:1px solid var(--line)}
-.faq-q{width:100%;text-align:left;background:none;border:none;padding:20px 4px;font-family:'Sora',sans-serif;font-size:1rem;font-weight:600;cursor:pointer;display:flex;justify-content:space-between;align-items:center}
-.faq-q .plus{font-size:1.3rem;color:var(--blue-deep);transition:transform .2s ease}
-.faq-item.open .plus{transform:rotate(45deg)}
-.faq-a{max-height:0;overflow:hidden;transition:max-height .25s ease}
-.faq-item.open .faq-a{max-height:200px}
-.faq-a p{padding:0 4px 20px;color:var(--gray);font-size:.92rem;max-width:70ch}
+/* faq */
+.fi{border-bottom:1px solid var(--line)}
+.fq{width:100%;text-align:left;background:none;border:0;padding:22px 4px;font:800 1.7rem var(--d);cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;color:var(--ink)}
+.fq .p{color:var(--red);font-size:2rem;transition:transform .3s}
+.fi.open .p{transform:rotate(45deg)}
+.fa{display:grid;grid-template-rows:0fr;transition:grid-template-rows .35s}
+.fa>div{overflow:hidden}
+.fi.open .fa{grid-template-rows:1fr}
+.fa p{padding:0 4px 22px;color:var(--gray);max-width:70ch}
 
-/* --- final cta --- */
-.final-cta{background:var(--ink);color:#fff;border-radius:16px;padding:56px 40px;text-align:center}
-.final-cta h2{color:#fff;font-size:clamp(1.6rem,3vw,2.2rem);margin-bottom:22px}
-.cross{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:30px}
-.cross a{border:1px solid #4a4a4a;color:#e6e6e6;padding:10px 18px;border-radius:8px;font-size:.88rem}
-.cross a:hover{border-color:var(--blue)}
+/* cta final */
+.cta{position:relative;overflow:hidden;background:var(--red);color:#fff;text-align:center;padding:110px 0}
+.cta::before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(90deg,rgba(0,0,0,.14) 0 34px,rgba(255,255,255,.08) 34px 68px)}
+.cta .wrap{position:relative}
+.cta h2{font-size:clamp(3rem,8vw,6.5rem);font-weight:900;text-transform:uppercase;max-width:14ch;margin:0 auto 30px}
+.cta .btn-primary{background:#fff;color:var(--red)}
+.cross{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-top:28px;font-size:.9rem}
+.cross a{border-bottom:1px solid rgba(255,255,255,.5)}
 
-/* --- footer --- */
-footer{background:#1f1f1f;color:#b8b8b8;padding:18px 0 16px;font-size:.85rem}
-.foot-row{display:flex;justify-content:space-between;flex-wrap:wrap;gap:20px;align-items:center}
-.foot-row .brand img{filter:brightness(0) invert(1)}
+footer{background:#141517;color:var(--steel);padding:22px 0 calc(22px + env(safe-area-inset-bottom,0px));font-size:.85rem}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center}
+.foot .brand img{filter:brightness(0) invert(1);height:56px}
 
-/* --- floating wa --- */
-.float-wa{position:fixed;bottom:24px;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.25);z-index:60}
+.float-wa{position:fixed;right:24px;bottom:calc(24px + env(safe-area-inset-bottom,0px));width:58px;height:58px;border-radius:50%;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 24px rgba(0,0,0,.3);z-index:60;transition:transform .2s}
+.float-wa:hover{transform:scale(1.08)}
 .float-wa svg{width:28px;height:28px}
-
-@media(max-width:600px){ section{padding:60px 0} .wrap{padding:0 20px} }
+@media(max-width:600px){section{padding:64px 0}.wrap{padding:0 20px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01ms!important;animation-delay:0s!important;transition-duration:.01ms!important}.marcas-track{animation:none!important}.hero h1 .ln span{transform:none}}
 </style>
 </head>
 <body>
-
 <header>
   <div class="wrap nav-row">
-    <a href="#top" class="brand" aria-label="Laminados Plásticos - inicio">
-      <img src="images/logo.webp" alt="Laminados Plásticos">
-    </a>
-    <nav><ul>
+    <a href="#top" class="brand" aria-label="Láminas Especializadas - inicio"><img src="images/logo/logo.webp" alt="Láminas Especializadas"></a>
+    <nav aria-label="Principal"><ul>
       <li><a href="#catalogo">Catálogo</a></li>
       <li><a href="#selector">¿Qué lámina necesito?</a></li>
       <li><a href="#logistica">Entregas</a></li>
       <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#sucursales">Sucursales</a></li>
+      <li><a href="#cobertura">Cobertura</a></li>
     </ul></nav>
     <div class="header-right">
-      <a class="phone-link" href="tel:3319609730">33 1960 9730</a>
-      <a class="btn btn-primary" id="navWaBtn" href="#" target="_blank" rel="noopener">
-        <svg class="wa-icon" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.7.7-1 1.5-1 2.4.1 1.1.6 2.2 1.4 3.2 1.5 2 3.3 3.4 5.6 4 .6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
-        Cotizar por WhatsApp
-      </a>
+      <a class="phone-link" href="tel:3310203117">33 1020 3117</a>
+      <a class="btn btn-primary" data-wa="Hola, quiero cotizar láminas para mi proyecto." href="#" target="_blank" rel="noopener"><svg class="wa" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>Cotizar por WhatsApp</a>
     </div>
   </div>
 </header>
 
-<section class="hero" id="top">
+<section class="hero dark" id="top">
+  <canvas id="ribs" aria-hidden="true"></canvas>
   <div class="wrap hero-grid">
     <div>
-      <p class="eyebrow">Guadalajara · Jalisco · Colima</p>
-      <h1>Láminas de policarbonato, acrílico y traslúcidas para tu proyecto</h1>
-      <p class="lead">Corte a la medida exacta, entrega directa a obra y asesoría para elegir la lámina correcta — sin adivinar espesores ni perder tiempo comparando en varios lados.</p>
-      <ul class="hero-badges">
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>Corte a la medida de tu proyecto</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>Entrega a obra en Zona Metropolitana y Colima</li>
-        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M4 12l5 5L20 6"/></svg>Facturamos y aceptamos varias formas de pago</li>
-      </ul>
+      <p class="eyebrow">Láminas Especializadas, Guadalajara</p>
+      <h1><span class="ln"><span>Perfiles</span></span><span class="ln"><span>que sostienen</span></span><span class="ln"><span>tu techo</span></span></h1>
+      <p class="lead">Láminas acanaladas y acanalados especiales para techos industriales, comerciales y residenciales. R-101, KR-18, Losacero y Galvateja, con asesoría para cotizar el material adecuado.</p>
       <div class="hero-ctas">
-        <a class="btn btn-primary" id="heroWaBtn" href="#" target="_blank" rel="noopener">
-          <svg class="wa-icon" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.7.7-1 1.5-1 2.4.1 1.1.6 2.2 1.4 3.2 1.5 2 3.3 3.4 5.6 4 .6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
-          Cotizar por WhatsApp
-        </a>
-        <a class="btn btn-outline" href="#catalogo">Ver catálogo</a>
+        <a class="btn btn-primary" data-wa="Hola, quiero cotizar láminas para mi proyecto." href="#" target="_blank" rel="noopener"><svg class="wa" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>Cotizar por WhatsApp</a>
+        <a class="btn btn-ghost" href="#catalogo">Ver catálogo</a>
       </div>
+      <ul class="hero-badges">
+        <li>Perfiles para proyectos residenciales e industriales</li>
+        <li>Consulta opciones de entrega en México</li>
+        <li>Asesoría y cotización por WhatsApp</li>
+      </ul>
     </div>
-    <div class="hero-visual" aria-label="Productos destacados">
-      <a class="hero-photo hero-photo-a" href="#catalogo" aria-label="Ver Láminas de PVC TLM-107 en el catálogo"><img src="images/1eraseccion/productos/t-2.png" alt="" decoding="async" fetchpriority="high"></a>
-      <a class="hero-photo hero-photo-b" href="#catalogo" aria-label="Ver Láminas de PVC PT1 en el catálogo"><img src="images/1eraseccion/productos/nueva2.png" alt="" loading="lazy" decoding="async"></a>
-      <a class="hero-photo hero-photo-c" href="#catalogo" aria-label="Ver Lámina T-18 Acrylit en el catálogo"><img src="images/1eraseccion/productos/ut-105.jpeg" alt="" loading="lazy" decoding="async"></a>
+    <div class="stack" id="stack" aria-label="Productos destacados">
+      <a class="s1" data-z="26" href="#catalogo" aria-label="Ver catálogo de láminas acanaladas"><img src="images/1era%20seccion/Lamina-acanalada-gdl.webp" alt="Lámina acanalada para techos" decoding="async" fetchpriority="high"></a>
+      <a class="s2" data-z="48" href="#catalogo" aria-label="Ver perfiles de lámina galvanizada"><img src="images/1era%20seccion/Lamina-galvanizada-guadalajara.webp" alt="Perfil de lámina galvanizada" decoding="async"></a>
+      <a class="s3" data-z="70" href="#catalogo" aria-label="Ver proyectos de techos de lámina"><img src="images/1era%20seccion/techo-de-lamina-galvanizada.webp" alt="Techo de lámina galvanizada" decoding="async"></a>
     </div>
   </div>
-  <div class="wrap trustbar">
-    <div><b>18 años</b><span>en el mercado</span></div>
-    <div><b>4</b><span>sucursales en Jalisco y Colima</span></div>
-    <div><b>+1,200</b><span>proyectos residenciales e industriales</span></div>
-    <div><b>24 h</b><span>tiempo de corte a medida</span></div>
+  <div class="trust">
+    <div><b>+15 años</b><span>de experiencia</span></div>
+    <div><b>México</b><span>consulta cobertura de envío</span></div>
+    <div><b>10 perfiles</b><span>en el catálogo disponible</span></div>
+    <div><b>Asesoría</b><span>para elegir tu lámina</span></div>
   </div>
 </section>
 
-
-
-
-
- <!-- Carrusel de proveedores -->
-<section class="marcas-carousel" style="background-color: --blue; padding: 1.5rem 0; margin: 0; overflow: hidden;">
-    <div style="max-width: 1200px; margin: 0 auto; padding: 0 15px;">
-      <div class="marcas-track" style="display: flex; align-items: center; justify-content: space-around; animation: scroll 20s linear infinite reverse; width: calc(250px * 10);">
-        <!-- Logos de proveedores - se duplican para el efecto de scroll infinito -->
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_isocindu.webp" alt="proveedor 1" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_Proveedor_Kingspan.webp" alt="proveedor 2" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_owens.webp" alt="proveedor 3" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_stabilit.webp" alt="proveedor 4" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_Ternium.webp" alt="proveedor 5" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedores_termofoam.webp" alt="proveedor 6" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <!-- Duplicar los logos -->
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_isocindu.webp" alt="proveedor 1" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_Proveedor_Kingspan.webp" alt="proveedor 2" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_owens.webp" alt="proveedor 3" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_stabilit.webp" alt="proveedor 4" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-        <div class="marcas-slide" style="flex-shrink: 0; padding: 0 15px;">
-          <img src="images/4taParteProvedores/Logo_proveedor_Ternium.webp" alt="proveedor 5" style="height: 60px; width: auto; object-fit: contain;">
-        </div>
-      </div>
+<section class="marcas" style="padding:1.4rem 0" aria-label="Marcas proveedoras">
+  <div class="marcas-track">
+    <div class="marcas-set">
+      <img src="images/2da%20seccion/Logo_proveedor_isocindu.webp" alt="Isocindu"><img src="images/2da%20seccion/Logo_Proveedor_Kingspan.webp" alt="Kingspan"><img src="images/2da%20seccion/Logo_proveedor_owens.webp" alt="Owens"><img src="images/2da%20seccion/Logo_proveedor_stabilit.webp" alt="Stabilit"><img src="images/2da%20seccion/Logo_proveedor_Ternium.webp" alt="Ternium"><img src="images/2da%20seccion/Logo_proveedores_termofoam.webp" alt="Termofoam">
     </div>
-    <style>
-      @keyframes scroll {
-        0% { transform: translateX(0); }
-        100% { transform: translateX(calc(-250px * 5)); }
-      }
-      .marcas-slide img:hover {
-        filter: grayscale(0) opacity(1) !important;
-        transform: scale(1.05);
-      }
-      @media (max-width: 768px) {
-        .marcas-track {
-          animation: scroll 15s linear infinite reverse !important;
-          width: calc(200px * 10) !important;
-        }
-        .marcas-slide img {
-          height: 50px !important;
-        }
-        @keyframes scroll {
-          0% { transform: translateX(0); }
-          100% { transform: translateX(calc(-200px * 5)); }
-        }
-      }
-    </style>
-  </section>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div class="marcas-set" aria-hidden="true">
+      <img src="images/2da%20seccion/Logo_proveedor_isocindu.webp" alt=""><img src="images/2da%20seccion/Logo_Proveedor_Kingspan.webp" alt=""><img src="images/2da%20seccion/Logo_proveedor_owens.webp" alt=""><img src="images/2da%20seccion/Logo_proveedor_stabilit.webp" alt=""><img src="images/2da%20seccion/Logo_proveedor_Ternium.webp" alt=""><img src="images/2da%20seccion/Logo_proveedores_termofoam.webp" alt="">
+    </div>
+  </div>
+</section>
 
 <section id="catalogo">
   <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Catálogo por material</p>
-      <h2>Encuentra tu lámina</h2>
-      <p>Cada botón abre WhatsApp con el producto ya escrito, para que podamos asesorarte mejor.</p>
-    </div>
-    <div class="grid-3" id="catalogGrid">
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/107.jpeg" alt="Lámina de PVC TLM-107" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>TLM-107</h3>
-          <p class="desc">Techados industriales, comerciales y bodegas de gran cobertura.</p>
-          <p class="specs">Ancho útil: 107 cm · Colores: blanco, marfil y termoacústico</p>
-          <a class="btn btn-light" data-wa-item="Láminas de PVC TLM-107" aria-label="Cotizar Láminas de PVC TLM-107 por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/tlm-82.jpeg" alt="Lámina de PVC TLM-82" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>TLM-82</h3>
-          <p class="desc">Cubiertas residenciales, comerciales y estructuras ligeras.</p>
-          <p class="specs">Ancho útil: 82 cm · Diseños: acanalado resistente y duradero</p>
-          <a class="btn btn-light" data-wa-item="Láminas de PVC TLM-82" aria-label="Cotizar Láminas de PVC TLM-82 por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/nueva2.png" alt="Lámina de PVC perfil trapezoidal T-81" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>T-81</h3>
-          <p class="desc">Naves industriales, almacenes y cerramientos perimetrales.</p>
-          <p class="specs">Perfil: trapezoidal T-81 · Propiedades: resistencia química y corrosiva</p>
-          <a class="btn btn-light" data-wa-item="Láminas de PVC T-81" aria-label="Cotizar Láminas de PVC T-81 por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/ut-105.jpeg" alt="Lámina de PVC UT-105" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>UT-105</h3>
-          <p class="desc">Proyectos agropecuarios, industriales y techados expuestos.</p>
-          <p class="specs">Ancho útil: 105 cm · Características: aislante térmico y acústico</p>
-          <a class="btn btn-light" data-wa-item="Láminas de PVC UT-105" aria-label="Cotizar Láminas de PVC UT-105 por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/107.jpeg" alt="Lámina de PVC PT1" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>PT1</h3>
-          <p class="desc">Cocheras, tejabanes, patios y techos ligeros.</p>
-          <p class="specs">Perfil: PT1 estándar · Colores: terracota, blanco y gris</p>
-          <a class="btn btn-light" data-wa-item="Láminas de PVC PT1" aria-label="Cotizar Láminas de PVC PT1 por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/t-2.png" alt="Lámina T-2 Acrylit" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>T-2 Acrylit</h3>
-          <p class="desc">Naves industriales, bodegas e iluminación natural constante.</p>
-          <p class="specs">Perfil: T-2 acanalado · Material: resina acrílica reforzada con fibra de vidrio</p>
-          <a class="btn btn-light" data-wa-item="Lámina T-2 Acrylit" aria-label="Cotizar Lámina T-2 Acrylit por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/nueva2.png" alt="Lámina T-18 Acrylit" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>T-18 Acrylit</h3>
-          <p class="desc">Cubiertas metálicas, naves industriales y tragaluces continuos.</p>
-          <p class="specs">Perfil: T-18 compatible · Alta difusión de luz y resistencia al intemperismo</p>
-          <a class="btn btn-light" data-wa-item="Lámina T-18 Acrylit" aria-label="Cotizar Lámina T-18 Acrylit por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/nueva1.png" alt="Lámina T-95 Poliacryl de poliéster reforzado con fibra de vidrio" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>T-95 Poliacryl</h3>
-          <p class="desc">Edificios comerciales, almacenes e invernaderos.</p>
-          <p class="specs">Perfil: T-95 trapezoidal · Transmisión de luz uniforme y alta durabilidad</p>
-          <a class="btn btn-light" data-wa-item="Lámina T-95 Poliacryl" aria-label="Cotizar Lámina T-95 Poliacryl por WhatsApp">Cotizar esta lámina</a>
-        </div>
-      </div>
-      <div class="card">
-        <img class="product-image" src="images/1eraseccion/productos/celular.png" alt="Lámina de policarbonato celular multi-pared" loading="lazy" decoding="async">
-        <div class="card-content">
-          <h3>Policarbonato celular</h3>
-          <p class="desc">Cocheras, domos, pérgolas y tragaluces.</p>
-          <p class="specs">Espesores: 4, 6, 8 y 10 mm · Colores: transparente, opal, bronce</p>
-          <a class="btn btn-light" data-wa-item="Policarbonato celular" aria-label="Cotizar Policarbonato celular por WhatsApp">Cotizar esta lámina</a>
-        </div>
+    <div class="sec-head"><p class="eyebrow">Catálogo por material</p><h2>Encuentra tu lámina</h2><p>Elige un perfil para ver su forma. El botón abre WhatsApp con el producto ya escrito, para que podamos asesorarte mejor.</p></div>
+    <div class="show">
+      <ul class="plist" id="plist" role="tablist" aria-label="Perfiles"></ul>
+      <div class="stage" id="stage" aria-live="polite">
+        <div class="stage-img"><img id="sImg" src="" alt=""></div>
+        <div class="stage-body"><span class="type" id="sType"></span><h3 id="sName"></h3><p id="sDesc"></p><p id="sSpec" style="font-size:.85rem;color:#9a9a9a"></p><a class="btn btn-primary" id="sWa" href="#" target="_blank" rel="noopener">Cotizar esta lámina</a></div>
+        <div class="prof"><svg viewBox="0 0 600 120" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#b8b8b8" stop-opacity=".35"/><stop offset="1" stop-color="#b8b8b8" stop-opacity="0"/></linearGradient></defs><path id="pFill" fill="url(#g)"/><path id="pLine" fill="none" stroke="#E0302A" stroke-width="4" stroke-linejoin="round" vector-effect="non-scaling-stroke"/></svg><small>Ilustración del perfil, no a escala. Confirma medidas, calibres y largos al cotizar.</small></div>
       </div>
     </div>
   </div>
 </section>
 
-<section id="selector" style="background:var(--soft)">
+<section id="selector" class="dark">
   <div class="wrap">
-    <div class="selector">
-      <div class="sec-head">
-        <p class="eyebrow" style="color:var(--blue)">Selector por proyecto</p>
-        <h2>¿Qué lámina necesito para mi proyecto?</h2>
-        <p>Elige lo que vas a construir y te recomendamos el material.</p>
-      </div>
-      <div class="tabs" id="tabs"></div>
-      <div class="result" id="selectorResult"></div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow">Comparativa</p>
-      <h2>Compara materiales antes de decidir</h2>
-      <p>Así puedes justificar la elección con datos, no solo con precio.</p>
-    </div>
-    <div class="table-scroll">
-      <table class="comparison-table" aria-label="Comparativa de materiales para techado">
-        <thead><tr><th>Material</th><th>Uso ideal</th><th>Paso de luz</th><th>Resistencia</th><th>Garantía</th><th>Precio</th></tr></thead>
-        <tbody>
-          <tr><td><strong>Policarbonato celular</strong><small class="material-meta">POLICARBONATO · CELULAR</small></td><td>Cocheras, domos, pérgolas y tragaluces</td><td><span class="metric metric-high">Alta</span></td><td><span class="metric metric-strong">Alta</span></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-          <tr><td><strong>TLM-107</strong><small class="material-meta">PVC · TERMOACÚSTICO</small></td><td>Naves industriales, bodegas y gran cobertura</td><td><span class="metric metric-none">Nula</span></td><td><span class="metric metric-strong">Alta</span><small class="metric-note">Termoacústica · anticorrosiva</small></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-          <tr><td><strong>TLM-82</strong><small class="material-meta">PVC · PERFIL TLM</small></td><td>Techados residenciales y estructuras ligeras</td><td><span class="metric metric-none">Nula</span></td><td><span class="metric metric-medium">Media-alta</span></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-low"><strong>$</strong></span></td></tr>
-          <tr><td><strong>T-81</strong><small class="material-meta">PVC · PERFIL TRAPEZOIDAL</small></td><td>Almacenes, naves y cerramientos perimetrales</td><td><span class="metric metric-none">Nula</span></td><td><span class="metric metric-strong">Alta</span><small class="metric-note">Resistencia química</small></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-          <tr><td><strong>UT-105</strong><small class="material-meta">PVC · PERFIL INDUSTRIAL</small></td><td>Techados agropecuarios e industriales expuestos</td><td><span class="metric metric-none">Nula</span></td><td><span class="metric metric-strong">Alta</span><small class="metric-note">Aislante térmico · acústico</small></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-          <tr><td><strong>PT1</strong><small class="material-meta">PVC · PERFIL PT1</small></td><td>Cocheras, patios, tejabanes y techos ligeros</td><td><span class="metric metric-none">Nula</span></td><td><span class="metric metric-medium">Media</span></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-low"><strong>$</strong></span></td></tr>
-          <tr><td><strong>T-2 Acrylit</strong><small class="material-meta">ACRYLIT · FIBRA DE VIDRIO</small></td><td>Iluminación natural en naves industriales y bodegas</td><td><span class="metric metric-very-high">Muy alta</span></td><td><span class="metric metric-strong">Alta</span><small class="metric-note">Reforzada con fibra de vidrio</small></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-          <tr><td><strong>T-18 Acrylit</strong><small class="material-meta">ACRYLIT · PERFIL T-18</small></td><td>Cubiertas metálicas y tragaluces continuos</td><td><span class="metric metric-high">Alta</span></td><td><span class="metric metric-strong">Alta</span><small class="metric-note">Difusión de luz</small></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-          <tr><td><strong>T-95 Poliacryl</strong><small class="material-meta">POLIACRYL · PERFIL T-95</small></td><td>Invernaderos, bodegas y edificios comerciales</td><td><span class="metric metric-high">Alta</span></td><td><span class="metric metric-medium">Media-alta</span></td><td><span class="warranty-value"><strong>10</strong><small>años</small></span></td><td><span class="price-value price-mid"><strong>$$</strong></span></td></tr>
-        </tbody>
-      </table>
-    </div>
+    <div class="sec-head"><p class="eyebrow">Selector por proyecto</p><h2>¿Qué lámina necesito para mi proyecto?</h2><p>Elige lo que vas a construir y te recomendamos el material.</p></div>
+    <div class="tabs" id="tabs"></div>
+    <div class="result" id="selRes"></div>
   </div>
 </section>
 
 <section id="cotizador">
-  <div class="wrap">
-    <div class="quote">
-      <div class="quote-grid">
-        <div>
-          <p class="eyebrow">Cotizador rápido</p>
-          <h2 style="font-size:1.7rem;margin-bottom:18px">Cotiza en menos de un minuto</h2>
-          <ul class="quote-steps">
-            <li><span class="step-num">1</span><span>Nos dices qué vas a construir</span></li>
-            <li><span class="step-num">2</span><span>Te recomendamos material y calculamos piezas</span></li>
-            <li><span class="step-num">3</span><span>Recibes precio con entrega incluida</span></li>
-          </ul>
-        </div>
-        <form class="qform" id="quoteForm">
-          <div class="field">
-            <label for="qProyecto">Tipo de proyecto</label>
-            <select id="qProyecto"><option>Cochera</option><option>Domo o tragaluz</option><option>Pérgola o terraza</option><option>Invernadero</option><option>Nave industrial</option><option value="otro">Otro proyecto</option></select>
-          </div>
-          <div class="field" id="qProyectoOtroField" hidden>
-            <label for="qProyectoOtro">¿Qué proyecto quieres cotizar?</label>
-            <input type="text" id="qProyectoOtro" placeholder="Describe tu proyecto" maxlength="100">
-          </div>
-          <div class="row-2">
-            <div class="field"><label for="qMetros">Metros aprox. (m²)</label><input type="number" id="qMetros" placeholder="Ej. 18" min="1"></div>
-            <div class="field"><label for="qMunicipio">Municipio</label><input type="text" id="qMunicipio" placeholder="Zapopan"></div>
-          </div>
-          <div class="field"><label>Necesito</label>
-            <div class="checks">
-              <label><input type="checkbox" id="qCorte" checked>Corte a medida</label>
-              <label><input type="checkbox" id="qEntrega">Entrega a obra</label>
-              <label><input type="checkbox" id="qFactura">Factura</label>
-            </div>
-          </div>
-          <button type="submit" class="btn btn-primary">
-            <svg class="wa-icon" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>
-            Enviar cotización por WhatsApp
-          </button>
-          <p style="font-size:.78rem;color:var(--gray)">Respuesta en menos de 15 min · Lun a Sáb 9:00–18:30</p>
-        </form>
+  <div class="wrap quote">
+    <div>
+      <p class="eyebrow">Cotizador rápido</p>
+      <h2>Cotiza en menos de un minuto</h2>
+      <ol class="qsteps"><li>Nos dices qué vas a construir</li><li>Revisamos perfil, medidas y cantidad</li><li>Te compartimos precio y opciones de envío</li></ol>
+    </div>
+    <form class="qform" id="quoteForm">
+      <div class="field"><label for="qProyecto">Tipo de proyecto</label><select id="qProyecto"><option>Casa habitación</option><option>Terraza o cochera</option><option>Bodega</option><option>Nave industrial</option><option>Comercio</option><option value="otro">Otro proyecto</option></select></div>
+      <div class="field" id="qOtroF" hidden><label for="qOtro">¿Qué proyecto quieres cotizar?</label><input type="text" id="qOtro" placeholder="Describe tu proyecto" maxlength="100"></div>
+      <div class="row2">
+        <div class="field"><label for="qMetros">Metros aprox. (m²)</label><input type="number" id="qMetros" placeholder="Ej. 18" min="1"></div>
+        <div class="field"><label for="qMun">Ciudad o estado</label><input type="text" id="qMun" placeholder="Guadalajara, Jalisco"></div>
       </div>
-    </div>
+      <div class="field"><label>Necesito</label><div class="checks"><label><input type="checkbox" id="qMedidas">Tengo medidas</label><label><input type="checkbox" id="qEnvio">Quiero cotizar envío</label><label><input type="checkbox" id="qAses">Necesito asesoría</label></div></div>
+      <button type="submit" class="btn btn-primary"><svg class="wa" viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8z"/></svg>Enviar cotización por WhatsApp</button>
+      <p class="note">Comparte tus datos y te ayudamos a revisar opciones.</p>
+    </form>
   </div>
 </section>
 
-<section id="logistica">
+<section id="logistica" style="background:#fff;padding-top:0">
   <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Logística</p><h2>Así te llega tu material</h2></div>
-    <div class="steps4" aria-label="Etapas de entrega">
-      <div class="step-card"><div class="n">01</div><h4>Entrega a obra</h4><p>Cobertura en ZMG y Colima, en 24–48 h según zona.</p></div>
-      <div class="step-card"><div class="n">02</div><h4>Corte a medida</h4><p>Listo en 24 h sin costo adicional en la mayoría de medidas.</p></div>
-      <div class="step-card"><div class="n">03</div><h4>Recoge en sucursal</h4><p>Listo en 2 horas en tu sucursal más cercana.</p></div>
+    <div class="sec-head"><p class="eyebrow">Envíos</p><h2>Coordinamos la entrega de tu material</h2></div>
+    <div class="ship" id="ship" aria-label="Etapas de entrega">
+      <div class="rail"><i></i></div>
+      <div class="stp"><div class="n">1</div><h4>Cuéntanos tu proyecto</h4><p>Indica el perfil, las medidas y la cantidad que necesitas.</p></div>
+      <div class="stp"><div class="n">2</div><h4>Revisamos opciones</h4><p>Confirmamos disponibilidad y detalles del producto.</p></div>
+      <div class="stp"><div class="n">3</div><h4>Consulta el envío</h4><p>Cotizamos cobertura, costo y tiempo según tu ubicación.</p></div>
     </div>
-    <div class="coverage-bar">
-      <span>Cobertura: Zona Metropolitana de Guadalajara y Colima</span>
-    </div>
+    <p class="cover">Envíos en México. Cobertura y tiempos sujetos a confirmación.</p>
   </div>
 </section>
 
-<section id="proyectos" style="background:var(--soft)">
+<section id="proyectos" class="dark">
   <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Proyectos y testimonios</p><h2>Proyectos que ya techamos</h2></div>
+    <div class="sec-head"><p class="eyebrow">Aplicaciones</p><h2>Lámina para proyectos industriales y comerciales</h2></div>
     <div class="filters" id="filters">
-      <button class="filter-btn active" data-cat="todos">Todos</button>
-      <button class="filter-btn" data-cat="residencial">Residencial</button>
-      <button class="filter-btn" data-cat="comercial">Comercial</button>
-      <button class="filter-btn" data-cat="industrial">Industrial</button>
+      <button class="fb active" data-cat="todos">Todos</button><button class="fb" data-cat="interiores">Interiores</button><button class="fb" data-cat="exteriores">Exteriores</button><button class="fb" data-cat="material">Material en obra</button>
     </div>
-    <div class="proj-grid" id="projGrid">
-      <div class="proj-card" data-cat="residencial"><div class="proj-photo"><img src="images/1eraseccion/proyectos/cochera.jpeg" alt="Cochera residencial cubierta con policarbonato" loading="lazy" decoding="async"></div><div class="proj-body"><h4>Cochera residencial · Zapopan</h4><p>Policarbonato celular 6 mm · 22 m²</p></div></div>
-      <div class="proj-card" data-cat="comercial"><div class="proj-photo"><img src="images/1eraseccion/proyectos/restaurante.jpeg" alt="Terraza de restaurante cubierta en Guadalajara" loading="lazy" decoding="async"></div><div class="proj-body"><h4>Terraza de restaurante · Guadalajara</h4><p>Policarbonato compacto · 40 m²</p></div></div>
-      <div class="proj-card" data-cat="industrial"><div class="proj-photo"><img src="images/1eraseccion/proyectos/industria.jpeg" alt="Nave industrial en Tlaquepaque" loading="lazy" decoding="async"></div><div class="proj-body"><h4>Nave industrial · Tlaquepaque</h4><p>Lámina traslúcida · 180 m²</p></div></div>
-    </div>
-    <div class="testimonials">
-      <div class="testi"><p>Cotizamos por WhatsApp en la mañana y el material llegó cortado y listo al día siguiente. Muy claros con precios y tiempos.</p><span>Ricardo M. · Cochera residencial, Zapopan</span></div>
-      <div class="testi"><p>Nos ayudaron a elegir el espesor correcto para la nave; el ahorro en luz natural se notó desde el primer mes.</p><span>Andrea L. · Nave industrial, Tlaquepaque</span></div>
+    <div class="pg" id="pg">
+      <div class="pc" data-cat="interiores"><img src="images/proyectos/proyecto1.webp" alt="Interior de nave industrial" loading="lazy" decoding="async"><div><h4>Interior de nave industrial</h4><p>Espacios industriales de gran formato</p></div></div>
+      <div class="pc" data-cat="interiores"><img src="images/proyectos/proyecto2.webp" alt="Cubierta metálica vista desde el interior" loading="lazy" decoding="async"><div><h4>Cubierta metálica</h4><p>Vista interior de una estructura techada</p></div></div>
+      <div class="pc" data-cat="exteriores"><img src="images/proyectos/proyecto3.webp" alt="Estructura de nave industrial" loading="lazy" decoding="async"><div><h4>Estructura industrial</h4><p>Aplicación exterior de cubierta metálica</p></div></div>
+      <div class="pc" data-cat="material"><img src="images/proyectos/proyecto4.webp" alt="Láminas almacenadas en obra" loading="lazy" decoding="async"><div><h4>Material en obra</h4><p>Láminas listas para su instalación</p></div></div>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap why-layout">
-    <div class="why-intro">
-      <p class="eyebrow">Por qué comprar con nosotros</p>
-      <h2>Lo que nos distingue</h2>
-      <p>Asesoría, disponibilidad y respaldo para que tu proyecto avance con confianza.</p>
-    </div>
-    <div class="why-grid">
-      <article class="why-item" data-index="01"><div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l3 7h7l-5.5 4.5L18 21l-6-4-6 4 1.5-7.5L2 9h7z"/></svg></div><h4>Asesoría técnica</h4><p>Te ayudamos a calcular piezas y elegir el espesor correcto.</p></article>
-      <article class="why-item" data-index="02"><div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16v16H4z"/></svg></div><h4>Stock inmediato</h4><p>Policarbonato celular y acrílico siempre en existencia.</p></article>
-      <article class="why-item" data-index="03"><div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div><h4>Fichas técnicas</h4><p>Descargables por producto, con garantía y normas.</p></article>
-      <article class="why-item" data-index="04"><div class="card-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg></div><h4>Factura y pagos</h4><p>Transferencia, tarjeta y meses sin intereses.</p></article>
-    </div>
+  <div class="wrap why">
+    <div><p class="eyebrow">Por qué comprar con nosotros</p><h2>Lo que nos distingue</h2><p style="color:var(--gray);max-width:34ch">Perfiles especializados y atención enfocada en las necesidades de tu cubierta.</p></div>
+    <ul class="wl">
+      <li><h4>Asesoría de perfil</h4><p>Revisamos contigo las opciones según el tipo de proyecto.</p></li>
+      <li><h4>Catálogo especializado</h4><p>Lámina acanalada, perfiles especiales, Losacero y Galvateja.</p></li>
+      <li><h4>Información clara</h4><p>Consulta calibres, largos y acabados disponibles al cotizar.</p></li>
+      <li><h4>Envíos por cotizar</h4><p>Revisamos cobertura y opciones de entrega para tu ubicación.</p></li>
+    </ul>
   </div>
 </section>
 
-<section id="sucursales" style="background:var(--soft)">
+<section id="cobertura" style="background:var(--bone)">
   <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Ubicación</p><h2>Visítanos o recoge tu pedido</h2></div>
-    <div class="location-grid">
-      <div class="location-details">
-        <h3>Laminados Plásticos</h3>
-        <address>Av. Periférico Pte. Manuel Gómez Morin 2880<br>Paraísos del Colli, C.P. 45069<br>Zapopan, Jal.</address>
-        <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&amp;destination=Av.%20Perif%C3%A9rico%20Pte.%20Manuel%20G%C3%B3mez%20Morin%202880%2C%20Para%C3%ADsos%20del%20Colli%2C%20C.P.%2045069%2C%20Zapopan%2C%20Jalisco" target="_blank" rel="noopener">Cómo llegar</a>
-      </div>
-      <div class="location-map">
-        <iframe title="Mapa de Laminados Plásticos en Paraísos del Colli, Zapopan" src="https://www.google.com/maps?q=Av.%20Perif%C3%A9rico%20Pte.%20Manuel%20G%C3%B3mez%20Morin%202880%2C%20Para%C3%ADsos%20del%20Colli%2C%20C.P.%2045069%2C%20Zapopan%2C%20Jalisco&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
-      </div>
+    <div class="sec-head"><p class="eyebrow">Cobertura y contacto</p><h2>Atención desde Guadalajara, con envíos en México</h2></div>
+    <div class="loc">
+      <div class="loc-d"><h3>Láminas Especializadas</h3><address>Atención y asesoría para proyectos residenciales, comerciales e industriales.<br>Consulta cobertura, costos y tiempos de envío según tu ubicación.</address><a class="btn btn-primary" href="https://wa.me/523310203117?text=Hola%2C%20quiero%20consultar%20cobertura%20y%20env%C3%ADo%20para%20mi%20proyecto." target="_blank" rel="noopener">Consultar cobertura</a></div>
+      <div class="loc-m"><img src="images/1era%20seccion/Lamina-galvanizada-guadalajara.webp" alt="Cubierta de lámina galvanizada" loading="lazy" decoding="async"></div>
     </div>
   </div>
 </section>
 
 <section id="faq">
-  <div class="wrap">
-    <div class="sec-head"><p class="eyebrow">Preguntas frecuentes</p><h2>Lo que más nos preguntan</h2></div>
-    <div id="faqList"></div>
-  </div>
+  <div class="wrap"><div class="sec-head"><p class="eyebrow">Preguntas frecuentes</p><h2>Lo que más nos preguntan</h2></div><div id="faqList"></div></div>
 </section>
 
-<section>
+<section class="cta">
   <div class="wrap">
-    <div class="final-cta">
-      <h2>¿Listo para techar tu proyecto? Cotiza hoy.</h2>
-      <a class="btn btn-primary" id="finalWaBtn" href="#" target="_blank" rel="noopener" style="background:var(--blue);color:var(--ink)">
-        Cotizar por WhatsApp
-      </a>
-      <div class="cross">
-        <a href="https://paneltermico.com/" target="_blank" rel="noopener">También necesitas: Panel térmico →</a>
-        <a href="https://laminasespecializadas.com/" target="_blank" rel="noopener">También necesitas: Lámina metálica →</a>
-      </div>
-    </div>
+    <h2>¿Listo para techar tu proyecto? Cotiza hoy.</h2>
+    <a class="btn btn-primary" data-wa="Hola, estoy listo para cotizar mi proyecto de techado." href="#" target="_blank" rel="noopener">Cotizar por WhatsApp</a>
+    <div class="cross"><a href="#catalogo">Explorar perfiles acanalados</a><a href="#cotizador">Cotizar mi proyecto</a></div>
   </div>
 </section>
 
 <footer>
-  <div class="wrap foot-row">
-    <div class="brand">
-      <img src="images/logo.webp" alt="Laminados Plásticos">
-    </div>
-    <span> Los mejores en laminados plásticos· 33 1960 9730</span>
-    <span>© 2026 Laminados Plásticos</span>
+  <div class="wrap foot">
+    <a class="brand" href="#top"><img src="images/logo/logo.webp" alt="Láminas Especializadas"></a>
+    <span>Láminas acanaladas y perfiles especiales · 33 1020 3117</span>
+    <span>© 2026 Láminas Especializadas</span>
   </div>
 </footer>
 
-<a class="float-wa" id="floatWaBtn" href="#" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp">
-  <svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.7.7-1 1.5-1 2.4.1 1.1.6 2.2 1.4 3.2 1.5 2 3.3 3.4 5.6 4 .6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg>
-</a>
+<a class="float-wa" data-wa="Hola, quiero cotizar láminas para mi proyecto." href="#" target="_blank" rel="noopener" aria-label="Cotizar por WhatsApp"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2C6.5 2 2 6.5 2 12c0 1.9.5 3.7 1.5 5.3L2 22l4.8-1.5C8.3 21.5 10.1 22 12 22c5.5 0 10-4.5 10-10S17.5 2 12 2zm0 18c-1.6 0-3.2-.4-4.5-1.2l-.3-.2-2.8.9.9-2.7-.2-.3C4.4 15.1 4 13.6 4 12c0-4.4 3.6-8 8-8s8 3.6 8 8-3.6 8-8 8zm4.4-5.9c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1-.2.2-.6.8-.8 1-.1.2-.3.2-.5.1-.7-.3-1.4-.7-2-1.3-.5-.5-1-1.1-1.4-1.7-.1-.2 0-.4.1-.5l.4-.4c.1-.1.2-.3.2-.4.1-.1 0-.3 0-.4-.1-.1-.5-1.3-.7-1.8-.2-.4-.4-.4-.5-.4h-.5c-.2 0-.4.1-.6.3-.7.7-1 1.5-1 2.4.1 1.1.6 2.2 1.4 3.2 1.5 2 3.3 3.4 5.6 4 .6.2 1.1.2 1.5.1.5-.1 1.4-.6 1.6-1.1.2-.5.2-1 .1-1.1-.1-.1-.2-.2-.4-.3z"/></svg></a>
 
 <script>
-const WA_NUMBER = "523319609730";
-function waLink(msg){ return "https://wa.me/"+WA_NUMBER+"?text="+encodeURIComponent(msg); }
-function setWa(el,msg){ el.href = waLink(msg); }
+const WA="523310203117",$=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s);
+const waLink=m=>"https://wa.me/"+WA+"?text="+encodeURIComponent(m);
+const setWa=(el,m)=>{el.href=waLink(m)};
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+$$('[data-wa]').forEach(a=>a.addEventListener('click',e=>setWa(e.currentTarget,a.dataset.wa)));
 
-document.getElementById('navWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget,"Hola, quiero cotizar láminas para mi proyecto."); });
-document.getElementById('heroWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget,"Hola, quiero cotizar láminas para mi proyecto."); });
-document.getElementById('finalWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget,"Hola, estoy listo para cotizar mi proyecto de techado."); });
-document.getElementById('floatWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget,"Hola, quiero cotizar láminas para mi proyecto."); });
-
-document.querySelectorAll('[data-wa-item]').forEach(btn=>{
-  btn.href="#";
-  btn.addEventListener('click', e=>{
-    const item = btn.getAttribute('data-wa-item');
-    setWa(e.currentTarget, "Hola, quiero cotizar: "+item+". ¿Me pueden dar precio y disponibilidad?");
-  });
-  btn.setAttribute('target','_blank'); btn.setAttribute('rel','noopener');
-});
-
-// ---- Selector by project ----
-const projects = {
-  "Cochera": {rec:"TLM-107", why:"Lámina de PVC con ancho útil de 107 cm y acabado termoacústico para techados de cochera.", alt:"TLM-82", altWhy:"Perfil de PVC de 82 cm para cubiertas residenciales y estructuras ligeras."},
-  "Domo": {rec:"Policarbonato celular", why:"Excelente difusión de luz natural con protección UV e aislamiento térmico que ayuda a evitar el sobrecalentamiento interior.", alt:"T-81 Cubrelit", altWhy:"Alternativa opaca de PVC para cuando se prioriza cubrir y proteger el espacio sobre el paso de luz."},
-  "Terraza": {rec:"UTR-105", why:"Lámina termoacústica de 105 cm de ancho útil para techados expuestos.", alt:"PT1", altWhy:"Perfil para patios y techos ligeros, disponible en terracota, blanco y gris."},
-  "Invernadero": {rec:"T81P", why:"Consulta la disponibilidad y ficha técnica de T81P para confirmar que sus prestaciones sean adecuadas para tu invernadero.", alt:"Policarbonato celular", altWhy:"Permite el paso de luz natural y ofrece aislamiento térmico para el espacio de cultivo."},
-  "Nave Industrial": {rec:"T-2 Acrylit", why:"Perfil acanalado de resina acrílica reforzada con fibra de vidrio para incorporar luz natural a naves y bodegas.", alt:"T-18 Acrylit", altWhy:"Compatible con cubiertas metálicas, con difusión de luz y resistencia al intemperismo."},
-  "Otro proyecto": {custom:true}
-};
-const tabsEl = document.getElementById('tabs');
-const resultEl = document.getElementById('selectorResult');
-Object.keys(projects).forEach((name,i)=>{
-  const b = document.createElement('button');
-  b.className = 'tab'+(i===0?' active':'');
-  b.textContent = name;
-  b.addEventListener('click', ()=>selectProject(name,b));
-  tabsEl.appendChild(b);
-});
-function selectProject(name, btnEl){
-  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
-  btnEl.classList.add('active');
-  const p = projects[name];
-  if(p.custom){
-    resultEl.innerHTML = `
-      <form class="custom-project" id="customProjectForm">
-        <label for="customProjectMessage">Cuéntanos qué proyecto tienes y qué necesitas cotizar</label>
-        <textarea id="customProjectMessage" rows="4" maxlength="1200" placeholder="Ejemplo: quiero cubrir una terraza de 20 m² y busco una lámina que deje pasar luz." required></textarea>
-        <button class="btn btn-primary" type="submit">Enviar mensaje por WhatsApp</button>
-      </form>`;
-    document.getElementById('customProjectForm').addEventListener('submit', e=>{
-      e.preventDefault();
-      const details = document.getElementById('customProjectMessage').value.trim();
-      if(!details) return;
-      window.open(waLink(`Hola, quiero cotizar otro proyecto. ${details}`), '_blank', 'noopener,noreferrer');
-    });
-    return;
+/* ---- Hero: lámina viva que reacciona a la luz del cursor ---- */
+(function(){
+  const cv=$('#ribs'),cx=cv.getContext('2d'),hero=$('#top');
+  let W,H,dpr,lx=.75,ly=.3,tx=.75,ty=.3,idle=true,vis=true,t0=0;
+  function size(){dpr=Math.min(devicePixelRatio||1,2);W=hero.clientWidth;H=hero.clientHeight;cv.width=W*dpr;cv.height=H*dpr;cx.setTransform(dpr,0,0,dpr,0,0);draw(0)}
+  function draw(t){
+    cx.clearRect(0,0,W,H);
+    const pitch=Math.max(44,W/26),n=Math.ceil(W/pitch)+1,step=4;
+    if(idle){tx=.5+.45*Math.sin(t/3200);ty=.28+.1*Math.cos(t/2300)}
+    lx+=(tx-lx)*.06;ly+=(ty-ly)*.06;
+    const LX=lx*W,LY=ly*H;
+    for(let x=0;x<W;x+=step){
+      const ph=((x/pitch)%1),s=Math.cos(ph*Math.PI*2);          // pendiente del perfil
+      const h=.5-.5*Math.cos(ph*Math.PI*2);
+      const d=Math.abs(x-LX)/(W*.5),glow=Math.max(0,1-d*d*1.6);
+      const facing=(x<LX?1:-1)*s;                                  // cara que mira a la luz
+      let v=.16+h*.1+Math.max(0,facing)*.32*glow+glow*.1;
+      const g=cx.createLinearGradient(0,0,0,H);
+      const c=Math.round(255*Math.min(v,.85));
+      g.addColorStop(0,`rgb(${c},${c},${Math.round(c*1.02)})`);
+      g.addColorStop(Math.max(0,Math.min(1,ly)),`rgb(${Math.min(255,c+28)},${Math.min(255,c+24)},${Math.min(255,c+24)})`);
+      g.addColorStop(1,`rgb(${Math.round(c*.5)},${Math.round(c*.5)},${Math.round(c*.52)})`);
+      cx.fillStyle=g;cx.fillRect(x,0,step+1,H);
+    }
+    const rg=cx.createRadialGradient(LX,LY,0,LX,LY,W*.35);
+    rg.addColorStop(0,'rgba(224,48,42,.22)');rg.addColorStop(1,'rgba(224,48,42,0)');
+    cx.fillStyle=rg;cx.fillRect(0,0,W,H);
   }
-  resultEl.innerHTML = `
-    <div class="result-card">
-      <div class="tag">${p.recTag || 'RECOMENDADA'}</div>
-      <h4>${p.rec}</h4>
-      <p>${p.why}</p>
-      <a class="btn btn-primary" href="#" id="selWaBtn">${p.recAction || 'Cotizar para mi proyecto'}</a>
-    </div>
-    <div class="result-card alt">
-      <div class="tag">${p.altTag || 'OPCIÓN ECONÓMICA'}</div>
-      <h4>${p.alt}</h4>
-      <p>${p.altWhy}</p>
-      <a class="btn btn-light" href="#" id="selAltWaBtn" style="background:transparent;border-color:#4a4a4a;color:#e6e6e6">${p.altAction || 'Cotizar esta opción'}</a>
-    </div>`;
-  document.getElementById('selWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget, p.recMessage || `Hola, tengo un proyecto de ${name.toLowerCase()} y quiero cotizar ${p.rec}.`); });
-  document.getElementById('selWaBtn').target='_blank';
-  document.getElementById('selAltWaBtn').addEventListener('click', e=>{ setWa(e.currentTarget, p.altMessage || `Hola, tengo un proyecto de ${name.toLowerCase()} y quiero cotizar ${p.alt} como opción económica.`); });
-  document.getElementById('selAltWaBtn').target='_blank';
-}
-selectProject("Cochera", tabsEl.children[0]);
-
-// ---- Quote form ----
-const projectSelect = document.getElementById('qProyecto');
-const customProjectField = document.getElementById('qProyectoOtroField');
-const customProjectInput = document.getElementById('qProyectoOtro');
-projectSelect.addEventListener('change', ()=>{
-  const isCustomProject = projectSelect.value === 'otro';
-  customProjectField.hidden = !isCustomProject;
-  customProjectInput.required = isCustomProject;
-  if(!isCustomProject) customProjectInput.value = '';
-});
-
-document.getElementById('quoteForm').addEventListener('submit', function(e){
-  e.preventDefault();
-  const proyecto = projectSelect.value === 'otro' ? customProjectInput.value.trim() : projectSelect.value;
-  if(!proyecto){
-    customProjectInput.setCustomValidity('Escribe qué proyecto quieres cotizar.');
-    customProjectInput.reportValidity();
-    return;
+  function loop(t){if(vis)draw(t);requestAnimationFrame(loop)}
+  size();addEventListener('resize',size);
+  if(!reduce){
+    hero.addEventListener('pointermove',e=>{const r=hero.getBoundingClientRect();tx=(e.clientX-r.left)/r.width;ty=(e.clientY-r.top)/r.height;idle=false});
+    hero.addEventListener('pointerleave',()=>idle=true);
+    new IntersectionObserver(([e])=>vis=e.isIntersecting).observe(hero);
+    requestAnimationFrame(loop);
   }
-  customProjectInput.setCustomValidity('');
-  const metros = document.getElementById('qMetros').value;
-  const municipio = document.getElementById('qMunicipio').value;
-  const corte = document.getElementById('qCorte').checked;
-  const entrega = document.getElementById('qEntrega').checked;
-  const factura = document.getElementById('qFactura').checked;
-  let msg = `Hola, quiero cotizar mi proyecto:\n- Tipo de proyecto: ${proyecto}`;
-  if(metros) msg += `\n- Metros aprox.: ${metros} m²`;
-  if(municipio) msg += `\n- Municipio: ${municipio}`;
-  const needs = [];
-  if(corte) needs.push("corte a medida");
-  if(entrega) needs.push("entrega a obra");
-  if(factura) needs.push("factura");
-  if(needs.length) msg += `\n- Necesito: ${needs.join(', ')}`;
-  window.open(waLink(msg), '_blank');
-});
-
-// ---- Projects filter ----
-document.querySelectorAll('.filter-btn').forEach(btn=>{
-  btn.addEventListener('click', ()=>{
-    document.querySelectorAll('.filter-btn').forEach(b=>b.classList.remove('active'));
-    btn.classList.add('active');
-    const cat = btn.getAttribute('data-cat');
-    document.querySelectorAll('.proj-card').forEach(card=>{
-      card.classList.toggle('hide', cat!=='todos' && card.getAttribute('data-cat')!==cat);
+  /* profundidad en las fotos */
+  const st=$('#stack');
+  if(!reduce&&matchMedia('(hover:hover)').matches){
+    hero.addEventListener('pointermove',e=>{
+      const r=hero.getBoundingClientRect(),px=(e.clientX-r.left)/r.width-.5,py=(e.clientY-r.top)/r.height-.5;
+      st.querySelectorAll('a').forEach(a=>{const z=+a.dataset.z;a.style.transform=`translate3d(${-px*z}px,${-py*z}px,0) rotateY(${px*8}deg) rotateX(${-py*8}deg)`});
     });
-  });
-});
+  }
+})();
 
-// ---- FAQ ----
-const faqData = [
-  {q:"¿Cuánto cuesta el metro cuadrado?", a:"Desde $180 por m² según material y espesor; el precio final depende del corte y la cantidad."},
-  {q:"¿Cortan a la medida?", a:"Sí, cortamos todas nuestras láminas a la medida exacta de tu proyecto, normalmente listas en 24 horas."},
-  {q:"¿Quién descarga el material en obra?", a:"La descarga es libre a bordo."},
-  {q:"¿Hacen instalación o recomiendan instalador?", a:"No instalamos directamente, pero contamos con un directorio de instaladores recomendados en Guadalajara y Colima."},
-  {q:"¿Qué garantía tienen las láminas?", a:"hasta 25 años según el material."},
-  {q:"¿Qué formas de pago aceptan? ¿Facturan?", a:"Aceptamos efectivo, transferencia, tarjeta y meses sin intereses. Facturamos todas las compras."}
+/* ---- Catálogo: perfil que se transforma ---- */
+const P=[
+ {n:"Losacero 25",wa:"Losacero 25",img:"losacero25",alt:"Lámina Losacero 25",type:"Deck metálico",d:"Deck metálico para integrarse a sistemas de losa compuesta.",s:"Consulta calibres, largos y disponibilidad.",k:"trap",c:6,h:.55,a:[.2,.5,.7]},
+ {n:"R-91.5",wa:"Lámina R-91.5",img:"91.5",alt:"Lámina acanalada R-91.5",type:"Lámina acanalada",d:"Perfil acanalado para cubiertas y fachadas metálicas.",s:"Consulta calibres, largos y acabados.",k:"trap",c:5,h:.8,a:[.16,.5,.66]},
+ {n:"R-72",wa:"Lámina R-72",img:"R-72",alt:"Lámina acanalada R-72",type:"Lámina acanalada",d:"Lámina acanalada para cubiertas de proyectos comerciales e industriales.",s:"Consulta calibres, largos y acabados.",k:"trap",c:6,h:.7,a:[.18,.5,.68]},
+ {n:"R-101",wa:"Lámina R-101",img:"r101",alt:"Lámina acanalada R-101",type:"Lámina acanalada",d:"Perfil metálico para techos y cerramientos de uso comercial e industrial.",s:"Consulta calibres, largos y acabados.",k:"trap",c:4,h:1,a:[.14,.48,.62]},
+ {n:"R-90",wa:"Lámina R-90",img:"r90",alt:"Lámina acanalada R-90",type:"Lámina acanalada",d:"Solución acanalada para cubiertas metálicas en distintos proyectos.",s:"Consulta calibres, largos y acabados.",k:"trap",c:5,h:.85,a:[.15,.5,.65]},
+ {n:"R-45",wa:"Lámina R-45",img:"r45",alt:"Lámina acanalada R-45",type:"Lámina acanalada",d:"Perfil para techos y revestimientos en proyectos residenciales o comerciales.",s:"Consulta calibres, largos y acabados.",k:"trap",c:10,h:.42,a:[.2,.5,.7]},
+ {n:"R-66",wa:"Lámina R-66",img:"r66",alt:"Lámina acanalada R-66",type:"Lámina acanalada",d:"Lámina perfilada para cubiertas y soluciones metálicas.",s:"Consulta calibres, largos y acabados.",k:"trap",c:7,h:.6,a:[.2,.5,.7]},
+ {n:"Galvateja",wa:"Lámina Galvateja",img:"galvateja",alt:"Lámina Galvateja",type:"Perfil tipo teja",d:"Perfil metálico con apariencia de teja para techos residenciales.",s:"Consulta colores, calibres y largos disponibles.",k:"wave",c:8,h:.55},
+ {n:"KR-18",wa:"Sistema KR-18",img:"kr18",alt:"Sistema de cubierta KR-18",type:"Perfil especial",d:"Sistema de cubierta metálica para proyectos que requieren un perfil especial.",s:"Consulta especificaciones, calibres y largos.",k:"kr",c:7,h:.4},
+ {n:"RN-100/35",wa:"Lámina RN-100/35",img:"Rn-10035",alt:"Lámina acanalada RN-100/35",type:"Lámina acanalada",d:"Perfil acanalado para cubiertas metálicas industriales y comerciales.",s:"Consulta calibres, largos y acabados.",k:"trap",c:5,h:.6,a:[.18,.5,.68]}
 ];
-const faqList = document.getElementById('faqList');
-faqData.forEach(item=>{
-  const div = document.createElement('div');
-  div.className = 'faq-item';
-  div.innerHTML = `<button class="faq-q"><span>${item.q}</span><span class="plus">+</span></button><div class="faq-a"><p>${item.a}</p></div>`;
-  div.querySelector('.faq-q').addEventListener('click', ()=>div.classList.toggle('open'));
-  faqList.appendChild(div);
+const N=180,sm=t=>t*t*(3-2*t);
+function shape(p,t){
+  if(p.k==="wave")return .5-.5*Math.cos(t*Math.PI*2);
+  if(p.k==="kr"){return t<.09?sm(t/.09):t<.18?1-sm((t-.09)/.09):0}
+  const [a,b,c]=p.a;return t<a?sm(t/a):t<b?1:t<c?1-sm((t-b)/(c-b)):0;
+}
+const target=p=>Array.from({length:N+1},(_,i)=>{const x=i/N;return p.h*shape(p,(x*p.c)%1)});
+let cur=target(P[0]),goal=cur,raf=0;
+function paint(){
+  const pts=cur.map((v,i)=>[i/N*600,104-v*88]);
+  const d="M"+pts.map(p=>p[0].toFixed(1)+","+p[1].toFixed(1)).join("L");
+  $('#pLine').setAttribute('d',d);$('#pFill').setAttribute('d',d+"L600,120L0,120Z");
+}
+function morph(){
+  let moving=false;
+  cur=cur.map((v,i)=>{const dv=goal[i]-v;if(Math.abs(dv)>.002){moving=true;return v+dv*.14}return goal[i]});
+  paint();raf=moving?requestAnimationFrame(morph):0;
+}
+const plist=$('#plist'),sImg=$('#sImg');
+P.forEach((p,i)=>{
+  const li=document.createElement('li');li.setAttribute('role','presentation');
+  li.innerHTML=`<button role="tab" aria-selected="${i===0}">${p.n}</button>`;
+  li.firstChild.addEventListener('click',()=>pick(i));
+  li.firstChild.addEventListener('mouseenter',()=>matchMedia('(hover:hover)').matches&&pick(i));
+  plist.appendChild(li);
+});
+let sel=-1;
+function pick(i){
+  if(i===sel)return;sel=i;const p=P[i];
+  plist.querySelectorAll('button').forEach((b,j)=>b.setAttribute('aria-selected',j===i));
+  sImg.classList.add('swap');
+  setTimeout(()=>{sImg.src=`images/productos/${p.img}.webp`;sImg.alt=p.alt;sImg.classList.remove('swap')},reduce?0:180);
+  $('#sType').textContent=p.type;$('#sName').textContent=p.n;$('#sDesc').textContent=p.d;$('#sSpec').textContent=p.s;
+  const w=$('#sWa');w.setAttribute('aria-label',`Cotizar ${p.wa} por WhatsApp`);
+  w.onclick=e=>setWa(e.currentTarget,`Hola, quiero cotizar: ${p.wa}. ¿Me pueden dar precio y disponibilidad?`);
+  goal=target(p);if(reduce){cur=goal;paint()}else if(!raf)raf=requestAnimationFrame(morph);
+}
+pick(0);
+
+/* ---- Selector por proyecto ---- */
+const PR={
+ "Casa habitación":{rec:"Galvateja",why:"Perfil metálico con apariencia de teja para cubiertas residenciales.",alt:"R-72",altWhy:"Opción de lámina acanalada; confirma medidas y acabados disponibles al cotizar."},
+ "Terraza o cochera":{rec:"R-72",why:"Perfil acanalado para una cubierta metálica residencial.",alt:"R-45",altWhy:"Alternativa de perfil acanalado. Consulta compatibilidad y medidas para tu estructura."},
+ "Bodega":{rec:"R-101",why:"Perfil metálico para cubiertas y cerramientos de uso comercial e industrial.",alt:"R-91.5",altWhy:"Otra opción acanalada; confirma claros, apoyos y medidas con asesoría."},
+ "Nave industrial":{rec:"KR-18",why:"Sistema de cubierta metálica de perfil especial para proyectos industriales.",alt:"Losacero 25",altWhy:"Deck metálico para sistemas de losa compuesta. Consulta especificaciones del proyecto."},
+ "Comercio":{rec:"RN-100/35",why:"Perfil acanalado para cubiertas de proyectos comerciales.",alt:"R-90",altWhy:"Alternativa metálica acanalada; consulta largos y disponibilidad."},
+ "Otro proyecto":{custom:true}
+};
+const tabs=$('#tabs'),res=$('#selRes');
+Object.keys(PR).forEach((n,i)=>{const b=document.createElement('button');b.className='tab'+(i?'':' active');b.textContent=n;b.addEventListener('click',()=>choose(n,b));tabs.appendChild(b)});
+function choose(n,b){
+  $$('.tab').forEach(t=>t.classList.remove('active'));b.classList.add('active');const p=PR[n];
+  if(p.custom){
+    res.innerHTML=`<form class="custom" id="cf"><label for="cm">Cuéntanos qué proyecto tienes y qué necesitas cotizar</label><textarea id="cm" maxlength="1200" placeholder="Ejemplo: necesito cubrir una nave y quiero cotizar perfiles y largos disponibles." required></textarea><button class="btn btn-primary" type="submit">Enviar mensaje por WhatsApp</button></form>`;
+    $('#cf').addEventListener('submit',e=>{e.preventDefault();const v=$('#cm').value.trim();if(v)window.open(waLink("Hola, quiero cotizar otro proyecto. "+v),'_blank','noopener,noreferrer')});return;
+  }
+  res.innerHTML=`<div class="rc"><div class="tag">Recomendada</div><h4>${p.rec}</h4><p>${p.why}</p><a class="btn btn-primary" id="r1" href="#" target="_blank" rel="noopener">Cotizar para mi proyecto</a></div>
+  <div class="rc alt"><div class="tag">Alternativa</div><h4>${p.alt}</h4><p>${p.altWhy}</p><a class="btn btn-ghost" id="r2" href="#" target="_blank" rel="noopener">Cotizar esta opción</a></div>`;
+  $('#r1').addEventListener('click',e=>setWa(e.currentTarget,`Hola, tengo un proyecto de ${n.toLowerCase()} y quiero cotizar ${p.rec}.`));
+  $('#r2').addEventListener('click',e=>setWa(e.currentTarget,`Hola, tengo un proyecto de ${n.toLowerCase()} y quiero cotizar ${p.alt} como alternativa.`));
+}
+choose("Casa habitación",tabs.children[0]);
+
+/* ---- Cotizador ---- */
+const ps=$('#qProyecto'),of=$('#qOtroF'),oi=$('#qOtro');
+ps.addEventListener('change',()=>{const o=ps.value==='otro';of.hidden=!o;oi.required=o;if(!o)oi.value=''});
+$('#quoteForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  const pr=ps.value==='otro'?oi.value.trim():ps.value;
+  if(!pr){oi.setCustomValidity('Escribe qué proyecto quieres cotizar.');oi.reportValidity();return}
+  oi.setCustomValidity('');
+  const m=$('#qMetros').value,mu=$('#qMun').value,needs=[];
+  if($('#qMedidas').checked)needs.push("tengo medidas");
+  if($('#qEnvio').checked)needs.push("cotizar envío");
+  if($('#qAses').checked)needs.push("necesito asesoría");
+  let msg=`Hola, quiero cotizar mi proyecto:\n- Tipo de proyecto: ${pr}`;
+  if(m)msg+=`\n- Metros aprox.: ${m} m²`;
+  if(mu)msg+=`\n- Municipio: ${mu}`;
+  if(needs.length)msg+=`\n- Necesito: ${needs.join(', ')}`;
+  window.open(waLink(msg),'_blank','noopener');
+});
+
+/* ---- Línea de envíos que avanza al llegar ---- */
+new IntersectionObserver((en,o)=>en.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');o.unobserve(x.target)}}),{threshold:.4}).observe($('#ship'));
+
+/* ---- Filtro de proyectos ---- */
+$$('.fb').forEach(b=>b.addEventListener('click',()=>{
+  $$('.fb').forEach(x=>x.classList.remove('active'));b.classList.add('active');
+  const c=b.dataset.cat;$$('.pc').forEach(k=>k.classList.toggle('hide',c!=='todos'&&k.dataset.cat!==c));
+}));
+
+/* ---- FAQ ---- */
+[["¿Qué productos manejan?","El catálogo incluye Losacero 25, R-91.5, R-72, R-101, R-90, R-45, R-66, Galvateja, KR-18 y RN-100/35."],
+["¿Cómo solicito una cotización?","Elige un producto o completa el cotizador con el tipo de proyecto, medidas aproximadas y ubicación."],
+["¿Qué calibres y largos tienen?","Las opciones dependen del perfil. Comparte el producto que necesitas para confirmar medidas y disponibilidad."],
+["¿Realizan envíos?","El sitio de la marca anuncia entregas en México. Cobertura, costo y tiempo se confirman según el destino y el material."],
+["¿Qué perfil necesito para mi cubierta?","La elección depende del proyecto y su estructura. Comparte medidas y uso para revisar opciones con asesoría."],
+["¿Cuánto cuesta la lámina?","El precio se cotiza según producto, calibre, largo, cantidad y destino. Envíanos esos datos para revisarlo."]
+].forEach(([q,a])=>{
+  const d=document.createElement('div');d.className='fi';
+  d.innerHTML=`<button class="fq" aria-expanded="false"><span>${q}</span><span class="p" aria-hidden="true">+</span></button><div class="fa"><div><p>${a}</p></div></div>`;
+  const b=d.firstChild;b.addEventListener('click',()=>{b.setAttribute('aria-expanded',d.classList.toggle('open'))});
+  $('#faqList').appendChild(d);
 });
 </script>
 </body>
